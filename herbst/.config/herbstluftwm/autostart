@@ -1,0 +1,363 @@
+#!/usr/bin/env bash
+
+herb() {
+    herbstclient "$@"
+}
+
+keyreg() {
+	herb keybind "$@"
+}
+
+# TODO: register mapping of monitor to resolution, xrandr ?
+# MONITORS=(HDMI-1 DP-1)
+export MONITORS=$(herb detect_monitors -l | wc -l)
+
+Mod=Mod4   	# Use the super key as the main modifier
+ModAlt=Mod1 # Mod Alt is alt 
+ModAlt2=$ModAlt-Ctrl # Alternative mod is alt+ctrl
+ModShift=$Mod-Shift
+ModCtrl=$Mod-Ctrl
+
+# STARTUP EXEC
+nitrogen --restore &
+reload_polybar &
+governor_set powersave &
+xbanish -i mod1 -i control -i mod4 &
+FRAMES=90 framerate_high &
+
+herb emit_hook reload
+herb set_layout max
+herb keyunbind --all
+
+# LAUNCHERS
+TERMINAL="gnome-terminal --zoom 1.5"
+keyreg $Mod-Return              spawn $TERMINAL
+keyreg $Mod-apostrophe          spawn emoji-keyboard -s
+keyreg $Mod-slash               spawn find_window
+keyreg $ModShift-w              spawn nautilus
+keyreg $Mod-Print               spawn teiler --quickcopy fullscreen
+keyreg Ctrl-Print               spawn teiler --quickcopy area
+keyreg Print                    spawn teiler
+keyreg $Mod-semicolon           spawn config_window
+keyred $ModCtrl-semicolon		spawn gnome-terminal --window -t "Adventure" -- zsh -ic adventure
+keyreg $ModShift-slash          spawn scratch
+#keyreg $ModShift-Return spawn gnome-terminal --zoom 2.15
+
+# ROFI
+keyreg $Mod-Escape spawn rofi \
+	-sidebar-mode -show drun -modi drun,run -width 50 -location 7 \
+	-theme-str "#listview{lines:20; columns:1; fixed-height: 0; layout:vertical;} #window{y-offset:40;x-offset:0%; anchor:north east;}"
+keyreg $Mod-Tab    spawn rofi \
+	-show windowcd -modi window -sidebar-mode -position 6 \
+	-theme-str "#element{width:475px; padding: 10px; font:\"Source Code Pro 16\";}#window{width:50%; y-offset: 0; x-offset:0;} #box{orientation: horizontal;} #listview{layout: vertical; dynamic: 0; columns: 3; fixed-height: 1; lines: 9; }"
+
+# CLOSE OR QUIT WM
+keyreg $Mod-q           close_or_remove
+keyreg $ModShift-q      spawn xkill
+keyreg Ctrl-Shift-Escape spawn sh -c "sleep 1 && systemctl suspend"
+keyreg $ModCtrl-r       reload
+keyreg XF86Sleep         quit
+
+# WINDOWING
+keyreg $ModShift-s      split explode 0.33
+keyreg $ModCtrl-s       chain . split vertical . cycle_frame
+keyreg $ModShift-Return chain . split explode . cycle_frame
+# close split
+keyreg $ModShift-d remove
+keyreg $ModCtrl-Return chain . cycle_frame . set_attr clients.focus.floating 0
+
+# FOCUS
+keyreg $Mod-Left       focus left
+keyreg $Mod-Down       focus down
+keyreg $Mod-Up         focus up
+keyreg $Mod-Right      focus right
+keyreg $Mod-h          focus left
+keyreg $Mod-j          focus down
+keyreg $Mod-k          focus up
+keyreg $Mod-l          focus right
+keyreg $ModCtrl-Left  shift left
+keyreg $ModCtrl-Down  shift down
+keyreg $ModCtrl-Up    shift up
+keyreg $ModCtrl-Right shift right
+keyreg $ModCtrl-h     shift left
+keyreg $ModCtrl-j     shift down
+keyreg $ModCtrl-k     shift up
+keyreg $ModCtrl-l     shift right
+
+# tags
+tag_names=( work term browser task )
+tag_keys=( {1..9} 0 )
+
+herb set swap_monitors_to_get_tag 0
+herb rename default "${tag_names[0]}" || true &>/dev/null
+
+function verb() {
+	action=$1
+	src=$2
+	dst=$3
+	mon=0
+	echo "chain . lock . focus_monitor $mon . $action $src . cycle_monitor . $action $dst . focus_monitor $mon . unlock"
+}
+
+for i in "${!tag_keys[@]}" ; do
+	name="${tag_names[$i]}"
+	if ! [ -z $name ] ; then
+		herb add "${tag_names[$i]}"
+	fi
+    key="${tag_keys[$i]}"
+    if ! [ -z "$key" ] ; then
+#		keyreg "$Mod-Alt-$key" $(verb use_index $i $(( i+1 )) )
+#		keyreg "$ModShift-$key"
+#		keyreg "$ModCtrl-$key" 
+		keyreg "$Mod-$key" use_index "$i"
+		keyreg "$ModCtrl-$key" move_index "$i"
+		
+		keyreg "$ModShift-$key" chain \
+			. set swap_monitors_to_get_tag 1 \
+			. use_index "$i" \
+			. set swap_monitors_to_get_tag 0 
+	fi
+done
+
+#TODO: make a event for change of workspace to automatically 
+
+
+# The following cycles through the available layouts within a frame, but skips
+# layouts, if the layout change wouldn't affect the actual window positions.
+# I.e. if there are two windows within a frame, the grid layout is skipped.
+
+# let the current frame explode into subframes
+# cycle forward
+keyreg $Mod-s spawn cycle_max
+# peek all
+keyreg $Mod-d	or						 \
+	, and                 						 \
+		. compare tags.focus.curframe_wcount = 2 \
+		. cycle_layout +1 max grid vertical      \
+	, cycle_layout +1 horizontal grid vertical max
+#	. and \
+#		.. compare tags.focus.curframe_wcount gt 4 \
+#						.. cycle_layout +1 grid max \
+
+
+# cycle back
+keyreg $Mod-a 	chain \
+						. cycle -1
+keyreg $Mod-x use_previous
+# substitute last window from mod-w
+	
+# mouse
+herb mouseunbind --all
+herb mousebind $Mod-Button1 move
+herb mousebind $Mod-Button2 zoom
+herb mousebind $Mod-Button3 resize
+
+
+# rotate layout
+keyreg $ModCtrl-c rotate
+# flip layout
+keyreg $ModShift-c chain , lock , rotate , rotate , unlock
+# split into direction
+keyreg $Mod-v      split right  0.5
+keyreg $Mod-b      split bottom   0.5
+keyreg $ModCtrl-v      chain , split right  0.5 , focus -e right
+keyreg $ModCtrl-b      chain , split bottom   0.5 , focus -i down
+keyreg $ModShift-b      split top   0.5
+
+# focus other screen
+keyreg $Mod-e      cycle_monitor
+# send to other screen
+keyreg $ModCtrl-e shift_to_monitor +1
+# swap with other screen
+#keyreg $ModCtrl-e chain . lock .  . unlock
+#keyreg $ModShift-x use_index -1 --skip-visible
+keyreg $ModShift-x spawn bring_last
+keyreg $ModShift-e spawn swap_monitors 0
+keyreg $Mod-grave spawn dunstctl history-pop
+keyreg $Mod-numbersign	spawn dunstctl close
+keyreg $ModCtrl-grave  spawn dunstctl context
+keyreg Ctrl-Shift-space spawn dunstctl close-all
+keyreg Ctrl-Shift-grave spawn pause_notification_toggle
+
+#[shortcuts]
+#
+#    # Shortcuts are specified as [modifier+][modifier+]...key
+#    # Available modifiers are "ctrl", "mod1" (the alt-key), "mod2",
+#    # "mod3" and "mod4" (windows-key).
+#    # Xev might be helpful to find names for keys.
+#
+#
+#    # Redisplay last message(s).
+#    # On the US keyboard layout "grave" is normally above TAB and left
+#    # of "1". Make sure this key actually exists on your keyboard layout,
+#    # e.g. check output of 'xmodmap -pke'
+#    history = ctrl+numbersign
+#    # Close notification.
+#    close = mod4+numbersign
+#
+#    # Context menu.
+#    context = ctrl+grave
+#    # Close all notifications.
+#    #togglescript = ctrl+grave /home/kine/.config/herbstluftwm/autostart:175
+#    close_all = ctrl+shift+space
+#
+# cycle frames
+keyreg $Mod-c                    cycle_frame
+#
+# resizing frames and floating clients
+resizestep=0.25
+##nudgestep=.25
+nudgestep=0.083
+# keyreg $ModCtrl-comma           resize left +0.05
+# keyreg $ModCtrl-period          resize right +0.05
+keyreg $Mod-bracketleft  use_index -1 --skip-visible
+keyreg $Mod-bracketright use_index +1 --skip-visible
+
+keyreg $ModCtrl-comma    resize left +$resizestep
+keyreg $ModCtrl-period   resize right +$resizestep
+
+keyreg $ModShift-h       resize left +$nudgestep
+keyreg $ModShift-j       resize down +$nudgestep
+keyreg $ModShift-k       resize up +$nudgestep
+keyreg $ModShift-l       resize right +$nudgestep
+keyreg $ModShift-Left    resize left +$resizestep
+keyreg $ModShift-Down    resize down +$resizestep
+keyreg $ModShift-Up      resize up +$resizestep
+keyreg $ModShift-Right   resize right +$resizestep
+
+herb set default_direction_external_only
+                                     
+keyreg $Mod-comma       cycle_all --skip-invisible -1
+keyreg $Mod-period      cycle_all --skip-invisible +1
+keyreg $ModShift-comma  shift left
+keyreg $ModShift-period shift right
+                                     
+# layouting
+keyreg $Mod-f spawn maximize
+# maximize
+keyreg $ModShift-f fullscreen toggle
+keyreg $ModShift-space                    chain . set_attr clients.focus.floating off . pseudotile toggle . jumpto urgent
+# resize popup                       
+keyreg $ModCtrl-space                chain \
+                                        , set_attr clients.focus.floating toggle \
+                                        , pseudotile off
+keyreg $Mod-space   	              chain \
+                                        , lock \
+                                        , attr tags.focus.floating_focused toggle \
+										, cycle , cycle -1 \
+                                        , unlock
+# peek grid
+keyreg $ModCtrl-z cycle_layout +1 grid max
+# peek floats
+keyreg $ModShift-z     floating toggle
+keyreg $Mod-z 	spawn throw_corner
+
+# keybind move mouse to center window and pop up lemonbar / rofi / dmenu
+
+keyreg $Mod-i     bring urgent
+
+## TODO: change to bring to last tag
+#keyreg $ModShift-x jumpto urgent
+
+
+# THEME
+herb attr theme.tiling.reset 1
+herb attr theme.floating.reset 1
+
+#= COLOURS =#
+herb set frame_border_active_color '#666'
+herb set frame_border_normal_color '#333'
+herb set frame_bg_normal_color '#88888800'
+herb set frame_bg_active_color '#eee'
+herb attr theme.active.color '#feef69'
+herb attr theme.normal.color '#666'
+herb attr theme.urgent.color orange
+herb attr theme.minimal.color '#333'
+herb attr theme.floating.outer_color '#97ff65'
+herb attr theme.active.inner_color '#ffeeee'
+herb attr theme.active.outer_color '#feef69'
+herb attr theme.background_color '#333333'
+#herb attr theme.floating.outer_color '#00ef69'
+#herb attr theme.floating.outer_color '#aaef69'
+
+herb set always_show_frame off
+herb set frame_bg_transparent on
+herb set frame_transparent_width 2
+herb set frame_border_width 5
+
+# ????
+herb set frame_gap 0
+#herb set frame_gap -10
+herb set window_gap 0
+herb set frame_padding 0
+
+herb set snap_distance 10
+herb set snap_gap 5
+
+herb set smart_window_surroundings off
+herb set smart_frame_surroundings off
+
+herb attr theme.minimal.border_width 2
+herb attr theme.inner_width 0
+herb attr theme.inner_color black
+herb attr theme.border_width 5
+herb attr theme.floating.border_width 5
+herb attr theme.floating.outer_width 5
+
+herb set mouse_recenter_gap 5
+herb set focus_follows_mouse 1
+# +git commit # turn setting wrong
+herb set focus_crosses_monitor_boundaries off
+herb set gapless_grid on
+herb set hide_covered_windows on
+herb set pseudotile_center_threshold 25
+herb set update_dragged_clients 0
+#herb set raise_on_focus on
+
+# rules
+herb unrule -F
+#herb rule class=XTerm tag=3 # move all xterms to tag 3
+herb rule focus=on # normally focus new clients
+herb rule windowtype~'_NET_WM_WINDOW_TYPE_(DIALOG|UTILITY|SPLASH)' floating=on
+herb rule class~'[Yy]ad' floating=on
+herb rule windowtype='_NET_WM_WINDOW_TYPE_DIALOG' focus=on
+herb rule windowtype~'_NET_WM_WINDOW_TYPE_(NOTIFICATION|DOCK|DESKTOP)' manage=off focus=off
+
+herb add term
+herb add config
+herb add task
+herb add browser
+herb add volume
+herb add music
+herb add discord
+herb rule class='pavucontrol' tag=volume
+herb rule class='spotify' tag=music
+herb rule class='firefox' windowtype='_NET_WM_WINDOW_TYPE_NORMAL' tag=browser
+herb rule title='Task Manager' tag=task
+herb rule title='Config Manager' tag=config
+
+keyreg $ModShift-p   chain , spawn sh -c 'pidof pavucontrol || pavucontrol' , use volume
+keyreg $ModShift-m   chain , spawn sh -c 'pidof spotify || spotify' , use music
+keyreg $Mod-m        spawn spotify_playpause
+keyreg $Mod-n        spawn spotify_control next
+keyreg $ModShift-n   spawn spotify_control previous
+keyreg XF86AudioPlay spawn spotify_playpause
+keyreg XF86AudioNext spawn spotify_control next
+keyreg XF86AudioPrev spawn spotify_control previous
+
+herb rule class='discord' tag=discord
+
+herb rule class='tasks' floating=on
+keyreg $Mod-t 		spawn task_window
+
+herb set tree_style '╾│ ├└╼─┐'
+herb set default_frame_layout 1
+
+# unlock, just to be sure
+herb unlock
+
+# do multi monitor setup here, e.g.:
+# herb set_monitors 1280x1024+0+0 1280x1024+1280+0
+# or simply:
+herb detect_monitors
+dunstify -a "herbstluftwm" "session loaded"

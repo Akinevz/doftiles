@@ -1,0 +1,369 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/jaagr/polybar
+;
+;   The README contains alot of information
+;
+;==========================================================
+
+[colors]
+;background = ${xrdb:color0:#222}
+background = #333333
+background-alt = #666666
+;foreground = ${xrdb:color7:#222}
+foreground = #eeeeee
+foreground-alt = #aaaaaa
+primary-alt = #FEEF69
+primary = #FFED4F
+secondary = #BAAE33
+alert = #bd2c40
+inactive = #aaa
+
+[bar/common]
+width = 100%
+height = 24
+;offset-x = 1%
+;offset-y = 1%
+;radius = 6.0
+fixed-center = true
+bottom = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 5
+line-color = #FEEF50
+
+;border-size = 4
+;border-color = #00000000
+
+padding-left = 1
+padding-right = 1
+
+modules-center = ewmh
+
+module-margin-left = 0
+module-margin-right = 1
+
+font-0 = "Fira Code:pixelsize=12;2"
+font-1 = "FontAwesome:fontformat=truetype:size=12:antialias=false;0"
+font-2 = "Siji:pixelsize=12;0"
+font-3 = unifont:fontformat=truetype:size=12:antialias=false;2
+font-4 = "Noto Sans Symbols:fontformat=truetype:size=12:antialias=false;2"
+
+[bar/single]
+inherit = bar/common
+monitor = HDMI-A-0
+modules-left = custom_governor cpu memory xkeyboard
+modules-right = xwindow pulseaudio date
+tray-position = right
+tray-padding = 2
+
+[bar/right]
+inherit = bar/common
+monitor = DisplayPort-1
+modules-right = wlan eth date 
+modules-left = custom_governor cpu temperature memory xkeyboard 
+
+[bar/left]
+inherit = bar/common
+monitor = DisplayPort-0
+
+modules-left = xwindow 
+modules-right = pulseaudio date 
+#modules-center = ewmh
+
+padding-left = 1
+tray-position = right
+tray-padding = 2
+
+[module/ewmh]
+type = internal/xworkspaces
+
+; Only show workspaces defined on the same output as the bar
+;
+; Useful if you want to show monitor specific workspaces
+; on different bars
+;
+; Default: false
+pin-workspaces = false
+
+; Create click handler used to focus desktop
+; Default: true
+enable-click = true
+
+; Create scroll handlers used to cycle desktops
+; Default: true
+enable-scroll = false
+
+format =  [ <label-state> ]
+label-active = " %name% "
+label-occupied = " %index% "
+label-active-padding = 1
+label-empty = " %index% "
+label-occupied-underline = #eee
+label-active-underline = #feef69
+label-empty-foreground = #999
+
+[module/xwindow]
+type = internal/xwindow
+label = "%title:0:60:...%"
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+
+format-spacing = 0
+;label-layout = %layout%
+label-layout = "%name%"
+label-layout-underline = ${colors.primary}
+label-indicator-background = ${colors.secondary}
+label-indicator-underline = ${colors.secondary}
+
+[module/filesystem]
+type = internal/fs
+interval = 25
+
+mount-0 = /
+
+label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+label-unmounted = %mountpoint% not mounted
+label-unmounted-foreground = ${colors.foreground-alt}
+
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = "CPU "
+format-prefix-foreground = ${colors.foreground-alt}
+format-underline = ${colors.primary}
+label = %percentage:2%%
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = "MEM "
+format-prefix-foreground = ${colors.foreground-alt}
+format-underline = ${colors.primary}
+label = %percentage_used%%
+
+[module/wlan]
+type = internal/network
+interface = wlp5s0
+interval = 5.0
+
+format-connected = <ramp-signal> <label-connected>
+format-connected-underline = ${colors.primary}
+label-connected = %essid%
+
+format-disconnected = <label-disconnected>
+format-disconnected-underline = ${colors.inactive}
+label-disconnected = %ifname%
+label-disconnected-foreground = ${colors.primary}
+
+ramp-signal-0 = .
+ramp-signal-1 = .·
+ramp-signal-2 = :.
+ramp-signal-3 = ·:
+ramp-signal-4 = ::
+ramp-signal-foreground = ${colors.foreground-alt}
+
+[module/eth]
+type = internal/network
+interface = enp0s31f6
+interval = 5.0
+
+format-connected-underline = ${colors.primary}
+format-connected-prefix = 
+format-connected-prefix-foreground = ${colors.foreground-alt}
+label-connected = %local_ip%
+
+format-disconnected =
+;format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+;label-disconnected = %ifname% disconnected
+;label-disconnected-foreground = ${colors.foreground-alt}
+
+[module/date]
+type = internal/date
+interval = 5
+
+date = "%a %d %b "
+date-alt = "%Y/%m/%d "
+
+time = "%H:%M"
+time-alt = %r
+
+format-prefix = 
+format-prefix-foreground = ${colors.foreground-alt}
+format-underline = ${colors.primary}
+
+label = %date%%time%
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+format-volume = <label-volume> <bar-volume>
+label-volume = VOL %percentage%%
+label-volume-foreground = ${root.foreground}
+
+label-muted = 🔇 muted
+label-muted-foreground = #666
+
+bar-volume-width = 5
+bar-volume-foreground-0 = ${colors.foreground}
+bar-volume-foreground-1 = ${colors.foreground}
+bar-volume-foreground-2 = ${colors.foreground}
+bar-volume-foreground-3 = ${colors.foreground}
+bar-volume-foreground-4 = ${colors.foreground}
+bar-volume-foreground-5 = ${colors.foreground}
+bar-volume-foreground-6 = ${colors.alert}
+bar-volume-gradient = false
+bar-volume-indicator = |
+bar-volume-indicator-font = 1
+bar-volume-fill = -
+bar-volume-fill-font = 1
+bar-volume-empty = ─
+bar-volume-empty-font = 1
+bar-volume-empty-foreground = ${colors.foreground-alt}
+
+[module/battery-combined-udev]
+type = custom/script
+exec = ~/.config/polybar/battery-combined-udev.sh
+tail = true
+
+format = <label>
+format-prefix = "BAT "
+format-prefix-foreground = ${colors.foreground-alt}
+format-foreground = ${colors.foreground}
+format-underline = ${colors.primary}
+
+[module/battery]
+type = internal/battery
+battery = BAT1
+adapter = ACAD
+full-at = 98
+
+format-charging = <animation-charging> <label-charging>
+format-charging-underline = ${colors.secondary}
+
+format-discharging = <bar-capacity> <label-discharging>
+format-discharging-underline = ${colors.primary}
+
+format-full-prefix = 
+format-full-prefix-foreground = ${colors.foreground-alt}
+format-full-underline = ${self.format-charging-underline}
+
+ramp-capacity-0 = ·
+ramp-capacity-1 = -
+ramp-capacity-2 = =
+ramp-capacity-foreground = ${colors.foreground-alt}
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-foreground = ${colors.foreground-alt}
+animation-charging-framerate = 750
+
+animation-discharging-0 = 
+animation-discharging-1 = 
+animation-discharging-2 = 
+animation-discharging-foreground = ${colors.foreground-alt}
+animation-discharging-framerate = 750
+
+[module/temperature]
+type = internal/temperature
+thermal-zone = 2
+warn-temperature = 60
+
+format-prefix = "TEM "
+format-prefix-foreground = ${colors.foreground-alt}
+format = <label>
+format-underline = ${colors.primary}
+format-warn = !<label-warn>
+format-warn-underline = ${colors.alert}
+
+label = %temperature-c%
+label-warn = %temperature-c%
+label-warn-foreground = ${colors.secondary}
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-foreground = ${colors.foreground-alt}
+
+
+; [module/powermenu]
+; type = custom/menu
+; 
+; expand-right = true
+; 
+; format-spacing = 1
+; 
+; label-open = "<|"
+; label-open-foreground = ${colors.secondary}
+; label-close = ">"
+; label-close-foreground = ${colors.secondary}
+; label-separator = |
+; label-separator-foreground = ${colors.foreground-alt}
+; 
+; menu-0-0 = REBOOT
+; menu-0-0-exec = menu-open-1
+; menu-0-1 = SLEEP
+; menu-0-1-exec = menu-open-2
+; menu-0-2 = BACKLIGHT
+; menu-0-2-exec = menu-open-3
+; 
+; menu-1-0 = cancel
+; menu-1-0-exec = menu-open-0
+; menu-1-1 = REBOOT
+; menu-1-1-exec = sudo reboot
+; 
+; menu-2-0 = SLEEP
+; menu-2-0-exec = systemctl hibernate
+; menu-2-1 = cancel
+; menu-2-1-exec = menu-open-0
+; 
+; menu-3-0 = Low
+; menu-3-1 = Med
+; menu-3-2 = High
+; 
+; menu-3-0-exec = xbacklight -set 10
+; menu-3-1-exec = xbacklight -set 50
+; menu-3-2-exec = xbacklight -set 100
+; 
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency = false
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5
+
+[module/custom_governor]
+type = custom/script
+;exec = sh -c "watch -n 2 ~/.bin/show_governor|tail -n1"
+exec = sh -c "~/.bin/show_cpu"
+interval = 2
+;#tail = true
+click-left = sh -c "$HOME/.bin/governor_set powersave -u 4500MHz -d 800MHz"
+click-middle = sh -c "$HOME/.bin/governor_set performance -u 4500MHz"
+click-right = sh -c "$HOME/.bin/governor_set powersave -u 4500MHz -d 3600MHz"
+label-underline = ${colors.primary}
+label = "%output%"
+format=<label>
+label-layout-padding = 0 

@@ -1,5 +1,8 @@
-systemctl --user import-environment PATH DBUS_SESSION_BUS_ADDRESS
-systemctl --no-block --user start xsession.target
+if (systemctl -q &>/dev/null);
+		then
+		systemctl --user import-environment PATH DBUS_SESSION_BUS_ADDRESS
+		systemctl --no-block --user start xsession.target
+fi
 stty -ixon
 #export fpath=("${fpath}" "~/.local/share/zcomplete")
 

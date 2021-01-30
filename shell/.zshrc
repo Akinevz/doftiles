@@ -5,9 +5,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+source ${HOME}/.cache/powerlevel10k/powerlevel10k.zsh-theme
 
-ZSH=/usr/share/oh-my-zsh/
+ZSH=${HOME}/.cache/oh-my-zsh
 ZSH_THEME="ys"
 ZSH_DISABLE_COMPFIX=true
 
@@ -28,6 +28,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+ALIASES=~/.aliases
 HISTFILE=~/.histfile
 HISTSIZE=9999
 SAVEHIST=9999
@@ -41,4 +42,4 @@ bindkey ' ' magic-space
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 source $ALIASES
-source $HOME/.config/zshrc.compl
+#source $HOME/.config/zshrc.compl

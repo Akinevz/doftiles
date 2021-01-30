@@ -1,0 +1,6 @@
+[submodule "shell/.cache/powerlevel10k"]
+	path = shell/.cache/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "shell/.cache/oh-my-zsh"]
+	path = shell/.cache/oh-my-zsh
+	url = https://github.com/Akinevz/ohmyzsh

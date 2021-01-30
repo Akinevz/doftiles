@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/dbus
+~MSle0~/dir
 
 # Last Substitute Search Pattern:
 ~MSle0&gra
@@ -20,30 +20,40 @@
 $
 
 # Command Line History (newest to oldest):
+:wq
+|2,0,1612032822,,"wq"
 :w
-|2,0,1612024394,,"w"
+|2,0,1612032261,,"w"
+:Gstatus
+|2,0,1612027057,,"Gstatus"
+:set termwinkeyZQ
+|2,0,1612026915,,"set termwinkeyZQ"
+:help gq
+|2,0,1612026762,,"help gq"
+:Gpush
+|2,0,1612025312,,"Gpush"
+:Git push
+|2,0,1612025265,,"Git push"
+:q
+|2,0,1612024981,,"q"
+:pwd
+|2,0,1612024625,,"pwd"
+:Mkdir text
+|2,0,1612024622,,"Mkdir text"
+:Gsplit
+|2,0,1612024420,,"Gsplit"
 :term
 |2,0,1612024330,,"term"
 :29
 |2,0,1612023790,,"29"
-:wq
-|2,0,1612023193,,"wq"
-:Git push
-|2,0,1612022596,,"Git push"
-:Gstatus
-|2,0,1612022404,,"Gstatus"
 :e .
 |2,0,1612022322,,"e ."
 :G
 |2,0,1612022314,,"G"
 :cd Cluedo/
 |2,0,1612022308,,"cd Cluedo/"
-:pwd
-|2,0,1612022303,,"pwd"
 :cwd
 |2,0,1612022301,,"cwd"
-:Gsplit
-|2,0,1612022284,,"Gsplit"
 :prev
 |2,0,1612021932,,"prev"
 :PREV
@@ -110,24 +120,20 @@ $
 |2,0,1610034223,,"'<,'>s/-/=g"
 :qw
 |2,0,1610033631,,"qw"
-:w|!pandoc % -o pa.pdf && xdg-open pa.pdf
-|2,0,1610028479,,"w|!pandoc % -o pa.pdf && xdg-open pa.pdf"
-:s/\<m\>/`m`/g
-|2,0,1610028462,,"s/\\<m\\>/`m`/g"
-:s/\<n\>/`n`/g
-|2,0,1610028458,,"s/\\<n\\>/`n`/g"
-:s/\<q\>/`q`/g
-|2,0,1610028435,,"s/\\<q\\>/`q`/g"
-:s/\<b\>/`b`/g
-|2,0,1610028418,,"s/\\<b\\>/`b`/g"
 
 # Search String History (newest to oldest):
+? @$
+|2,1,1612027749,,"@$"
+??\a
+|2,1,1612024638,63,"\\a"
+?/dir
+|2,1,1612024558,47,"dir"
+?/folder
+|2,1,1612024544,47,"folder"
+?/new
+|2,1,1612024532,47,"new"
 ?/dbus
 |2,1,1612023939,47,"dbus"
-? @$
-|2,1,1612022363,,"@$"
-??\a
-|2,1,1612022279,63,"\\a"
 ?/tpop
 |2,1,1612021859,47,"tpop"
 ? ^\s*\(- \[ \]\|- \[X\]\)
@@ -216,12 +222,6 @@ $
 |2,1,1609547763,47,"info"
 ?/hdmi
 |2,1,1609464559,47,"hdmi"
-?/tools
-|2,1,1609268121,47,"tools"
-?/inde
-|2,1,1609177067,47,"inde"
-?/h
-|2,1,1609113906,47,"h"
 
 # Expression History (newest to oldest):
 =!date
@@ -312,23 +312,31 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
+"0	CHAR	0
+	zsh-syntax-highlighting
+|3,0,0,0,1,0,1612030374,"zsh-syntax-highlighting"
+""1	LINE	0
+	[submodule "shell/.cache/oh-my-zsh"]
+		path = shell/.cache/oh-my-zsh
+		url = https://github.com/ohmyzsh/ohmyzsh
+|3,1,1,1,3,0,1612032791,"[submodule \"shell/.cache/oh-my-zsh\"]","	path = shell/.cache/oh-my-zsh","	url = https://github.com/ohmyzsh/ohmyzsh"
+"2	LINE	0
+	ZSH_CUSTOM=$
+|3,0,2,1,1,0,1612032251,"ZSH_CUSTOM=$"
+"3	LINE	0
 	- [ ] 
-|3,0,0,1,1,0,1612022366,"- [ ] "
-"1	LINE	0
-	- [ ] 
-|3,0,1,1,1,0,1612022254,"- [ ] "
-"2	CHAR	0
+|3,0,3,1,1,0,1612022254,"- [ ] "
+"4	CHAR	0
 	to add some sort of work tracking for final mark distribution
 	- [ ] 
-|3,0,2,0,2,0,1612022149,"to add some sort of work tracking for final mark distribution","- [ ] "
-"3	LINE	0
-	- [x] C# code prototype by Dexter
-|3,0,3,1,1,0,1612021734,"- [x] C# code prototype by Dexter"
-"4	LINE	0
-	- [x] C# code prototype by Dexter
-|3,0,4,1,1,0,1612021729,"- [x] C# code prototype by Dexter"
+|3,0,4,0,2,0,1612022149,"to add some sort of work tracking for final mark distribution","- [ ] "
 "5	LINE	0
+	- [x] C# code prototype by Dexter
+|3,0,5,1,1,0,1612021734,"- [x] C# code prototype by Dexter"
+"6	LINE	0
+	- [x] C# code prototype by Dexter
+|3,0,6,1,1,0,1612021729,"- [x] C# code prototype by Dexter"
+"7	LINE	0
 	"Plug 'dense-analysis/ale'
 	"Plug 'ianks/vim-tsx'
 	"Plug 'leafgarland/typescript-vim'
@@ -338,8 +346,8 @@ $
 	"Plug 'prabirshrestha/vim-lsp'
 	"Plug 'ryanolsonx/vim-lsp-typescript'
 	"Plug 'vim-latex/vim-latex'
-|3,0,5,1,9,0,1612021536,"\"Plug 'dense-analysis/ale'","\"Plug 'ianks/vim-tsx'","\"Plug 'leafgarland/typescript-vim'","\"Plug 'moll/vim-node'","\"Plug 'peitalin/vim-jsx-typescript'","\"Plug 'prabirshrestha/async.vim'","\"Plug 'prabirshrestha/vim-lsp'","\"Plug 'ryanolsonx/vim-lsp-typescript'","\"Plug 'vim-latex/vim-latex'"
-"6	LINE	0
+|3,0,7,1,9,0,1612021536,"\"Plug 'dense-analysis/ale'","\"Plug 'ianks/vim-tsx'","\"Plug 'leafgarland/typescript-vim'","\"Plug 'moll/vim-node'","\"Plug 'peitalin/vim-jsx-typescript'","\"Plug 'prabirshrestha/async.vim'","\"Plug 'prabirshrestha/vim-lsp'","\"Plug 'ryanolsonx/vim-lsp-typescript'","\"Plug 'vim-latex/vim-latex'"
+"8	LINE	0
 	Plug 'dense-analysis/ale'
 	Plug 'tpope/vim-repeat'
 	Plug 'tpope/vim-eunuch'
@@ -367,9 +375,9 @@ $
 	Plug 'vim-pandoc/vim-pandoc'
 	Plug 'vim-pandoc/vim-pandoc-syntax'
 	Plug 'tpope/vim-commentary'
-|3,0,6,1,27,0,1612021221,"Plug 'dense-analysis/ale'","Plug 'tpope/vim-repeat'","Plug 'tpope/vim-eunuch'","Plug 'tpope/vim-surround'","Plug 'unblevable/quick-scope'","Plug 'junegunn/goyo.vim'","Plug 'junegunn/limelight.vim'","Plug 'tpope/vim-fugitive'","Plug 'tpope/vim-unimpaired'","Plug 'aserebryakov/vim-todo-lists'","Plug 'michaeljsmith/vim-indent-object'","Plug 'vim-airline/vim-airline'","Plug 'xolox/vim-misc'","Plug 'xolox/vim-session'",>32
+|3,0,8,1,27,0,1612021221,"Plug 'dense-analysis/ale'","Plug 'tpope/vim-repeat'","Plug 'tpope/vim-eunuch'","Plug 'tpope/vim-surround'","Plug 'unblevable/quick-scope'","Plug 'junegunn/goyo.vim'","Plug 'junegunn/limelight.vim'","Plug 'tpope/vim-fugitive'","Plug 'tpope/vim-unimpaired'","Plug 'aserebryakov/vim-todo-lists'","Plug 'michaeljsmith/vim-indent-object'","Plug 'vim-airline/vim-airline'","Plug 'xolox/vim-misc'","Plug 'xolox/vim-session'",>32
 |<"Plug 'junegunn/vim-easy-align'","Plug 'prabirshrestha/async.vim'","Plug 'prabirshrestha/vim-lsp'","Plug 'leafgarland/typescript-vim'","Plug 'ianks/vim-tsx'","Plug 'peitalin/vim-jsx-typescript'","Plug 'ryanolsonx/vim-lsp-typescript'","Plug 'HerringtonDarkholme/yats.vim'","Plug 'moll/vim-node'","Plug 'vim-latex/vim-latex'","Plug 'vim-pandoc/vim-pandoc'","Plug 'vim-pandoc/vim-pandoc-syntax'","Plug 'tpope/vim-commentary'"
-"7	LINE	0
+"9	LINE	0
 	Plug 'dense-analysis/ale'
 	Plug 'tpope/vim-repeat'
 	Plug 'tpope/vim-eunuch'
@@ -379,26 +387,7 @@ $
 	Plug 'junegunn/limelight.vim'
 	Plug 'tpope/vim-fugitive'
 	Plug 'tpope/vim-unimpaired'
-|3,0,7,1,9,0,1612021204,"Plug 'dense-analysis/ale'","Plug 'tpope/vim-repeat'","Plug 'tpope/vim-eunuch'","Plug 'tpope/vim-surround'","Plug 'unblevable/quick-scope'","Plug 'junegunn/goyo.vim'","Plug 'junegunn/limelight.vim'","Plug 'tpope/vim-fugitive'","Plug 'tpope/vim-unimpaired'"
-"8	LINE	0
-	Plug 'tpope/vim-repeat'
-	Plug 'tpope/vim-eunuch'
-	Plug 'tpope/vim-surround'
-	Plug 'unblevable/quick-scope'
-	Plug 'junegunn/goyo.vim'
-	Plug 'junegunn/limelight.vim'
-	Plug 'tpope/vim-fugitive'
-	Plug 'tpope/vim-unimpaired'
-|3,0,8,1,8,0,1612021194,"Plug 'tpope/vim-repeat'","Plug 'tpope/vim-eunuch'","Plug 'tpope/vim-surround'","Plug 'unblevable/quick-scope'","Plug 'junegunn/goyo.vim'","Plug 'junegunn/limelight.vim'","Plug 'tpope/vim-fugitive'","Plug 'tpope/vim-unimpaired'"
-"9	LINE	0
-	Plug 'tpope/vim-repeat'
-	Plug 'tpope/vim-eunuch'
-	Plug 'tpope/vim-surround'
-	Plug 'unblevable/quick-scope'
-	Plug 'junegunn/goyo.vim'
-	Plug 'junegunn/limelight.vim'
-	Plug 'tpope/vim-fugitive'
-|3,0,9,1,7,0,1612021189,"Plug 'tpope/vim-repeat'","Plug 'tpope/vim-eunuch'","Plug 'tpope/vim-surround'","Plug 'unblevable/quick-scope'","Plug 'junegunn/goyo.vim'","Plug 'junegunn/limelight.vim'","Plug 'tpope/vim-fugitive'"
+|3,0,9,1,9,0,1612021204,"Plug 'dense-analysis/ale'","Plug 'tpope/vim-repeat'","Plug 'tpope/vim-eunuch'","Plug 'tpope/vim-surround'","Plug 'unblevable/quick-scope'","Plug 'junegunn/goyo.vim'","Plug 'junegunn/limelight.vim'","Plug 'tpope/vim-fugitive'","Plug 'tpope/vim-unimpaired'"
 "a	LINE	0
 	HYPHEN_INSENSITIVE="true"
 	ENABLE_CORRECTION="true"
@@ -451,9 +440,9 @@ $
 "z	CHAR	0
 	Q
 |3,0,35,0,1,0,1562301574,"Q"
-""-	CHAR	0
-	 
-|3,1,36,0,1,0,1612024391," "
+"-	CHAR	0
+	cache
+|3,0,36,0,1,0,1612032258,"cache"
 
 # File marks:
 'A  1478  21  ~/cartographer-gl/map-widget/node_modules/@types/mapbox-gl/index.d.ts
@@ -466,360 +455,285 @@ $
 |4,78,151,0,1554901471,"~/task_launch"
 'Z  2  34  ~/cartographer-gl/map-widget/src/mapboxTerrainV2.ts
 |4,90,2,34,1568110507,"~/cartographer-gl/map-widget/src/mapboxTerrainV2.ts"
-'0  1  0  ~/hacking
-|4,48,1,0,1612024410,"~/hacking"
-'1  1  0  ~/.aliases
-|4,49,1,0,1612024171,"~/.aliases"
-'2  44  0  ~/.zshrc
-|4,50,44,0,1612024164,"~/.zshrc"
-'3  25  0  ~/.zshrc
-|4,51,25,0,1612023977,"~/.zshrc"
-'4  25  0  ~/.zshrc
-|4,52,25,0,1612023977,"~/.zshrc"
-'5  1  0  ~/.zshrc
-|4,53,1,0,1612023961,"~/.zshrc"
-'6  1  0  ~/.zshrc
-|4,54,1,0,1612023961,"~/.zshrc"
-'7  1  0  ~/.zshrc
-|4,55,1,0,1612023961,"~/.zshrc"
-'8  1  0  ~/.zshrc
-|4,56,1,0,1612023961,"~/.zshrc"
-'9  8  34  ~/doftiles/shell/.zshrc
-|4,57,8,34,1612023193,"~/doftiles/shell/.zshrc"
+'0  1  65  /tmp/zshRTpbId
+|4,48,1,65,1612032822,"/tmp/zshRTpbId"
+'1  1  0  ~/doftiles/.gitmodules
+|4,49,1,0,1612032800,"~/doftiles/.gitmodules"
+'2  1  0  ~/doftiles/.gitmodules
+|4,50,1,0,1612032792,"~/doftiles/.gitmodules"
+'3  1  0  ~/doftiles/.git/modules/shell/.cache/oh-my-zsh/COMMIT_EDITMSG
+|4,51,1,0,1612032483,"~/doftiles/.git/modules/shell/.cache/oh-my-zsh/COMMIT_EDITMSG"
+'4  15  20  ~/doftiles/shell/.zshrc
+|4,52,15,20,1612032284,"~/doftiles/shell/.zshrc"
+'5  1  127  /tmp/zshn3xaBe
+|4,53,1,127,1612030377,"/tmp/zshn3xaBe"
+'6  1  20  /tmp/zshd9M57e
+|4,54,1,20,1612030353,"/tmp/zshd9M57e"
+'7  1  0  ~/doftiles/.gitmodules
+|4,55,1,0,1612027766,"~/doftiles/.gitmodules"
+'8  1  0  ~/doftiles/.gitmodules
+|4,56,1,0,1612027766,"~/doftiles/.gitmodules"
+'9  1  0  ~/doftiles/.giti
+|4,57,1,0,1612027755,"~/doftiles/.giti"
 
 # Jumplist (newest first):
--'  1  0  ~/hacking
-|4,39,1,0,1612024410,"~/hacking"
--'  1  0  ~/.zprofile
-|4,39,1,0,1612024330,"~/.zprofile"
--'  1  0  ~/.zprofile
-|4,39,1,0,1612024330,"~/.zprofile"
--'  1  0  ~/.aliases
-|4,39,1,0,1612024171,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1612024171,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1612024171,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1612024171,"~/.aliases"
--'  44  0  ~/.zshrc
-|4,39,44,0,1612024164,"~/.zshrc"
--'  44  0  ~/.zshrc
-|4,39,44,0,1612024164,"~/.zshrc"
--'  44  0  ~/.zshrc
-|4,39,44,0,1612024164,"~/.zshrc"
--'  44  0  ~/.zshrc
-|4,39,44,0,1612024164,"~/.zshrc"
--'  44  0  ~/.zshrc
-|4,39,44,0,1612024164,"~/.zshrc"
--'  44  0  ~/.zshrc
-|4,39,44,0,1612024164,"~/.zshrc"
--'  44  0  ~/.zshrc
-|4,39,44,0,1612024164,"~/.zshrc"
--'  44  0  ~/.zshrc
-|4,39,44,0,1612024164,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1612024146,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1612024146,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1612024146,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1612024146,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1612024146,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1612024146,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1612024146,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1612024146,"~/.zshrc"
--'  25  0  ~/.zshrc
-|4,39,25,0,1612023977,"~/.zshrc"
--'  25  0  ~/.zshrc
-|4,39,25,0,1612023977,"~/.zshrc"
--'  25  0  ~/.zshrc
-|4,39,25,0,1612023977,"~/.zshrc"
--'  25  0  ~/.zshrc
-|4,39,25,0,1612023977,"~/.zshrc"
--'  25  0  ~/.zshrc
-|4,39,25,0,1612023977,"~/.zshrc"
--'  25  0  ~/.zshrc
-|4,39,25,0,1612023977,"~/.zshrc"
--'  25  0  ~/.zshrc
-|4,39,25,0,1612023977,"~/.zshrc"
--'  25  0  ~/.zshrc
-|4,39,25,0,1612023977,"~/.zshrc"
--'  25  0  ~/.zshrc
-|4,39,25,0,1612023977,"~/.zshrc"
--'  25  0  ~/.zshrc
-|4,39,25,0,1612023977,"~/.zshrc"
--'  25  0  ~/.zshrc
-|4,39,25,0,1612023977,"~/.zshrc"
--'  25  0  ~/.zshrc
-|4,39,25,0,1612023977,"~/.zshrc"
--'  25  0  ~/.zshrc
-|4,39,25,0,1612023977,"~/.zshrc"
--'  25  0  ~/.zshrc
-|4,39,25,0,1612023977,"~/.zshrc"
--'  25  0  ~/.zshrc
-|4,39,25,0,1612023977,"~/.zshrc"
--'  25  0  ~/.zshrc
-|4,39,25,0,1612023977,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1612023971,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1612023971,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1612023971,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1612023971,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1612023971,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1612023971,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1612023971,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1612023971,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1612023961,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1612023961,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1612023961,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1612023961,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1612023961,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1612023961,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1612023961,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1612023961,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  10  27  ~/.zshrc
-|4,39,10,27,1612023346,"~/.zshrc"
--'  45  0  ~/.zshrc
-|4,39,45,0,1612023290,"~/.zshrc"
--'  45  0  ~/.zshrc
-|4,39,45,0,1612023290,"~/.zshrc"
--'  45  0  ~/.zshrc
-|4,39,45,0,1612023290,"~/.zshrc"
--'  45  0  ~/.zshrc
-|4,39,45,0,1612023290,"~/.zshrc"
--'  45  0  ~/.zshrc
-|4,39,45,0,1612023290,"~/.zshrc"
--'  45  0  ~/.zshrc
-|4,39,45,0,1612023290,"~/.zshrc"
--'  45  0  ~/.zshrc
-|4,39,45,0,1612023290,"~/.zshrc"
--'  45  0  ~/.zshrc
-|4,39,45,0,1612023290,"~/.zshrc"
--'  45  0  ~/.zshrc
-|4,39,45,0,1612023290,"~/.zshrc"
--'  45  0  ~/.zshrc
-|4,39,45,0,1612023290,"~/.zshrc"
--'  45  0  ~/.zshrc
-|4,39,45,0,1612023290,"~/.zshrc"
--'  45  0  ~/.zshrc
-|4,39,45,0,1612023290,"~/.zshrc"
--'  45  0  ~/.zshrc
-|4,39,45,0,1612023290,"~/.zshrc"
+-'  1  65  /tmp/zshRTpbId
+|4,39,1,65,1612032822,"/tmp/zshRTpbId"
+-'  1  0  ~/doftiles/.gitmodules
+|4,39,1,0,1612032800,"~/doftiles/.gitmodules"
+-'  1  0  ~/doftiles/.gitmodules
+|4,39,1,0,1612032800,"~/doftiles/.gitmodules"
+-'  1  0  ~/doftiles/.gitmodules
+|4,39,1,0,1612032792,"~/doftiles/.gitmodules"
+-'  1  0  ~/doftiles/.gitmodules
+|4,39,1,0,1612032792,"~/doftiles/.gitmodules"
+-'  1  0  ~/doftiles/.git/modules/shell/.cache/oh-my-zsh/COMMIT_EDITMSG
+|4,39,1,0,1612032483,"~/doftiles/.git/modules/shell/.cache/oh-my-zsh/COMMIT_EDITMSG"
+-'  1  0  ~/doftiles/.git/modules/shell/.cache/oh-my-zsh/COMMIT_EDITMSG
+|4,39,1,0,1612032483,"~/doftiles/.git/modules/shell/.cache/oh-my-zsh/COMMIT_EDITMSG"
+-'  1  0  ~/doftiles/.git/modules/shell/.cache/oh-my-zsh/COMMIT_EDITMSG
+|4,39,1,0,1612032483,"~/doftiles/.git/modules/shell/.cache/oh-my-zsh/COMMIT_EDITMSG"
+-'  1  0  ~/doftiles/.git/modules/shell/.cache/oh-my-zsh/COMMIT_EDITMSG
+|4,39,1,0,1612032483,"~/doftiles/.git/modules/shell/.cache/oh-my-zsh/COMMIT_EDITMSG"
+-'  1  0  ~/doftiles/.git/modules/shell/.cache/oh-my-zsh/COMMIT_EDITMSG
+|4,39,1,0,1612032483,"~/doftiles/.git/modules/shell/.cache/oh-my-zsh/COMMIT_EDITMSG"
+-'  1  0  ~/doftiles/.git/modules/shell/.cache/oh-my-zsh/COMMIT_EDITMSG
+|4,39,1,0,1612032483,"~/doftiles/.git/modules/shell/.cache/oh-my-zsh/COMMIT_EDITMSG"
+-'  1  0  ~/doftiles/.git/modules/shell/.cache/oh-my-zsh/COMMIT_EDITMSG
+|4,39,1,0,1612032483,"~/doftiles/.git/modules/shell/.cache/oh-my-zsh/COMMIT_EDITMSG"
+-'  1  0  ~/doftiles/.git/modules/shell/.cache/oh-my-zsh/COMMIT_EDITMSG
+|4,39,1,0,1612032483,"~/doftiles/.git/modules/shell/.cache/oh-my-zsh/COMMIT_EDITMSG"
+-'  15  20  ~/doftiles/shell/.zshrc
+|4,39,15,20,1612032284,"~/doftiles/shell/.zshrc"
+-'  15  20  ~/doftiles/shell/.zshrc
+|4,39,15,20,1612032284,"~/doftiles/shell/.zshrc"
+-'  15  20  ~/doftiles/shell/.zshrc
+|4,39,15,20,1612032284,"~/doftiles/shell/.zshrc"
+-'  15  20  ~/doftiles/shell/.zshrc
+|4,39,15,20,1612032284,"~/doftiles/shell/.zshrc"
+-'  15  20  ~/doftiles/shell/.zshrc
+|4,39,15,20,1612032284,"~/doftiles/shell/.zshrc"
+-'  15  20  ~/doftiles/shell/.zshrc
+|4,39,15,20,1612032284,"~/doftiles/shell/.zshrc"
+-'  15  20  ~/doftiles/shell/.zshrc
+|4,39,15,20,1612032284,"~/doftiles/shell/.zshrc"
+-'  15  20  ~/doftiles/shell/.zshrc
+|4,39,15,20,1612032284,"~/doftiles/shell/.zshrc"
+-'  15  20  ~/doftiles/shell/.zshrc
+|4,39,15,20,1612032284,"~/doftiles/shell/.zshrc"
+-'  15  20  ~/doftiles/shell/.zshrc
+|4,39,15,20,1612032284,"~/doftiles/shell/.zshrc"
+-'  15  20  ~/doftiles/shell/.zshrc
+|4,39,15,20,1612032284,"~/doftiles/shell/.zshrc"
+-'  15  20  ~/doftiles/shell/.zshrc
+|4,39,15,20,1612032284,"~/doftiles/shell/.zshrc"
+-'  15  20  ~/doftiles/shell/.zshrc
+|4,39,15,20,1612032284,"~/doftiles/shell/.zshrc"
+-'  15  20  ~/doftiles/shell/.zshrc
+|4,39,15,20,1612032284,"~/doftiles/shell/.zshrc"
+-'  15  20  ~/doftiles/shell/.zshrc
+|4,39,15,20,1612032284,"~/doftiles/shell/.zshrc"
+-'  15  20  ~/doftiles/shell/.zshrc
+|4,39,15,20,1612032284,"~/doftiles/shell/.zshrc"
+-'  12  22  ~/doftiles/shell/.zshrc
+|4,39,12,22,1612032251,"~/doftiles/shell/.zshrc"
+-'  12  22  ~/doftiles/shell/.zshrc
+|4,39,12,22,1612032251,"~/doftiles/shell/.zshrc"
+-'  12  22  ~/doftiles/shell/.zshrc
+|4,39,12,22,1612032251,"~/doftiles/shell/.zshrc"
+-'  12  22  ~/doftiles/shell/.zshrc
+|4,39,12,22,1612032251,"~/doftiles/shell/.zshrc"
+-'  12  22  ~/doftiles/shell/.zshrc
+|4,39,12,22,1612032251,"~/doftiles/shell/.zshrc"
+-'  12  22  ~/doftiles/shell/.zshrc
+|4,39,12,22,1612032251,"~/doftiles/shell/.zshrc"
+-'  12  22  ~/doftiles/shell/.zshrc
+|4,39,12,22,1612032251,"~/doftiles/shell/.zshrc"
+-'  12  22  ~/doftiles/shell/.zshrc
+|4,39,12,22,1612032251,"~/doftiles/shell/.zshrc"
+-'  12  22  ~/doftiles/shell/.zshrc
+|4,39,12,22,1612032251,"~/doftiles/shell/.zshrc"
+-'  12  22  ~/doftiles/shell/.zshrc
+|4,39,12,22,1612032251,"~/doftiles/shell/.zshrc"
+-'  12  22  ~/doftiles/shell/.zshrc
+|4,39,12,22,1612032251,"~/doftiles/shell/.zshrc"
+-'  12  22  ~/doftiles/shell/.zshrc
+|4,39,12,22,1612032251,"~/doftiles/shell/.zshrc"
+-'  12  22  ~/doftiles/shell/.zshrc
+|4,39,12,22,1612032251,"~/doftiles/shell/.zshrc"
+-'  12  22  ~/doftiles/shell/.zshrc
+|4,39,12,22,1612032251,"~/doftiles/shell/.zshrc"
+-'  12  22  ~/doftiles/shell/.zshrc
+|4,39,12,22,1612032251,"~/doftiles/shell/.zshrc"
+-'  12  22  ~/doftiles/shell/.zshrc
+|4,39,12,22,1612032251,"~/doftiles/shell/.zshrc"
+-'  6  17  ~/doftiles/shell/.zshrc
+|4,39,6,17,1612032143,"~/doftiles/shell/.zshrc"
+-'  6  17  ~/doftiles/shell/.zshrc
+|4,39,6,17,1612032143,"~/doftiles/shell/.zshrc"
+-'  6  17  ~/doftiles/shell/.zshrc
+|4,39,6,17,1612032143,"~/doftiles/shell/.zshrc"
+-'  6  17  ~/doftiles/shell/.zshrc
+|4,39,6,17,1612032143,"~/doftiles/shell/.zshrc"
+-'  6  17  ~/doftiles/shell/.zshrc
+|4,39,6,17,1612032143,"~/doftiles/shell/.zshrc"
+-'  6  17  ~/doftiles/shell/.zshrc
+|4,39,6,17,1612032143,"~/doftiles/shell/.zshrc"
+-'  6  17  ~/doftiles/shell/.zshrc
+|4,39,6,17,1612032143,"~/doftiles/shell/.zshrc"
+-'  6  17  ~/doftiles/shell/.zshrc
+|4,39,6,17,1612032143,"~/doftiles/shell/.zshrc"
+-'  6  17  ~/doftiles/shell/.zshrc
+|4,39,6,17,1612032143,"~/doftiles/shell/.zshrc"
+-'  6  17  ~/doftiles/shell/.zshrc
+|4,39,6,17,1612032143,"~/doftiles/shell/.zshrc"
+-'  6  17  ~/doftiles/shell/.zshrc
+|4,39,6,17,1612032143,"~/doftiles/shell/.zshrc"
+-'  6  17  ~/doftiles/shell/.zshrc
+|4,39,6,17,1612032143,"~/doftiles/shell/.zshrc"
+-'  6  17  ~/doftiles/shell/.zshrc
+|4,39,6,17,1612032143,"~/doftiles/shell/.zshrc"
+-'  6  17  ~/doftiles/shell/.zshrc
+|4,39,6,17,1612032143,"~/doftiles/shell/.zshrc"
+-'  6  17  ~/doftiles/shell/.zshrc
+|4,39,6,17,1612032143,"~/doftiles/shell/.zshrc"
+-'  6  17  ~/doftiles/shell/.zshrc
+|4,39,6,17,1612032143,"~/doftiles/shell/.zshrc"
+-'  1  0  ~/doftiles/shell/.zshrc
+|4,39,1,0,1612032031,"~/doftiles/shell/.zshrc"
+-'  1  0  ~/doftiles/shell/.zshrc
+|4,39,1,0,1612032031,"~/doftiles/shell/.zshrc"
+-'  1  0  ~/doftiles/shell/.zshrc
+|4,39,1,0,1612032031,"~/doftiles/shell/.zshrc"
+-'  1  0  ~/doftiles/shell/.zshrc
+|4,39,1,0,1612032031,"~/doftiles/shell/.zshrc"
+-'  1  0  ~/doftiles/shell/.zshrc
+|4,39,1,0,1612032031,"~/doftiles/shell/.zshrc"
+-'  1  0  ~/doftiles/shell/.zshrc
+|4,39,1,0,1612032031,"~/doftiles/shell/.zshrc"
+-'  1  0  ~/doftiles/shell/.zshrc
+|4,39,1,0,1612032031,"~/doftiles/shell/.zshrc"
+-'  1  0  ~/doftiles/shell/.zshrc
+|4,39,1,0,1612032031,"~/doftiles/shell/.zshrc"
+-'  1  0  ~/doftiles/shell/.zshrc
+|4,39,1,0,1612032031,"~/doftiles/shell/.zshrc"
+-'  1  0  ~/doftiles/shell/.zshrc
+|4,39,1,0,1612032031,"~/doftiles/shell/.zshrc"
+-'  1  0  ~/doftiles/shell/.zshrc
+|4,39,1,0,1612032031,"~/doftiles/shell/.zshrc"
+-'  1  0  ~/doftiles/shell/.zshrc
+|4,39,1,0,1612032031,"~/doftiles/shell/.zshrc"
+-'  1  0  ~/doftiles/shell/.zshrc
+|4,39,1,0,1612032031,"~/doftiles/shell/.zshrc"
+-'  1  0  ~/doftiles/shell/.zshrc
+|4,39,1,0,1612032031,"~/doftiles/shell/.zshrc"
+-'  1  0  ~/doftiles/shell/.zshrc
+|4,39,1,0,1612032031,"~/doftiles/shell/.zshrc"
+-'  1  0  ~/doftiles/shell/.zshrc
+|4,39,1,0,1612032031,"~/doftiles/shell/.zshrc"
+-'  1  127  /tmp/zshn3xaBe
+|4,39,1,127,1612030377,"/tmp/zshn3xaBe"
+-'  1  127  /tmp/zshn3xaBe
+|4,39,1,127,1612030377,"/tmp/zshn3xaBe"
+-'  1  127  /tmp/zshn3xaBe
+|4,39,1,127,1612030377,"/tmp/zshn3xaBe"
+-'  1  127  /tmp/zshn3xaBe
+|4,39,1,127,1612030377,"/tmp/zshn3xaBe"
+-'  1  127  /tmp/zshn3xaBe
+|4,39,1,127,1612030377,"/tmp/zshn3xaBe"
+-'  1  127  /tmp/zshn3xaBe
+|4,39,1,127,1612030377,"/tmp/zshn3xaBe"
+-'  1  127  /tmp/zshn3xaBe
+|4,39,1,127,1612030377,"/tmp/zshn3xaBe"
+-'  1  127  /tmp/zshn3xaBe
+|4,39,1,127,1612030377,"/tmp/zshn3xaBe"
+-'  1  127  /tmp/zshn3xaBe
+|4,39,1,127,1612030377,"/tmp/zshn3xaBe"
+-'  1  127  /tmp/zshn3xaBe
+|4,39,1,127,1612030377,"/tmp/zshn3xaBe"
+-'  1  127  /tmp/zshn3xaBe
+|4,39,1,127,1612030377,"/tmp/zshn3xaBe"
+-'  1  127  /tmp/zshn3xaBe
+|4,39,1,127,1612030377,"/tmp/zshn3xaBe"
+-'  1  127  /tmp/zshn3xaBe
+|4,39,1,127,1612030377,"/tmp/zshn3xaBe"
+-'  1  127  /tmp/zshn3xaBe
+|4,39,1,127,1612030377,"/tmp/zshn3xaBe"
+-'  1  127  /tmp/zshn3xaBe
+|4,39,1,127,1612030377,"/tmp/zshn3xaBe"
+-'  1  127  /tmp/zshn3xaBe
+|4,39,1,127,1612030377,"/tmp/zshn3xaBe"
+-'  1  127  /tmp/zshn3xaBe
+|4,39,1,127,1612030377,"/tmp/zshn3xaBe"
+-'  1  127  /tmp/zshn3xaBe
+|4,39,1,127,1612030377,"/tmp/zshn3xaBe"
+-'  1  127  /tmp/zshn3xaBe
+|4,39,1,127,1612030377,"/tmp/zshn3xaBe"
+-'  1  127  /tmp/zshn3xaBe
+|4,39,1,127,1612030377,"/tmp/zshn3xaBe"
+-'  1  127  /tmp/zshn3xaBe
+|4,39,1,127,1612030377,"/tmp/zshn3xaBe"
+-'  1  127  /tmp/zshn3xaBe
+|4,39,1,127,1612030377,"/tmp/zshn3xaBe"
+-'  1  127  /tmp/zshn3xaBe
+|4,39,1,127,1612030377,"/tmp/zshn3xaBe"
 
 # Buffer list:
-%~/hacking	1	0
+%/tmp/zshRTpbId	1	65
 
 # History of marks within files (newest to oldest):
 
-> ~/hacking
-	*	1612024407	0
+> /tmp/zshRTpbId
+	*	1612032822	0
+	"	1	65
+	^	1	66
+	.	1	65
+	+	1	65
+
+> ~/doftiles/.gitmodules
+	*	1612032796	0
 	"	1	0
-
-> ~/.zprofile
-	*	1612024394	0
-	"	2	2
-	^	2	0
-	.	2	0
-	+	3	0
-	+	4	0
-	+	5	0
-	+	1	31
-	+	3	0
-	+	1	30
-	+	2	0
-
-> ~/.aliases
-	*	1612024170	0
-	"	1	0
-	^	18	27
-	.	18	26
-	+	14	0
-	+	7	11
-	+	8	20
-	+	3	0
-	+	4	0
-	+	3	17
-	+	7	0
-	+	14	0
-	+	61	8
-	+	3	0
-	+	14	0
-	+	6	0
-	+	5	0
-	+	14	0
-	+	9	0
-	+	14	0
-	+	9	0
-	+	14	0
-	+	19	49
-	+	19	48
-	+	19	16
-	+	19	0
-	+	20	0
-	+	19	60
-	+	19	12
-	+	17	10
-	+	11	0
-	+	19	0
-	+	12	0
-	+	17	24
-	+	14	0
-	+	23	0
-	+	16	0
-	+	19	0
-	+	10	17
-	+	24	0
-	+	17	24
-	+	16	0
-	+	15	22
-	+	18	26
-
-> ~/.zshrc
-	*	1612024163	0
-	"	44	0
-	^	31	18
-	.	31	17
-	+	45	0
-	+	8	0
-	+	10	27
-	+	31	17
-
-> ~/doftiles/shell/.cache/powerlevel10k/powerlevel10k.zsh-theme
-	*	1612023266	0
-	"	1	0
-
-> ~/doftiles/shell/.zshrc
-	*	1612023192	0
-	"	8	34
-	^	8	35
-	.	8	34
-	+	8	34
-
-> ~/doftiles/vim/.vim/bundle/vim-fugitive/doc/fugitive.txt
-	*	1612022478	0
-	"	438	30
-
-> ~/Cluedo/README.md
-	*	1612022427	0
-	"	1	0
-	^	5	73
-	.	16	0
-	+	4	11
-	+	6	0
-	+	13	124
-	+	13	80
-	+	8	10
-	+	5	79
-	+	6	0
-	+	7	0
-	+	13	48
-	+	13	118
-	+	11	32
-	+	11	0
-	+	13	47
-	+	13	117
-	+	15	11
-	+	13	0
-	+	15	16
-	+	15	11
-	+	15	45
-	+	14	77
-	+	16	6
-	+	11	25
-	+	5	72
-	+	16	0
-
-> fugitive:///home/kine/Cluedo/.git//0/README.md
-	*	1612022284	0
-	"	2	0
 	.	1	0
 	+	1	0
 
+> ~/doftiles/.git/modules/shell/.cache/oh-my-zsh/COMMIT_EDITMSG
+	*	1612032465	0
+	"	1	0
+
+> ~/doftiles/shell/.zshrc
+	*	1612032265	0
+	"	15	20
+	^	15	20
+	.	15	20
+	+	9	34
+	+	12	12
+	+	4	38
+	+	5	16
+	+	6	16
+	+	9	13
+	+	11	10
+	+	12	0
+	+	15	20
+
+> /tmp/zshn3xaBe
+	*	1612030376	0
+	"	1	127
+	.	1	105
+	+	1	105
+
+> /tmp/zshd9M57e
+	*	1612030352	0
+	"	1	20
+	^	1	21
+	.	1	20
+	+	1	20
+
+> ~/doftiles/.giti
+	*	1612027754	0
+	"	1	0
+
 > ~/.plan
-	*	1612022275	0
+	*	1612026778	0
 	"	2	0
 	^	2	23
 	.	2	22
@@ -906,6 +820,147 @@ $
 	+	1	40
 	+	30	20
 	+	2	22
+
+> /usr/share/vim/vim81/doc/change.txt
+	*	1612026766	0
+	"	1366	7
+
+> ~/doftiles/shell/.cache/oh-my-zsh/plugins/.pl
+	*	1612026749	0
+	"	1	0
+
+> /tmp/zshpYiSeu
+	*	1612026746	0
+	"	1	0
+	.	1	14
+	+	1	14
+
+> fugitive:///home/kine/doftiles/.git//f207ae1a1c348b87d762de4328a79bf5ec8327b3
+	*	1612025045	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/doftiles/vim/.vim/bundle/vim-fugitive/doc/fugitive.txt
+	*	1612024766	0
+	"	287	48
+
+> ~/.zshrc
+	*	1612024739	0
+	"	1	0
+	^	31	18
+	.	31	17
+	+	45	0
+	+	8	0
+	+	10	27
+	+	31	17
+
+> ~/.zprofile
+	*	1612024736	0
+	"	1	0
+	^	2	0
+	.	2	0
+	+	3	0
+	+	4	0
+	+	5	0
+	+	1	31
+	+	3	0
+	+	1	30
+	+	2	0
+
+> /usr/share/vim/vim81/doc/pi_netrw.txt
+	*	1612024608	0
+	"	285	26
+
+> ~/hacking
+	*	1612024407	0
+	"	1	0
+
+> ~/.aliases
+	*	1612024170	0
+	"	1	0
+	^	18	27
+	.	18	26
+	+	14	0
+	+	7	11
+	+	8	20
+	+	3	0
+	+	4	0
+	+	3	17
+	+	7	0
+	+	14	0
+	+	61	8
+	+	3	0
+	+	14	0
+	+	6	0
+	+	5	0
+	+	14	0
+	+	9	0
+	+	14	0
+	+	9	0
+	+	14	0
+	+	19	49
+	+	19	48
+	+	19	16
+	+	19	0
+	+	20	0
+	+	19	60
+	+	19	12
+	+	17	10
+	+	11	0
+	+	19	0
+	+	12	0
+	+	17	24
+	+	14	0
+	+	23	0
+	+	16	0
+	+	19	0
+	+	10	17
+	+	24	0
+	+	17	24
+	+	16	0
+	+	15	22
+	+	18	26
+
+> ~/doftiles/shell/.cache/powerlevel10k/powerlevel10k.zsh-theme
+	*	1612023266	0
+	"	1	0
+
+> ~/Cluedo/README.md
+	*	1612022427	0
+	"	1	0
+	^	5	73
+	.	16	0
+	+	4	11
+	+	6	0
+	+	13	124
+	+	13	80
+	+	8	10
+	+	5	79
+	+	6	0
+	+	7	0
+	+	13	48
+	+	13	118
+	+	11	32
+	+	11	0
+	+	13	47
+	+	13	117
+	+	15	11
+	+	13	0
+	+	15	16
+	+	15	11
+	+	15	45
+	+	14	77
+	+	16	6
+	+	11	25
+	+	5	72
+	+	16	0
+
+> fugitive:///home/kine/Cluedo/.git//0/README.md
+	*	1612022284	0
+	"	2	0
+	.	1	0
+	+	1	0
 
 > ~/doftiles/vim/.vim/vimrc
 	*	1612022274	0
@@ -2326,127 +2381,3 @@ $
 	+	1	10
 	+	3	0
 	+	2	59
-
-> /tmp/zsh2XyEME
-	*	1608340836	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> /tmp/zshSWqf0a
-	*	1608340732	0
-	"	1	83
-	^	1	84
-	.	1	83
-	+	1	83
-
-> ~/.config/dunst/dunstrc
-	*	1608337490	0
-	"	1	0
-	^	270	22
-	.	2	0
-	+	32	25
-	+	263	4
-	+	263	16
-	+	263	12
-	+	273	14
-	+	263	16
-	+	273	14
-	+	268	14
-	+	273	0
-	+	263	0
-	+	269	0
-	+	263	0
-	+	274	0
-	+	275	30
-	+	270	21
-	+	268	28
-	+	273	14
-	+	275	16
-	+	273	14
-	+	275	19
-	+	273	17
-	+	270	15
-	+	268	17
-	+	273	19
-	+	275	21
-	+	273	19
-	+	275	25
-	+	273	28
-	+	268	14
-	+	270	12
-	+	268	14
-	+	273	14
-	+	275	16
-	+	273	14
-	+	275	25
-	+	268	28
-	+	275	19
-	+	273	28
-	+	270	21
-	+	2	0
-
-> ~/.local/bin/config_window
-	*	1608320857	0
-	"	2	19
-	^	2	20
-	.	2	19
-	+	2	19
-
-> ~/.local/bin/task_window
-	*	1608320821	0
-	"	2	14
-	^	2	15
-	.	2	14
-	+	2	24
-	+	2	19
-	+	2	17
-	+	2	56
-	+	2	14
-	+	2	55
-	+	2	11
-	+	2	14
-
-> ~/.local/bin/focus_tag
-	*	1608320791	0
-	"	5	38
-	^	5	39
-	.	5	39
-	+	2	0
-	+	5	39
-
-> ~/conf/vim/.vim/syntax/tasks.vim
-	*	1608320312	0
-	"	18	11
-	^	18	12
-	.	18	11
-	+	19	4
-	+	10	0
-	+	12	0
-	+	10	0
-	+	19	0
-	+	10	0
-	+	5	0
-	+	9	0
-	+	14	0
-	+	18	11
-
-> ~/conf/vim/.vim/autoload/plug.vim
-	*	1608319668	0
-	"	1	0
-
-> ~/.local/bin/b
-	*	1608140741	0
-	"	1	0
-
-> ~/.config/zshrc.compl
-	*	1608137830	0
-	"	1	0
-	.	20	0
-	+	20	0
-
-> /etc/pacman.d/mirrorlist
-	*	1608129808	0
-	"	3	0
-	.	3	0
-	+	3	0

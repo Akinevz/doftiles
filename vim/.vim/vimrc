@@ -8,18 +8,12 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 	" }}}
 call plug#begin('~/.vim/bundle')
-Plug 'aserebryakov/vim-todo-lists'
-Plug 'michaeljsmith/vim-indent-object'
 	" tabline + sessions {{{
 "Plug 'ap/vim-buftabline'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#ale#enabled = 1
-Plug 'vim-airline/vim-airline'
-Plug 'xolox/vim-misc'
-Plug 'xolox/vim-session'
 	" }}}
 	" easyalign {{{
-Plug 'junegunn/vim-easy-align'
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
 
@@ -27,26 +21,17 @@ xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 	" }}}
 	" (un)comment {{{
-Plug 'tpope/vim-commentary'
 	" }}}
 	" unix stuff {{{
-Plug 'tpope/vim-eunuch'
 	" }}}
 	" surround {{{
-Plug 'tpope/vim-surround'
 	" }}}
 	" repeat {{{
-Plug 'tpope/vim-repeat'
 	" }}}
 	" quick-scope highlight {{{
-Plug 'unblevable/quick-scope'
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 	" }}}
 	" limelight/goyo + tpope(git/unimp) {{{
-Plug 'junegunn/goyo.vim'
-Plug 'junegunn/limelight.vim'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-unimpaired'
 	" }}}
 	" ALE {{{
 let g:ale_completion_enabled = 1
@@ -62,7 +47,6 @@ let g:ale_fixers = {
 			\ 'typescript': ['prettier'],
 			\ 'css':		['prettier'],
 			\}
-Plug 'dense-analysis/ale'
 "set omnifunc=ale#completion#OmniFunc
 	" }}}
 	" Syntastic {{{
@@ -77,24 +61,32 @@ Plug 'dense-analysis/ale'
 "let g:syntastic_check_on_wq = 0
 	" }}}
 	" LSP + Complete {{{
-Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/vim-lsp'
 let g:lsp_signs_error = {'text': '✗'}
 	" }}}
 	" typescript syntax {{{
-Plug 'leafgarland/typescript-vim'
-Plug 'ianks/vim-tsx'
-Plug 'peitalin/vim-jsx-typescript'
-Plug 'ryanolsonx/vim-lsp-typescript'
-Plug 'HerringtonDarkholme/yats.vim'
-Plug 'moll/vim-node'
 " rest in ~/.vim/ftplugin/typescript.vim
 	" }}}
 	" latex + pandoc {{{
-Plug 'vim-latex/vim-latex'
+	" }}}
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'aserebryakov/vim-todo-lists'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
+Plug 'junegunn/vim-easy-align'
+Plug 'michaeljsmith/vim-indent-object'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'unblevable/quick-scope'
+Plug 'vim-airline/vim-airline'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
-	" }}}
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-session'
 call plug#end()
 " }}}
 

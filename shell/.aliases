@@ -1,42 +1,42 @@
 #!/bin/bash
 
-alias ayy="yay -S"
-alias yeet="yay -Rns"
-
-alias v=vim
-alias df=duf
-alias hc=herbstclient
-alias sysc=systemctl
-alias cd..="cd .."
-
-alias aliases="vim ${ALIASES} && source ${ALIASES}"
-alias exports="vim ${EXPORTS} && source ${EXPORTS}"
-
-# /home/kine/.bin/tasks
-alias plan='vim ./.plan'
-alias diary='vim ./.diary'
-# /home/kine/.bin/adventure
-alias adventure='vim "${HOME}/www/root/adventure/$(date).txt"'
-
+# General
+alias v="vim ."
+alias plan='vim +set\ ft=todo ~/.plan'
+alias diary='vim ~/.diary'
 alias today='date'
-
-#alias task="todo -a"
-alias done="todo -r"
 
 alias s="ls -tr -1h --color=tty"
 alias sl="ls -r"
 alias ll="ls -rlAt -1h --color=tty"
 alias l="ls -tAh -1"
 
-alias last="echo vim expansion for edit last file"
-#alias la="ls -l|grep --color \"->\"|sed -e 's/->\(.*\)/\n->\1/g'"
-alias sudo="sudo"
-alias tiny='tiny --config ~/.config/tinyrc.yml'
-alias fuck='fc'
-alias :e='vim'
-alias :q='exit'
-alias ppid='ps -o ppid=,cmd= -p'
+
+alias aliases="vim ${ALIASES} && source ${ALIASES}"
+alias exports="vim ${EXPORTS} && source ${EXPORTS}"
+
+# Windows
+alias explorer="explorer.exe"
+
+# Arch Linux
+alias ayy="yay -S"
+alias yeet="yay -Rns"
+alias hc=herbstclient
+
+# Files
+alias cd..="cd .."
 alias cp="cp -vi"
+alias df=duf
+alias open=xdg-open
+alias sysc=systemctl
+
+# Mess
+# /home/kine/.bin/tasks
+# /home/kine/.bin/adventure
+alias done="todo -r"
+#alias task="todo -a"
+alias adventure='vim "${HOME}/www/root/adventure/$(date).txt"'
+alias ppid='ps -o ppid=,cmd= -p'
 alias fwhich="which-file"
 alias lls="readlink -e"
 alias lb_navigate='cd ${LOCAL_BIN}'
@@ -46,7 +46,6 @@ alias show=bat
 alias ff="find ~/ | fzf"
 alias preview="fzf --preview 'bat --color \"always\" {}'"
 alias please='please "$(fc -ln -1)"'
-alias open=xdg-open
 alias ri="rm -ri"
 alias rr="rm -r"
 alias pgrep="pgrep -l"
@@ -54,11 +53,14 @@ alias winefy='export WINEARCH=win64 WINEPREFIX=`pwd`'
 alias netmum='nload -m u m'
 alias root_from_boot='journalctl -b | grep -i sudo'
 alias ss="please ss"
-#Edit vimrc
 alias up=uprecords
 alias tasks_session='vim --servername tasks'
 
-#machines
+# Todo
+alias last="echo vim expansion for edit last file"
+#alias la="ls -l|grep --color \"->\"|sed -e 's/->\(.*\)/\n->\1/g'"
+
+# SSH
 alias surface='ssh surface'
 alias portable='ssh portable'
 

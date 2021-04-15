@@ -1,16 +1,23 @@
 #!/bin/bash
 
 # General
-alias v="vim ."
+alias v="vim"
+alias vv="vim ."
+
 alias plan='vim +set\ ft=todo ~/.plan'
-alias diary='vim ~/.diary'
-alias today='date'
+alias adventure='vim "~/adventures/$(date).txt"'
+alias today='date;cal'
+
+alias vimrc='vim .vim/vimrc'
+alias zshrc='vim .zshrc'
+alias stows='vim ~/doftiles'
 
 alias s="ls -tr -1h --color=tty"
 alias sl="ls -r"
 alias ll="ls -rlAt -1h --color=tty"
 alias l="ls -tAh -1"
 
+alias please="fc"
 
 alias aliases="vim ${ALIASES} && source ${ALIASES}"
 alias exports="vim ${EXPORTS} && source ${EXPORTS}"

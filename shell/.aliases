@@ -42,26 +42,26 @@ alias sysc=systemctl
 # /home/kine/.bin/adventure
 alias done="todo -r"
 #alias task="todo -a"
-alias adventure='vim "${HOME}/www/root/adventure/$(date).txt"'
-alias ppid='ps -o ppid=,cmd= -p'
-alias fwhich="which-file"
-alias lls="readlink -e"
-alias lb_navigate='cd ${LOCAL_BIN}'
-alias sudi="sudo -i"
-alias sude="sudo -E su"
-alias show=bat
 alias ff="find ~/ | fzf"
-alias preview="fzf --preview 'bat --color \"always\" {}'"
-alias please='please "$(fc -ln -1)"'
-alias ri="rm -ri"
-alias rr="rm -r"
-alias pgrep="pgrep -l"
-alias winefy='export WINEARCH=win64 WINEPREFIX=`pwd`'
+alias fwhich="which-file"
+alias lb_navigate='cd ${LOCAL_BIN}'
+alias lls="readlink -e"
 alias netmum='nload -m u m'
+alias pgrep="pgrep -l"
+alias please='please "$(fc -ln -1)"'
+alias ppid='ps -o ppid=,cmd= -p'
+alias preview="fzf --preview 'bat --color \"always\" {}'"
+alias ri="rm -ri"
 alias root_from_boot='journalctl -b | grep -i sudo'
+alias rr="rm -r"
+alias rf="rm -f"
+alias show=bat
 alias ss="please ss"
-alias up=uprecords
+alias sude="sudo -E su"
+alias sudi="sudo -i"
 alias tasks_session='vim --servername tasks'
+alias up=uprecords
+alias winefy='export WINEARCH=win64 WINEPREFIX=`pwd`'
 
 # Todo
 alias last="echo vim expansion for edit last file"

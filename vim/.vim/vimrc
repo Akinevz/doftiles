@@ -45,6 +45,7 @@ Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
 call plug#end()
 
+let mapleader="z"
 
 imap <Leader>wq <Esc>
 nmap <Leader>wq :up<CR>

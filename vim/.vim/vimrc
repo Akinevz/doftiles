@@ -1,39 +1,15 @@
 filetype plugin on
-" PLUGINS {{{
-	" enable plug {{{
 if empty(glob('~/.vim/autoload/plug.vim'))
 	silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
 		\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
-	" }}}
 call plug#begin('~/.vim/bundle')
-	" tabline + sessions {{{
-"Plug 'ap/vim-buftabline'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#ale#enabled = 1
-	" }}}
-	" easyalign {{{
-" Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
-
-" Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
-	" }}}
-	" (un)comment {{{
-	" }}}
-	" unix stuff {{{
-	" }}}
-	" surround {{{
-	" }}}
-	" repeat {{{
-	" }}}
-	" quick-scope highlight {{{
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
-	" }}}
-	" limelight/goyo + tpope(git/unimp) {{{
-	" }}}
-	" ALE {{{
 let g:ale_completion_enabled = 1
 let g:ale_close_preview_on_insert = 1
 let g:ale_cursor_detail = 1
@@ -47,27 +23,7 @@ let g:ale_fixers = {
 			\ 'typescript': ['prettier'],
 			\ 'css':		['prettier'],
 			\}
-"set omnifunc=ale#completion#OmniFunc
-	" }}}
-	" Syntastic {{{
-"Plug 'vim-syntastic/syntastic'
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
-"
-"let g:syntastic_always_populate_loc_list = 1
-"let g:syntastic_auto_loc_list = 1
-"let g:syntastic_check_on_open = 1
-"let g:syntastic_check_on_wq = 0
-	" }}}
-	" LSP + Complete {{{
 let g:lsp_signs_error = {'text': '✗'}
-	" }}}
-	" typescript syntax {{{
-" rest in ~/.vim/ftplugin/typescript.vim
-	" }}}
-	" latex + pandoc {{{
-	" }}}
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'aserebryakov/vim-todo-lists'
 Plug 'junegunn/goyo.vim'
@@ -88,10 +44,7 @@ Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
 call plug#end()
-" }}}
 
-"--KEYBINDS--" {{{
-let mapleader="`"
 
 imap <Leader>wq <Esc>
 nmap <Leader>wq :up<CR>
@@ -100,14 +53,12 @@ imap <Leader>v	<C-o>""yiw:vimgrep /<C-r>""/ %<CR><ESC>
 nmap <Leader>v	""yaw:vimgrep /<C-r>""/ %<CR>
 nmap <Leader>cn	:cn<CR>:copen<CR>:vimgrep /
 
-" autocompletes {{{
-"inoremap <expr> <NUL> InsertTabWrapper()
+" autocompletes 
 inoremap <expr> <tab> InsertTabWrapper()
 inoremap <expr> <NUL> InsertModeCorrect()
 nnoremap <expr> <NUL> NormalModeCorrect()
 nnoremap <Leader><NUL> egea<C-x><C-s>
 inoremap <expr> <S-Tab> pumvisible() ? "<C-p>" : "<C-d>"
-" }}}
 " find brace
 map [[ ?{<CR>w99[{
 map ]] /}<CR>b99]}
@@ -130,13 +81,10 @@ nnoremap <C-w><C-o><C-w> <C-w><C-w>99<C-w>+99<C-w>>
 inoremap <C-B> <C-o>guB<Esc>E<Space>
 inoremap <C-F> <C-o>e<C-o>a
 " spell toggles
-nnoremap <leader>s :setlocal complete^=kspell<CR>
-nnoremap <leader>S :setlocal spell<CR>
-nnoremap <leader><leader>S :setlocal invspell<CR>
-" }}}
 set completeopt+=preview
-" colorscheme {{{
 colorscheme ron
+" if current file starts with alias=
+" add to aliases file
 
 if has("gui_running")
 	set guifont=Fira\ Code\ weight=453\ 16
@@ -213,23 +161,18 @@ nnoremap <C-W><C-D> :bp <bar> :bd #<CR>
 nnoremap <C-W><C-L> :ls<CR>
 " }}}
 
-" latex {{{
+" latex 
 let g:tex_flavor='pdflatex'
-" }}}
-" Plugin Paths {{{
-	"set runtimepath+=$HOME/.vim/vim-buftabline
-	"set runtimepath+=$HOME/.vim/bundle/vim-easy-align-master
-" }}}
-" Sessions {{{
+"
+" sessions 
 let g:session_autosave = 'no'
 let g:session_autoload = 'no'
 nmap 	<s-Z><s-C>	:up<bar>:SaveSession<bar>:CloseSession<cr>
 nmap 	<s-Z><s-X>	:SaveSession 
 nmap 	<s-Z><s-O>	:OpenSession 
-" }}}
-
-" autocomplete funcs {{{
-" insert-ctrl-space {{{
+"
+" autocomplete funcs 
+" insert-ctrl-space 
 function! InsertModeCorrect()
     let col = col('.') - 1
 	if !&l:spell
@@ -243,8 +186,7 @@ function! InsertModeCorrect()
         return pumvisible() ? "\<c-p>" : "\<Esc>bea\<c-x>s "
     endif
 endfunction
-" }}}
-" normal-ctrl-space {{{
+" normal-ctrl-space
 function! NormalModeCorrect()
     let col = col('.') - 1
 	if !&l:spell
@@ -258,8 +200,6 @@ function! NormalModeCorrect()
         " return "bea\<c-x>s\<c-e>"
     endif
 endfunction
-" }}}
-" insert-tab {{{
 function! InsertTabWrapper()
     let col = col('.') - 1
 	if !&l:spell
@@ -271,6 +211,6 @@ function! InsertTabWrapper()
         return "\<c-n>"
     endif
 endfunction
-" }}}
-" }}}
+
+" == GLOBALS ==
 " vim:foldmethod=marker:foldlevel=0

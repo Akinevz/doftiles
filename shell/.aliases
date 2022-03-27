@@ -1,5 +1,22 @@
 #!/bin/bash
 
+# incoming 
+alias sxhkd="vim .config/sxhkd"
+alias bspwm="vim .config/bspwm"
+alias sx="sxhkd"
+alias bs="bspwm"
+alias aliases="vim .config/aliases"
+alias rc="vim .config/rc"
+alias profile="vim .config/profile"
+
+alias ls='ls --color=auto'
+alias la='ls -l --color=auto'
+alias lal='ls -al --color=auto'
+alias l='ls'
+alias s='ls -r'
+
+alias please='sudo "$BASH" -c "$(history -p !!)"'
+
 # General
 alias v="vim"
 alias vv="vim ."

@@ -5,13 +5,14 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-source ${HOME}/.cache/powerlevel10k/powerlevel10k.zsh-theme
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
-ZSH=${HOME}/.cache/oh-my-zsh
+ZSH=/usr/share/oh-my-zsh/
 ZSH_THEME="ys"
 ZSH_DISABLE_COMPFIX=true
 
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
+ZSH_CUSTOM=$HOME/.config/oh-my-zsh/custom/
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
 fi

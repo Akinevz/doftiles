@@ -12,5 +12,10 @@ export ALIASES="${HOME}/.aliases"
 source $EXPORTS
 export PATH=$LOCAL_BIN:$PATH
 #source $ALIASES
+#
+#export LIBGL_ALWAYS_INDIRECT=1 #GWSL
+##export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0 #GWSL
+#export DISPLAY=$(grep nameserver /etc/resolv.conf | sed 's/nameserver //')":0"
+#export PULSE_SERVER=tcp:$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}') #GWSL
 
 [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx

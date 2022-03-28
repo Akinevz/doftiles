@@ -8,19 +8,15 @@ alias plan='vim +set\ ft=todo ~/.plan'
 alias adventure='vim "~/adventures/$(date).txt"'
 alias today='date;cal'
 
-alias vimrc='vim .vim/vimrc'
-alias zshrc='vim .zshrc'
-alias stows='vim ~/doftiles'
+alias vimrc='${EDITOR} ${HOME}/.vim/vimrc'
+alias zshrc='${EDITOR} ${HOME}/.zshrc'
+alias stows='${EDITOR} ${HOME}/doftiles'
+alias aliases='${EDITOR} ${HOME}/.aliases'
 
 alias s="ls -tr -1h --color=tty"
 alias sl="ls -r"
 alias ll="ls -rlAt -1h --color=tty"
 alias l="ls -tAh -1"
-
-alias please="fc"
-
-alias aliases="vim ${ALIASES} && source ${ALIASES}"
-alias exports="vim ${EXPORTS} && source ${EXPORTS}"
 
 # Windows
 alias explorer="explorer.exe"

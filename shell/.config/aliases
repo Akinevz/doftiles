@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # incoming 
-alias sxhkd="vim $HOME/.config/sxhkd"
-alias bspwm="vim $HOME/.config/bspwm"
+alias sxhkdrc="vim $HOME/.config/sxhkd"
+#alias bspwmrc="vim $HOME/.config/bspwm"
+alias wmrc="vim $HOME/.config/herbstluftwm/autostart"
 alias sx="sxhkd"
 alias bs="bspwm"
 alias aliases="vim $HOME/.config/aliases && source $HOME/.config/aliases"
@@ -11,10 +12,10 @@ alias rc="vim $HOME/.config/rc"
 alias profile="vim $HOME/.profile"
 
 alias ls='ls --color=auto'
-alias la='ls -l --color=auto'
-alias lal='ls -al --color=auto'
+alias la='ls -al --color=auto'
 alias l='ls'
 alias s='ls -r'
+alias sl='s'
 
 alias please='sudo "$BASH" -c "$(history -p !!)"'
 

@@ -9,8 +9,11 @@ stty -ixon
 export EXPORTS="${HOME}/.exports"
 export ALIASES="${HOME}/.aliases"
 
+
 source $EXPORTS
-export PATH=$LOCAL_BIN:$PATH
+export EDITOR=vim
+export JDK_HOME="/usr/lib/jvm/default/"
+export PATH=$LOCAL_BIN:$PATH:$SFDX_PATH:$JDK_HOME/bin
 #source $ALIASES
 
-[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
+[[ -z $DISPLAY && $XDG_VTNR -eq 2 ]] && exec startx

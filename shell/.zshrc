@@ -43,4 +43,8 @@ bindkey ' ' magic-space
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 source $ALIASES
+cd
 #source $HOME/.config/zshrc.compl
+git config --global user.name "Kirill <akinevz> Nevzorov"
+git config --global user.email "akinevz@outlook.com"
+eval `ssh-agent`

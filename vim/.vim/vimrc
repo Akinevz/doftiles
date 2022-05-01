@@ -1,3 +1,6 @@
+if $TERM =~ 'xterm-256color'
+	set noek
+endif
 filetype plugin on
 if empty(glob('~/.vim/autoload/plug.vim'))
 	silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -88,7 +91,8 @@ colorscheme ron
 " add to aliases file
 
 if has("gui_running")
-	set guifont=Fira\ Code\ weight=453\ 16
+	"set guifont=Fira\ Code\ weight=453\ 16
+	set guifont=Source\ Code\ Pro\ 16
 	colorscheme torte
 endif
 " }}}

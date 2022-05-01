@@ -1,0 +1,7 @@
+#!/bin/bash
+
+keyreg $Mod-grave spawn dunstctl history-pop
+keyreg $Mod-numbersign	spawn dunstctl close
+keyreg $ModCtrl-grave  spawn dunstctl context
+keyreg Ctrl-Shift-space spawn dunstctl close-all
+keyreg Ctrl-Shift-grave spawn pause_notification_toggle

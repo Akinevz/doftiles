@@ -11,2280 +11,329 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/launch
-
-# Last Substitute Search Pattern:
-~MSle0&gra
-
-# Last Substitute String:
-$
+~MSle0~/\V\<exports\>
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1651391725,,"wq"
+|2,0,1651393862,,"wq"
 :q
-|2,0,1651391708,,"q"
-:w
-|2,0,1651391707,,"w"
-:!ls
-|2,0,1650885786,,"!ls"
-:ls
-|2,0,1650885784,,"ls"
-:pwd
-|2,0,1650885782,,"pwd"
-:cd /mnt/c/Programs/Mozilla\ Firefox/
-|2,0,1650885781,,"cd /mnt/c/Programs/Mozilla\\ Firefox/"
-:e salesforce/notes.md
-|2,0,1650880232,,"e salesforce/notes.md"
-:set autochdir
-|2,0,1650878297,,"set autochdir"
-:w /mnt/c/Programs//VcXsrv/start_server_bg.bat
-|2,0,1650878269,,"w /mnt/c/Programs//VcXsrv/start_server_bg.bat"
-:e /mnt/c/Programs/VcXsrv/start_server.bat
-|2,0,1650878255,,"e /mnt/c/Programs/VcXsrv/start_server.bat"
-:e
-|2,0,1650454024,,"e"
-:e doftiles/herbst/.config/herbstluftwm/custom_keybinds
-|2,0,1650453735,,"e doftiles/herbst/.config/herbstluftwm/custom_keybinds"
-:bn
-|2,0,1650453719,,"bn"
-:e custom
-|2,0,1650453154,,"e custom"
-:e doftiles/herbst/.config/herbstluftwm/
-|2,0,1650453149,,"e doftiles/herbst/.config/herbstluftwm/"
-:w ~/bin/vcxstart
-|2,0,1650452150,,"w ~/bin/vcxstart"
-:qa
-|2,0,1650448207,,"qa"
-:q!
-|2,0,1649840085,,"q!"
-:w ! sudo tee > /dev/null '%' 
-|2,0,1649840077,,"w ! sudo tee > /dev/null '%' "
-:w ~/cleanup.sh
-|2,0,1649665828,,"w ~/cleanup.sh"
-:bp
-|2,0,1649530053,,"bp"
-:e /home/kine/.config/herbstluftwm/dunst_keybinds
-|2,0,1649530041,,"e /home/kine/.config/herbstluftwm/dunst_keybinds"
-:e /mnt/c/Programs//VcXsrv//config.xlaunch
-|2,0,1649528706,,"e /mnt/c/Programs//VcXsrv//config.xlaunch"
-:e:
-|2,0,1649528683,,"e:"
-:w ++enc=utf-8
-|2,0,1649358222,,"w ++enc=utf-8"
-:e ++enc=cp1251
-|2,0,1649358168,,"e ++enc=cp1251"
-:set fileencoding
-|2,0,1649358113,,"set fileencoding"
-:set encoding
-|2,0,1649358103,,"set encoding"
-:e /mnt/c/Documents/Downloads/rusub.srt
-|2,0,1649358089,,"e /mnt/c/Documents/Downloads/rusub.srt"
-:w hmrc
-|2,0,1649171601,,"w hmrc"
-:qa!
-|2,0,1649151448,,"qa!"
-:term
-|2,0,1649150872,,"term"
-:w /mnt/e/Webtolead.html
-|2,0,1648722385,,"w /mnt/e/Webtolead.html"
-:help noek
-|2,0,1648572267,,"help noek"
-:Gstatus
-|2,0,1612027057,,"Gstatus"
-:set termwinkeyZQ
-|2,0,1612026915,,"set termwinkeyZQ"
-:help gq
-|2,0,1612026762,,"help gq"
-:Gpush
-|2,0,1612025312,,"Gpush"
-:Git push
-|2,0,1612025265,,"Git push"
-:Mkdir text
-|2,0,1612024622,,"Mkdir text"
-:Gsplit
-|2,0,1612024420,,"Gsplit"
-:29
-|2,0,1612023790,,"29"
-:e .
-|2,0,1612022322,,"e ."
-:G
-|2,0,1612022314,,"G"
-:cd Cluedo/
-|2,0,1612022308,,"cd Cluedo/"
-:cwd
-|2,0,1612022301,,"cwd"
-:prev
-|2,0,1612021932,,"prev"
-:PREV
-|2,0,1612021930,,"PREV"
-:e $MYVIMRC
-|2,0,1612021850,,"e $MYVIMRC"
+|2,0,1651393826,,"q"
 
 # Search String History (newest to oldest):
-?/tab
-|2,1,1650880435,47,"tab"
-?/close
-|2,1,1650880336,47,"close"
-?/next
-|2,1,1650880264,47,"next"
-?/Tab
-|2,1,1650880256,47,"Tab"
-?/launch
-|2,1,1650878742,47,"launch"
-?/quit
-|2,1,1650732067,47,"quit"
-? @$
-|2,1,1650534053,,"@$"
-?/rofi
-|2,1,1650533721,47,"rofi"
-?/cycle
-|2,1,1650454471,47,"cycle"
-?/set
-|2,1,1650454031,47,"set"
-?/mod-z
-|2,1,1650453749,47,"mod-z"
-?/scrn
-|2,1,1650453113,47,"scrn"
-?/scrot
-|2,1,1650453106,47,"scrot"
-?/screen
-|2,1,1650453096,47,"screen"
-?/start
-|2,1,1650452893,47,"start"
-?/path
-|2,1,1650441043,47,"path"
-?/include
-|2,1,1649839600,47,"include"
-?/dunst
-|2,1,1649529981,47,"dunst"
-?/cycle_max
-|2,1,1649529960,47,"cycle_max"
-?/emoji
-|2,1,1649529769,47,"emoji"
-?/esc
-|2,1,1649529698,47,"esc"
-?/mod-c
-|2,1,1649529592,47,"mod-c"
-?/term
-|2,1,1649528884,47,"term"
-?/gnome
-|2,1,1649528281,47,"gnome"
-?/bspw
-|2,1,1649527815,47,"bspw"
-?/font
-|2,1,1649150611,47,"font"
-??\a
-|2,1,1612024638,63,"\\a"
-?/dir
-|2,1,1612024558,47,"dir"
-?/folder
-|2,1,1612024544,47,"folder"
-?/new
-|2,1,1612024532,47,"new"
-?/dbus
-|2,1,1612023939,47,"dbus"
-?/tpop
-|2,1,1612021859,47,"tpop"
-? ^\s*\(- \[ \]\|- \[X\]\)
-|2,1,1610549668,,"^\\s*\\(- \\[ \\]\\|- \\[X\\]\\)"
-?/mod-space
-|2,1,1610545173,47,"mod-space"
-?/dia
-|2,1,1610463163,47,"dia"
-?/sat
-|2,1,1610369989,47,"sat"
-? \<keyreg\>
-|2,1,1610222405,,"\\<keyreg\\>"
-? \<ModCtrl\>
-|2,1,1610222360,,"\\<ModCtrl\\>"
-? gra
-|2,1,1610221947,,"gra"
-? grave
-|2,1,1610221932,,"grave"
-? numbersign
-|2,1,1610221923,,"numbersign"
-?/sh
-|2,1,1610210418,47,"sh"
-?/ja
-|2,1,1610144359,47,"ja"
-?/ch
-|2,1,1610144308,47,"ch"
-?/tasks
-|2,1,1610063538,47,"tasks"
-?/task
-|2,1,1610063452,47,"task"
-?/ver
-|2,1,1610063392,47,"ver"
-?/verb
-|2,1,1610063391,47,"verb"
-??task
-|2,1,1610062365,63,"task"
-? =
-|2,1,1610034643,,"="
 
 # Expression History (newest to oldest):
-=!date
-|2,2,1601229157,,"!date"
-=!xrandr --help
-|2,2,1595538683,,"!xrandr --help"
-=!calendar
-|2,2,1581565112,,"!calendar"
-=!ls
-|2,2,1578551796,,"!ls"
-=:!date
-|2,2,1564430291,,":!date"
-=date()
-|2,2,1564430263,,"date()"
-="relativenumber"
-|2,2,1560869819,,"\"relativenumber\""
-=echo relativenumber
-|2,2,1560869796,,"echo relativenumber"
-=relativenumber
-|2,2,1560869786,,"relativenumber"
-=&relativenumber
-|2,2,1560869774,,"&relativenumber"
-=&viminfo
-|2,2,1552602587,,"&viminfo"
-=set viminfo?
-|2,2,1552583485,,"set viminfo?"
-=&set viminfo?
-|2,2,1552583439,,"&set viminfo?"
 
 # Input Line History (newest to oldest):
-@] 
-|2,3,1581491536,,"] "
-@]\s
-|2,3,1581491516,,"]\\s"
-@]
-|2,3,1581491403,,"]"
-@[
-|2,3,1581490971,,"["
-@\s+
-|2,3,1581490497,,"\\s+"
-@\s
-|2,3,1581490482,,"\\s"
-@\w
-|2,3,1578533265,,"\\w"
-@p
-|2,3,1578541857,,"p"
-@y
-|2,3,1573046069,,"y"
-@KeyVal
-|2,3,1568382158,,"KeyVal"
-@Property
-|2,3,1568382152,,"Property"
-@ul>
-|2,3,1568374137,,"ul>"
-@setSelected
-|2,3,1568367467,,"setSelected"
-@defaultMapStyle
-|2,3,1568292900,,"defaultMapStyle"
-@features
-|2,3,1568285539,,"features"
-@selectedFeatureIds
-|2,3,1568285283,,"selectedFeatureIds"
-@vs
-|2,3,1568118007,,"vs"
-@style
-|2,3,1568113652,,"style"
-@defaultConfig
-|2,3,1568111865,,"defaultConfig"
-@mergeStyleWithData
-|2,3,1568111397,,"mergeStyleWithData"
-@updateData
-|2,3,1568043136,,"updateData"
-@map
-|2,3,1568036130,,"map"
-@zoomedOut
-|2,3,1567524121,,"zoomedOut"
-@vp
-|2,3,1567521421,,"vp"
-@viewport
-|2,3,1567521413,,"viewport"
-@Application
-|2,3,1565924522,,"Application"
-@\\
-|2,3,1562300736,,"\\\\"
-@-
-|2,3,1562300698,,"-"
 
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	keyreg $Mod-Escape				reload
-|3,0,0,1,1,0,1650880395,"keyreg $Mod-Escape				reload"
 "1	LINE	0
-	Smallest - ITX
-	PCIE connectors - 1 
-	CPU Sockets - 1
-	RAM Slots - 2
-|3,0,1,1,4,0,1650979585,"Smallest - ITX","PCIE connectors - 1 ","CPU Sockets - 1","RAM Slots - 2"
+	eval `ssh-agent`
+|3,0,1,1,1,0,1651393715,"eval `ssh-agent`"
 "2	LINE	0
-	Smallest - ITX
-|3,0,2,1,1,0,1650979570,"Smallest - ITX"
+	>>>>>>> 2e87f762eb33494f182fab3344bdc2e73566c538
+|3,0,2,1,1,0,1651393544,">>>>>>> 2e87f762eb33494f182fab3344bdc2e73566c538"
 "3	LINE	0
-	Smallest - ITX
-|3,0,3,1,1,0,1650979570,"Smallest - ITX"
+	<<<<<<< HEAD
+	alias la='ls -al --color=auto'
+	alias l='ls'
+	alias s='ls -r'
+	alias sl='s'
+	=======
+|3,0,3,1,6,0,1651393542,"<<<<<<< HEAD","alias la='ls -al --color=auto'","alias l='ls'","alias s='ls -r'","alias sl='s'","======="
 "4	LINE	0
-	
-	
-|3,0,4,1,2,0,1650979554,"",""
+	<<<<<<< HEAD
+|3,0,4,1,1,0,1651393531,"<<<<<<< HEAD"
 "5	LINE	0
-	# cycle; TODO: make these cycle frame if only in frame
-	keyreg $Mod-s 		chain \
-							. cycle -1
-	keyreg $ModShift-s	chain \
-							. cycle +1
-	keyreg $Mod-c		cycle_frame
-	
-|3,0,5,1,7,0,1650880562,"# cycle; TODO: make these cycle frame if only in frame","keyreg $Mod-s 		chain \\","						. cycle -1","keyreg $ModShift-s	chain \\","						. cycle +1","keyreg $Mod-c		cycle_frame",""
-"6	LINE	0
-	keyreg $Mod-Tab		or \
-						, and \
-							. compare tags.focus.curframe_wcount gt 1 \
-							. cycle +1 \
-						, cycle_frame 
-|3,0,6,1,5,0,1650880551,"keyreg $Mod-Tab		or \\","					, and \\","						. compare tags.focus.curframe_wcount gt 1 \\","						. cycle +1 \\","					, cycle_frame "
-"7	LINE	0
-	keyreg $ModShift-a			chain . split vertical . cycle_frame
-|3,0,7,1,1,0,1650880384,"keyreg $ModShift-a			chain . split vertical . cycle_frame"
-"8	LINE	0
-	# layouting
-	keyreg $Mod-f spawn maximize
-|3,0,8,1,2,0,1650457764,"# layouting","keyreg $Mod-f spawn maximize"
-"9	LINE	0
-	# rotate layout
-	keyreg $ModCtrl-c			rotate
-	# flip layout
-	keyreg $ModShift-c			chain , lock , rotate , rotate , unlock
-	# split into direction
-	keyreg $Mod-v				split right  0.5
-	keyreg $Mod-b				split bottom   0.5
-	keyreg $ModCtrl-v			chain , split right  0.5 , focus -e right
-	keyreg $ModCtrl-b			chain , split bottom   0.5 , focus -i down
-	keyreg $ModShift-b			chain split top   0.5 , focus -i down
-	
-|3,0,9,1,11,0,1650454562,"# rotate layout","keyreg $ModCtrl-c			rotate","# flip layout","keyreg $ModShift-c			chain , lock , rotate , rotate , unlock","# split into direction","keyreg $Mod-v				split right  0.5","keyreg $Mod-b				split bottom   0.5","keyreg $ModCtrl-v			chain , split right  0.5 , focus -e right","keyreg $ModCtrl-b			chain , split bottom   0.5 , focus -i down","keyreg $ModShift-b			chain split top   0.5 , focus -i down",""
-"a	LINE	0
-	HYPHEN_INSENSITIVE="true"
-	ENABLE_CORRECTION="true"
-	COMPLETION_WAITING_DOTS="true"
-	
-	HISTFILE=~/.histfile
-	HISTSIZE=9999
-	SAVEHIST=9999
-	
-	setopt autocd beep nomatch notify extendedglob
-	set -o emacs
-	bindkey -e
-	bindkey ' ' magic-space
-	
-	Plug 'aserebryakov/vim-todo-lists'
-	Plug 'michaeljsmith/vim-indent-object'
-	Plug 'vim-airline/vim-airline'
-	Plug 'xolox/vim-misc'
-	Plug 'xolox/vim-session'
-	 'junegunn/vim-easy-align'
-|3,0,10,1,19,0,1612021127,"HYPHEN_INSENSITIVE=\"true\"","ENABLE_CORRECTION=\"true\"","COMPLETION_WAITING_DOTS=\"true\"","","HISTFILE=~/.histfile","HISTSIZE=9999","SAVEHIST=9999","","setopt autocd beep nomatch notify extendedglob","set -o emacs","bindkey -e","bindkey ' ' magic-space","","Plug 'aserebryakov/vim-todo-lists'","Plug 'michaeljsmith/vim-indent-object'","Plug 'vim-airline/vim-airline'","Plug 'xolox/vim-misc'","Plug 'xolox/vim-session'",>28
-|<" 'junegunn/vim-easy-align'"
-"f	CHAR	0
-	/home/kine/.bin/adventure
-|3,0,15,0,1,0,1610532067,"/home/kine/.bin/adventure"
-"j	CHAR	0
-	
-|3,0,19,0,1,0,1573226791,""
-"l	LINE	0
-	3I=A :r!datekJA 3A=2o
-|3,0,21,1,1,0,1609156372,"3I=A :r!datekJA 3A=2o"
-"q@	LINE	0
-	3I=A :r!datekJA 3A=2o
-|3,2,26,1,1,0,1610463394,"3I=A :r!datekJA 3A=2o"
-"r	CHAR	0
-	A€kbciwJ€kbJ
-|3,0,27,0,1,0,1596936643,"A€kbciwJ€kbJ"
-"s	CHAR	0
-	_iecho "€kD€kDgconnectA"€ýaj
-|3,0,28,0,1,0,1598882847,"_iecho \"€kD€kDgconnectA\"€ýaj"
-"u	CHAR	0
-	
-|3,0,30,0,1,0,1580010805,""
-"w	LINE	0
-	w|!pandoc % -o pa.pdf && xdg-open pa.pdf
-|3,0,32,1,1,0,1610027937,"w|!pandoc % -o pa.pdf && xdg-open pa.pdf"
-"y	LINE	0
-	3I=A :r!datekJA 3A=2o
-|3,0,34,1,1,0,1609684071,"3I=A :r!datekJA 3A=2o"
-"z	CHAR	0
-	Q
-|3,0,35,0,1,0,1562301574,"Q"
+	=======
+	alias sxhkd="vim $HOME/.config/sxhkd"
+	alias bspwm="vim $HOME/.config/bspwm"
+	>>>>>>> 2e87f762eb33494f182fab3344bdc2e73566c538
+|3,0,5,1,4,0,1651393529,"=======","alias sxhkd=\"vim $HOME/.config/sxhkd\"","alias bspwm=\"vim $HOME/.config/bspwm\"",">>>>>>> 2e87f762eb33494f182fab3344bdc2e73566c538"
 ""-	CHAR	0
-	-global user.email "akinevz@outlook.com" -
-|3,1,36,0,1,0,1651391723,"-global user.email \"akinevz@outlook.com\" -"
+	profile
+|3,1,36,0,1,0,1651393819,"profile"
 
 # File marks:
-'A  1478  21  ~/cartographer-gl/map-widget/node_modules/@types/mapbox-gl/index.d.ts
-|4,65,1478,21,1568110477,"~/cartographer-gl/map-widget/node_modules/@types/mapbox-gl/index.d.ts"
-'B  304  42  ~/.config/herbstluftwm/autostart
-|4,66,304,42,1595957659,"~/.config/herbstluftwm/autostart"
-'M  321  2  ~/.config/herbstluftwm/autostart
-|4,77,321,2,1595859810,"~/.config/herbstluftwm/autostart"
-'N  151  0  ~/task_launch
-|4,78,151,0,1554901471,"~/task_launch"
-'Z  2  34  ~/cartographer-gl/map-widget/src/mapboxTerrainV2.ts
-|4,90,2,34,1568110507,"~/cartographer-gl/map-widget/src/mapboxTerrainV2.ts"
-'0  1  12  /tmp/zshxtICyK
-|4,48,1,12,1651391725,"/tmp/zshxtICyK"
-'1  14  16  ~/doftiles/shell/.zprofile
-|4,49,14,16,1651391708,"~/doftiles/shell/.zprofile"
-'2  1  15  /tmp/zshjJlck2
-|4,50,1,15,1651372642,"/tmp/zshjJlck2"
-'3  41  15  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,51,41,15,1651372446,"~/doftiles/herbst/.config/herbstluftwm/autostart"
-'4  1  0  ~/bin/bar.sh
-|4,52,1,0,1651372323,"~/bin/bar.sh"
-'5  4  1  ~/bin/bar.sh
-|4,53,4,1,1651372305,"~/bin/bar.sh"
-'6  4  1  ~/bin/bar.sh
-|4,54,4,1,1651372305,"~/bin/bar.sh"
-'7  32  20  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,55,32,20,1651372168,"~/doftiles/herbst/.config/herbstluftwm/autostart"
-'8  32  20  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,56,32,20,1651372168,"~/doftiles/herbst/.config/herbstluftwm/autostart"
-'9  2  48  ~/bin/firefox-launch
-|4,57,2,48,1650885829,"~/bin/firefox-launch"
+'0  13  0  ~/.config/profile
+|4,48,13,0,1651393862,"~/.config/profile"
+'1  1  0  ~/.config/profile
+|4,49,1,0,1651393826,"~/.config/profile"
+'2  1  0  ~/.config/profile
+|4,50,1,0,1651393826,"~/.config/profile"
+'3  12  39  ~/.config/aliases
+|4,51,12,39,1651393822,"~/.config/aliases"
+'4  1  0  ~/.aliases
+|4,52,1,0,1651393808,"~/.aliases"
+'5  1  0  ~/.exports
+|4,53,1,0,1651393805,"~/.exports"
+'6  9  25  ~/doftiles/shell/.zprofile
+|4,54,9,25,1651393788,"~/doftiles/shell/.zprofile"
+'7  1  0  ~/doftiles/shell/.zshrc
+|4,55,1,0,1651393775,"~/doftiles/shell/.zshrc"
+'8  1  0  ~/.profile
+|4,56,1,0,1651393760,"~/.profile"
+'9  1  0  ~/.profile
+|4,57,1,0,1651393760,"~/.profile"
 
 # Jumplist (newest first):
--'  1  12  /tmp/zshxtICyK
-|4,39,1,12,1651391725,"/tmp/zshxtICyK"
--'  14  16  ~/doftiles/shell/.zprofile
-|4,39,14,16,1651391708,"~/doftiles/shell/.zprofile"
--'  14  16  ~/doftiles/shell/.zprofile
-|4,39,14,16,1651391708,"~/doftiles/shell/.zprofile"
+-'  13  0  ~/.config/profile
+|4,39,13,0,1651393862,"~/.config/profile"
+-'  1  0  ~/.config/profile
+|4,39,1,0,1651393849,"~/.config/profile"
+-'  1  0  ~/.config/profile
+|4,39,1,0,1651393826,"~/.config/profile"
+-'  12  39  ~/.config/aliases
+|4,39,12,39,1651393822,"~/.config/aliases"
+-'  12  39  ~/.config/aliases
+|4,39,12,39,1651393822,"~/.config/aliases"
+-'  12  39  ~/.config/aliases
+|4,39,12,39,1651393822,"~/.config/aliases"
+-'  12  39  ~/.config/aliases
+|4,39,12,39,1651393822,"~/.config/aliases"
+-'  1  0  ~/.config/aliases
+|4,39,1,0,1651393809,"~/.config/aliases"
+-'  1  0  ~/.config/aliases
+|4,39,1,0,1651393809,"~/.config/aliases"
+-'  1  0  ~/.config/aliases
+|4,39,1,0,1651393809,"~/.config/aliases"
+-'  1  0  ~/.config/aliases
+|4,39,1,0,1651393809,"~/.config/aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.exports
+|4,39,1,0,1651393805,"~/.exports"
+-'  1  0  ~/.exports
+|4,39,1,0,1651393805,"~/.exports"
+-'  1  0  ~/.exports
+|4,39,1,0,1651393805,"~/.exports"
+-'  1  0  ~/.exports
+|4,39,1,0,1651393805,"~/.exports"
+-'  1  0  ~/.exports
+|4,39,1,0,1651393805,"~/.exports"
+-'  1  0  ~/.exports
+|4,39,1,0,1651393805,"~/.exports"
+-'  1  0  ~/.exports
+|4,39,1,0,1651393805,"~/.exports"
+-'  1  0  ~/.exports
+|4,39,1,0,1651393805,"~/.exports"
+-'  1  0  ~/.exports
+|4,39,1,0,1651393805,"~/.exports"
+-'  1  0  ~/.exports
+|4,39,1,0,1651393805,"~/.exports"
+-'  1  0  ~/.exports
+|4,39,1,0,1651393805,"~/.exports"
+-'  1  0  ~/.exports
+|4,39,1,0,1651393805,"~/.exports"
+-'  1  0  ~/.exports
+|4,39,1,0,1651393805,"~/.exports"
+-'  1  0  ~/.exports
+|4,39,1,0,1651393805,"~/.exports"
+-'  1  0  ~/.exports
+|4,39,1,0,1651393805,"~/.exports"
+-'  1  0  ~/.exports
+|4,39,1,0,1651393805,"~/.exports"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  9  25  ~/doftiles/shell/.zprofile
+|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
+-'  13  7  ~/doftiles/shell/.zprofile
+|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
 -'  1  0  ~/doftiles/shell/.zprofile
-|4,39,1,0,1651391693,"~/doftiles/shell/.zprofile"
--'  1  0  ~/doftiles/shell/.zprofile
-|4,39,1,0,1651391693,"~/doftiles/shell/.zprofile"
--'  1  15  /tmp/zshjJlck2
-|4,39,1,15,1651372642,"/tmp/zshjJlck2"
--'  1  15  /tmp/zshjJlck2
-|4,39,1,15,1651372642,"/tmp/zshjJlck2"
--'  1  15  /tmp/zshjJlck2
-|4,39,1,15,1651372642,"/tmp/zshjJlck2"
--'  1  15  /tmp/zshjJlck2
-|4,39,1,15,1651372642,"/tmp/zshjJlck2"
--'  41  15  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,41,15,1651372446,"~/doftiles/herbst/.config/herbstluftwm/autostart"
--'  41  15  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,41,15,1651372446,"~/doftiles/herbst/.config/herbstluftwm/autostart"
--'  41  15  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,41,15,1651372446,"~/doftiles/herbst/.config/herbstluftwm/autostart"
--'  41  15  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,41,15,1651372446,"~/doftiles/herbst/.config/herbstluftwm/autostart"
--'  41  15  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,41,15,1651372446,"~/doftiles/herbst/.config/herbstluftwm/autostart"
--'  41  15  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,41,15,1651372446,"~/doftiles/herbst/.config/herbstluftwm/autostart"
--'  41  15  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,41,15,1651372446,"~/doftiles/herbst/.config/herbstluftwm/autostart"
--'  41  15  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,41,15,1651372446,"~/doftiles/herbst/.config/herbstluftwm/autostart"
--'  1  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,1,0,1651372360,"~/doftiles/herbst/.config/herbstluftwm/autostart"
--'  1  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,1,0,1651372360,"~/doftiles/herbst/.config/herbstluftwm/autostart"
--'  1  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,1,0,1651372360,"~/doftiles/herbst/.config/herbstluftwm/autostart"
--'  1  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,1,0,1651372360,"~/doftiles/herbst/.config/herbstluftwm/autostart"
--'  1  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,1,0,1651372360,"~/doftiles/herbst/.config/herbstluftwm/autostart"
--'  1  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,1,0,1651372360,"~/doftiles/herbst/.config/herbstluftwm/autostart"
--'  1  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,1,0,1651372360,"~/doftiles/herbst/.config/herbstluftwm/autostart"
--'  1  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,1,0,1651372360,"~/doftiles/herbst/.config/herbstluftwm/autostart"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372323,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372323,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372323,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372323,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372323,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372323,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372323,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372323,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372323,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372323,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372323,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372323,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372323,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372323,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372323,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372323,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  4  1  ~/bin/bar.sh
-|4,39,4,1,1651372305,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372197,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372197,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372197,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372197,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372197,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372197,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372197,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372197,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372197,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372197,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372197,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372197,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372197,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372197,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372197,"~/bin/bar.sh"
--'  1  0  ~/bin/bar.sh
-|4,39,1,0,1651372197,"~/bin/bar.sh"
--'  32  20  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,32,20,1651372168,"~/doftiles/herbst/.config/herbstluftwm/autostart"
--'  32  20  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,32,20,1651372168,"~/doftiles/herbst/.config/herbstluftwm/autostart"
--'  32  20  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,32,20,1651372168,"~/doftiles/herbst/.config/herbstluftwm/autostart"
--'  32  20  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,32,20,1651372168,"~/doftiles/herbst/.config/herbstluftwm/autostart"
--'  32  20  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,32,20,1651372168,"~/doftiles/herbst/.config/herbstluftwm/autostart"
--'  32  20  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,32,20,1651372168,"~/doftiles/herbst/.config/herbstluftwm/autostart"
--'  32  20  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,32,20,1651372168,"~/doftiles/herbst/.config/herbstluftwm/autostart"
--'  32  20  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,32,20,1651372168,"~/doftiles/herbst/.config/herbstluftwm/autostart"
--'  32  20  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,32,20,1651372168,"~/doftiles/herbst/.config/herbstluftwm/autostart"
--'  32  20  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,32,20,1651372168,"~/doftiles/herbst/.config/herbstluftwm/autostart"
--'  32  20  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,32,20,1651372168,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+|4,39,1,0,1651393777,"~/doftiles/shell/.zprofile"
 
 # Buffer list:
-%/tmp/zshxtICyK	1	12
+%~/.config/profile	13	0
 
 # History of marks within files (newest to oldest):
 
-> /tmp/zshxtICyK
-	*	1651391723	0
-	"	1	12
-	.	1	12
-	+	1	12
-
-> ~/doftiles/shell/.zprofile
-	*	1651391707	0
-	"	14	16
-	^	14	17
-	.	14	16
-	+	14	16
-
-> /tmp/zshjJlck2
-	*	1651372641	0
-	"	1	15
-	^	1	16
-	.	1	15
-	+	1	15
-
-> ~/doftiles/herbst/.config/herbstluftwm/autostart
-	*	1651372445	0
-	"	41	15
-	^	41	16
-	.	41	15
-	+	24	0
-	+	37	5
-	+	31	0
-	+	29	0
-	+	31	19
-	+	29	0
-	+	31	0
-	+	37	0
-	+	40	22
-	+	39	21
-	+	40	25
-	+	38	17
-	+	43	19
-	+	35	0
-	+	13	0
-	+	14	13
-	+	17	0
-	+	24	14
-	+	24	10
-	+	24	0
-	+	31	0
-	+	35	0
-	+	32	9
-	+	35	0
-	+	36	0
-	+	37	0
-	+	143	0
-	+	146	12
-	+	166	0
-	+	167	52
-	+	168	0
-	+	167	12
-	+	347	0
-	+	44	24
-	+	18	0
-	+	14	0
-	+	210	0
-	+	46	14
-	+	45	27
-	+	90	17
-	+	55	12
-	+	90	20
-	+	55	34
-	+	90	12
-	+	55	55
-	+	57	0
-	+	58	20
-	+	143	29
-	+	143	15
-	+	143	0
-	+	143	17
-	+	143	0
-	+	58	0
-	+	90	58
-	+	90	15
-	+	77	0
-	+	90	7
-	+	165	0
-	+	90	0
-	+	153	20
-	+	153	19
-	+	153	16
-	+	153	20
-	+	153	0
-	+	78	0
-	+	90	14
-	+	194	0
-	+	195	11
-	+	31	62
-	+	30	49
-	+	47	7
-	+	49	25
-	+	47	21
-	+	90	24
-	+	57	17
-	+	58	0
-	+	56	0
-	+	48	13
-	+	90	49
-	+	90	18
-	+	90	0
-	+	66	0
-	+	90	0
-	+	59	0
-	+	73	0
-	+	71	0
-	+	41	15
-
-> ~/bin/bar.sh
-	*	1651372322	0
-	"	1	0
-	.	4	0
-	+	4	0
-
-> ~/bin/firefox-launch
-	*	1650885828	0
-	"	2	48
-	^	2	49
-	.	2	23
-	+	2	23
-
-> ~/firefox-launch
-	*	1650885797	0
-	"	2	44
-	^	2	45
-	.	2	44
-	+	2	44
-
-> ~/salesforce/notes.md
-	*	1650880584	0
-	"	1	0
-
-> /mnt/c/Programs/VcXsrv/config.xlaunch
-	*	1650879191	0
-	"	2	30
-	^	2	31
-	.	2	30
-	+	2	376
-	+	2	30
-
-> /mnt/c/Programs/VcXsrv/start_server.bat
-	*	1650879184	0
-	"	1	9
-	^	1	26
-	.	1	17
-	+	1	11
-	+	1	17
-
-> ~/bin/vcxstart
-	*	1650879182	0
-	"	4	8
-	^	4	31
-	.	3	0
-	+	6	29
-	+	6	0
-	+	4	0
-	+	6	0
-	+	3	0
-
-> /mnt/c/Programs/VcXsrv/start_server_bg.bat
-	*	1650878679	0
-	"	5	3
-	^	5	4
-	.	5	3
-	+	1	17
-	+	4	0
-	+	3	3
-	+	4	3
-	+	5	3
-
-> ~/bin/cleanup.sh
-	*	1650878577	0
-	"	1	0
-
-> ~/bin/vcxstart_bg
-	*	1650878511	0
-	"	4	8
-	^	4	46
-	.	4	45
-	+	4	45
-
-> ~/.profile
-	*	1650874560	0
-	"	1	0
-
-> ~/.config/autostart/sxhkd.desktop
-	*	1650534083	0
-	"	1	0
-
-> ~/.config/autostart/picon.desktop
-	*	1650534072	0
-	"	1	0
-
-> ~/salesforce/HelloWorldLightningWebComponent/.sfdx/sfdx-config.json
-	*	1650532415	0
-	"	3	0
-
-> ~/.zprofile
-	*	1650531979	0
-	"	15	52
-	^	15	53
-	.	15	52
-	+	3	0
-	+	4	0
-	+	5	0
-	+	1	31
-	+	3	0
-	+	1	30
-	+	2	0
-	+	15	30
-	+	13	0
-	+	12	0
-	+	14	17
-	+	15	52
-
-> /tmp/zshtUKeiL
-	*	1650531727	0
-	"	1	74
-	.	1	74
-	+	1	74
-
-> ~/.exports
-	*	1650531158	0
-	"	13	39
-	.	12	19
-	+	6	0
-	+	7	0
-	+	9	0
-	+	8	12
-	+	10	6
-	+	18	60
-	+	19	0
-	+	21	17
-	+	21	0
-	+	13	0
-	+	12	19
-
-> ~/doftiles/herbst/.config/herbstluftwm/custom_keybinds
-	*	1650453745	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/vcxstart
-	*	1650452263	0
-	"	1	0
-
-> /tmp/zshDUNOup
-	*	1650452156	0
-	"	2	0
-	^	2	0
-	.	1	11
-	+	6	4
-	+	3	4
-	+	7	19
-	+	8	0
-	+	1	11
-
-> ~/bin/open_vcxsrv
-	*	1650448371	0
-	"	3	0
-	.	2	0
-	+	2	0
-
-> ~/bin/profile_manager
-	*	1650448206	0
-	"	1	0
-	^	2	0
-	.	1	11
-	+	3	60
-	+	1	11
-
-> /etc/init.d/dbus
-	*	1650442396	0
-	"	21	0
-
-> ~/.aliases
-	*	1650441021	0
-	"	58	0
-	^	18	27
-	.	18	26
-	+	14	0
-	+	7	11
-	+	8	20
-	+	3	0
-	+	4	0
-	+	3	17
-	+	7	0
-	+	14	0
-	+	61	8
-	+	3	0
-	+	14	0
-	+	6	0
-	+	5	0
-	+	14	0
-	+	9	0
-	+	14	0
-	+	9	0
-	+	14	0
-	+	19	49
-	+	19	48
-	+	19	16
-	+	19	0
-	+	20	0
-	+	19	60
-	+	19	12
-	+	17	10
-	+	11	0
-	+	19	0
-	+	12	0
-	+	17	24
-	+	14	0
-	+	23	0
-	+	16	0
-	+	19	0
-	+	10	17
-	+	24	0
-	+	17	24
-	+	16	0
-	+	15	22
-	+	18	26
-
-> ~/.zshrc
-	*	1650441016	0
-	"	45	7
-	^	31	18
-	.	31	17
-	+	45	0
-	+	8	0
-	+	10	27
-	+	31	17
-
-> ~/.config/rc
-	*	1650440971	0
-	"	1	0
-
-> /etc/pacman.conf
-	*	1649840083	0
-	"	113	0
-	^	96	43
-	.	88	0
-	+	80	0
-	+	112	0
-	+	88	0
-	+	97	0
-	+	88	0
-	+	88	7
-	+	96	3
-	+	88	0
-
-> /var/tmp/pacmanXXw1D1lP.conf
-	*	1649839619	0
-	"	84	0
-	^	81	11
-	.	82	0
-	+	81	10
-	+	82	0
-
-> ~/hmrc
-	*	1649674557	0
-	"	1	0
-	^	1	0
-	.	1	0
-	+	1	0
-
-> /tmp/zshno6i6c
-	*	1649665828	0
-	"	1	321
-	^	1	48
-	.	1	30
-	+	1	38
-	+	1	47
-	+	2	0
-	+	1	30
-
-> ~/doftiles/herbst/.config/herbstluftwm/dunst_keybinds
-	*	1649530062	0
-	"	2	0
-	^	2	0
-	.	1	11
-	+	3	0
-	+	1	11
+> ~/.config/profile
+	*	1651393860	0
+	"	13	0
 
 > ~/.config/aliases
-	*	1649528877	0
-	"	6	20
-	^	6	21
-	.	6	20
-	+	17	0
-	+	18	0
-	+	5	13
-	+	4	12
-	+	6	20
+	*	1651393822	0
+	"	12	39
+	^	12	40
+	.	12	39
+	+	12	39
 
-> ~/.config/bspwm
-	*	1649527806	0
-	"	5	1
-	^	5	2
-	.	5	0
-	+	4	0
-	+	5	0
-
-> /mnt/c/Documents/Downloads/rusub.srt
-	*	1649358731	0
-	"	22	0
-
-> ~/doftiles/vim/.vim/vimrc
-	*	1649150649	0
-	"	95	30
-	^	95	31
-	.	95	30
-	+	14	0
-	+	18	0
-	+	20	0
-	+	18	0
-	+	20	0
-	+	27	0
-	+	73	0
-	+	70	0
-	+	67	0
-	+	27	0
-	+	29	0
-	+	31	0
-	+	34	0
-	+	33	0
-	+	35	0
-	+	38	0
-	+	53	0
-	+	27	0
-	+	74	0
-	+	75	0
-	+	76	0
-	+	78	0
-	+	79	0
-	+	88	0
-	+	74	0
-	+	77	24
-	+	74	0
-	+	81	0
-	+	3	4
-	+	95	0
-	+	94	1
-	+	95	30
-
-> /mnt/e/Webtolead.html
-	*	1648722397	0
-	"	80	6
-	^	80	7
-	.	80	0
-	+	80	0
-
-> /usr/share/vim/vim82/doc/options.txt
-	*	1648572267	0
-	"	3091	42
-
-> /tmp/zshRTpbId
-	*	1612032822	0
-	"	1	65
-	^	1	66
-	.	1	65
-	+	1	65
-
-> ~/doftiles/.gitmodules
-	*	1612032796	0
+> ~/.aliases
+	*	1651393807	0
 	"	1	0
-	.	1	0
-	+	1	0
 
-> ~/doftiles/.git/modules/shell/.cache/oh-my-zsh/COMMIT_EDITMSG
-	*	1612032465	0
+> ~/.exports
+	*	1651393792	0
 	"	1	0
+
+> ~/doftiles/shell/.zprofile
+	*	1651393787	0
+	"	9	25
 
 > ~/doftiles/shell/.zshrc
-	*	1612032265	0
-	"	15	20
-	^	15	20
-	.	15	20
-	+	9	34
-	+	12	12
-	+	4	38
-	+	5	16
-	+	6	16
-	+	9	13
-	+	11	10
-	+	12	0
-	+	15	20
-
-> /tmp/zshn3xaBe
-	*	1612030376	0
-	"	1	127
-	.	1	105
-	+	1	105
-
-> /tmp/zshd9M57e
-	*	1612030352	0
-	"	1	20
-	^	1	21
-	.	1	20
-	+	1	20
-
-> ~/doftiles/.giti
-	*	1612027754	0
+	*	1651393774	0
 	"	1	0
 
-> ~/.plan
-	*	1612026778	0
-	"	2	0
-	^	2	23
-	.	2	22
-	+	40	12
-	+	40	0
-	+	28	34
-	+	28	21
-	+	28	32
-	+	40	0
-	+	28	0
-	+	40	0
-	+	28	34
-	+	28	38
-	+	28	37
-	+	28	38
-	+	28	0
-	+	28	43
-	+	28	23
-	+	28	0
-	+	40	0
-	+	28	28
-	+	28	0
-	+	22	0
-	+	28	0
-	+	22	40
-	+	28	0
-	+	22	39
-	+	22	27
-	+	22	35
-	+	22	0
-	+	22	14
-	+	22	0
-	+	22	30
-	+	22	0
-	+	22	58
-	+	22	59
-	+	22	44
-	+	22	17
-	+	22	18
-	+	22	0
-	+	22	49
-	+	22	30
-	+	22	36
-	+	22	13
-	+	22	0
-	+	22	31
-	+	22	0
-	+	3	0
-	+	22	0
-	+	3	0
-	+	28	0
-	+	22	0
-	+	3	0
-	+	20	0
-	+	19	0
-	+	22	44
-	+	3	0
-	+	29	0
-	+	28	0
-	+	22	0
-	+	2	0
-	+	22	0
-	+	2	0
-	+	3	0
-	+	22	0
-	+	28	0
-	+	22	0
-	+	9	0
-	+	10	0
-	+	11	29
-	+	12	24
-	+	13	35
-	+	29	0
-	+	25	0
-	+	28	0
-	+	2	0
-	+	14	0
-	+	20	0
-	+	21	30
-	+	22	0
-	+	2	0
-	+	4	0
-	+	6	0
-	+	1	40
-	+	30	20
-	+	2	22
-
-> /usr/share/vim/vim81/doc/change.txt
-	*	1612026766	0
-	"	1366	7
-
-> ~/doftiles/shell/.cache/oh-my-zsh/plugins/.pl
-	*	1612026749	0
+> ~/.profile
+	*	1651393759	0
 	"	1	0
 
-> /tmp/zshpYiSeu
-	*	1612026746	0
-	"	1	0
-	.	1	14
-	+	1	14
+> ~/.config/rc
+	*	1651393757	0
+	"	39	0
+	.	50	0
+	+	50	0
 
-> fugitive:///home/kine/doftiles/.git//f207ae1a1c348b87d762de4328a79bf5ec8327b3
-	*	1612025045	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/doftiles/vim/.vim/bundle/vim-fugitive/doc/fugitive.txt
-	*	1612024766	0
-	"	287	48
-
-> /usr/share/vim/vim81/doc/pi_netrw.txt
-	*	1612024608	0
-	"	285	26
-
-> ~/hacking
-	*	1612024407	0
+> ~/doftiles/.git/COMMIT_EDITMSG
+	*	1651393743	0
 	"	1	0
 
-> ~/doftiles/shell/.cache/powerlevel10k/powerlevel10k.zsh-theme
-	*	1612023266	0
-	"	1	0
+> ~/doftiles/vim/.vim/vimrc
+	*	1651393566	0
+	"	217	0
 
-> ~/Cluedo/README.md
-	*	1612022427	0
-	"	1	0
-	^	5	73
-	.	16	0
-	+	4	11
-	+	6	0
-	+	13	124
-	+	13	80
-	+	8	10
-	+	5	79
-	+	6	0
+> ~/doftiles/shell/.config/aliases
+	*	1651393547	0
+	"	54	0
+	.	19	0
 	+	7	0
-	+	13	48
-	+	13	118
-	+	11	32
-	+	11	0
-	+	13	47
-	+	13	117
-	+	15	11
-	+	13	0
-	+	15	16
-	+	15	11
-	+	15	45
-	+	14	77
-	+	16	6
-	+	11	25
-	+	5	72
-	+	16	0
-
-> fugitive:///home/kine/Cluedo/.git//0/README.md
-	*	1612022284	0
-	"	2	0
-	.	1	0
-	+	1	0
-
-> ~/Cluedo/Soft_Dev/Skeleton/lvl1/cluedoFramework1.cs
-	*	1612022271	0
-	"	138	0
-
-> ~/.tasks
-	*	1612021665	0
-	"	1	0
-	^	5	16
-	.	5	15
-	+	112	1
-	+	114	46
-	+	115	1
-	+	108	55
-	+	116	51
-	+	52	0
-	+	92	35
-	+	93	0
-	+	52	35
-	+	52	0
-	+	97	40
-	+	99	0
-	+	105	0
-	+	104	0
-	+	106	16
-	+	104	0
-	+	103	19
-	+	103	53
-	+	52	0
-	+	118	0
-	+	117	0
-	+	52	0
-	+	52	4
-	+	52	3
-	+	92	0
-	+	52	35
-	+	54	58
-	+	54	0
-	+	70	60
-	+	75	7
-	+	74	13
-	+	79	29
-	+	67	56
-	+	91	0
-	+	56	48
-	+	58	56
-	+	80	0
-	+	82	56
-	+	90	24
-	+	32	0
-	+	32	36
-	+	34	46
-	+	138	39
-	+	40	23
-	+	42	57
-	+	44	59
-	+	45	0
-	+	46	58
-	+	50	24
-	+	51	0
-	+	32	0
-	+	23	3
-	+	23	4
-	+	32	0
-	+	23	35
-	+	32	3
-	+	23	0
-	+	138	23
-	+	138	25
-	+	138	16
-	+	134	30
-	+	138	23
-	+	139	0
-	+	134	0
-	+	134	33
-	+	138	23
-	+	134	3
-	+	134	35
-	+	138	25
-	+	137	0
-	+	134	0
-	+	23	3
-	+	25	0
-	+	25	3
-	+	31	15
-	+	25	0
-	+	24	0
-	+	31	0
-	+	25	1
-	+	31	0
-	+	25	0
-	+	24	0
-	+	25	19
-	+	24	0
-	+	23	0
-	+	8	0
-	+	8	50
-	+	8	0
-	+	10	48
-	+	14	24
-	+	141	0
-	+	141	25
-	+	14	60
-	+	21	21
-	+	6	0
-	+	1	0
-	+	141	0
-	+	2	0
-	+	3	57
-	+	5	15
-
-> ~/.diary
-	*	1612021664	0
-	"	1	0
-	^	15	27
-	.	15	26
-	+	34	0
-	+	17	3
-	+	18	0
-	+	32	58
-	+	33	0
-	+	1	3
-	+	2	0
-	+	9	42
-	+	11	45
-	+	15	26
-
-> /tmp/vgGoD7d/43.fugitiveblame
-	*	1612021628	0
-	"	138	0
-
-> /run/media/kine/web/root/adventure/Wed 13 Jan 14:53:51 GMT 2021.txt
-	*	1610549631	0
-	"	1	0
-
-> /run/media/kine/docs/taxes
-	*	1610547611	0
-	"	1	0
-	.	2	0
-	+	2	0
-
-> /run/media/kine/docs/p.translit
-	*	1610545799	0
-	"	1	0
-
-> /run/media/kine/docs/phones
-	*	1610545790	0
-	"	1	17
-	^	1	18
-	.	1	17
-	+	1	17
-
-> ~/.config/herbstluftwm/autostart
-	*	1610545290	0
-	"	1	0
-	^	177	6
-	.	241	7
-	+	103	25
-	+	107	0
-	+	104	0
-	+	103	6
-	+	88	30
-	+	114	2
-	+	123	0
-	+	336	30
-	+	130	0
-	+	62	0
-	+	64	44
-	+	173	0
-	+	174	0
-	+	174	19
-	+	174	35
-	+	336	45
-	+	33	34
-	+	209	0
-	+	210	0
-	+	209	0
-	+	210	0
-	+	206	0
-	+	209	0
-	+	67	31
-	+	336	0
-	+	363	42
-	+	13	0
-	+	252	8
-	+	250	8
-	+	252	17
-	+	57	17
-	+	23	13
-	+	348	0
-	+	332	0
-	+	61	0
-	+	57	25
-	+	59	24
-	+	58	0
-	+	60	0
-	+	48	1
-	+	335	64
-	+	176	16
-	+	14	0
-	+	204	0
-	+	181	0
-	+	182	0
-	+	183	0
-	+	176	10
-	+	177	45
-	+	324	90
-	+	176	42
-	+	176	36
-	+	177	36
-	+	177	37
-	+	40	0
-	+	42	82
-	+	253	22
-	+	253	32
-	+	25	35
-	+	26	25
-	+	24	23
-	+	23	15
-	+	22	19
-	+	176	0
-	+	177	0
-	+	177	7
-	+	177	21
-	+	176	0
-	+	177	0
-	+	176	0
-	+	177	0
-	+	176	0
-	+	181	0
-	+	180	0
-	+	177	24
-	+	180	30
-	+	177	21
-	+	177	0
-	+	178	0
-	+	177	0
-	+	179	0
-	+	177	0
-	+	179	5
-	+	175	23
-	+	180	54
-	+	191	51
-	+	185	0
-	+	179	43
-	+	178	22
-	+	176	0
-	+	178	0
-	+	176	11
-	+	177	0
-	+	176	0
-	+	174	5
-	+	177	5
-	+	241	7
-	+	244	7
-	+	241	7
-	o	363	42
-
-> ~/.config/polybar/config
-	*	1610545286	0
-	"	1	0
-	^	66	17
-	.	69	0
-	+	84	31
-	+	363	19
-	+	363	0
-	+	359	55
-	+	362	1
-	+	360	6
-	+	359	0
-	+	360	7
-	+	363	0
-	+	359	0
-	+	363	13
-	+	363	54
-	+	72	9
-	+	78	8
-	+	80	22
-	+	74	22
-	+	84	17
-	+	84	0
-	+	83	30
-	+	84	11
-	+	83	30
-	+	82	0
-	+	83	0
-	+	82	44
-	+	366	34
-	+	87	20
-	+	88	15
-	+	82	11
-	+	84	0
-	+	365	55
-	+	75	16
-	+	77	0
-	+	76	23
-	+	83	16
-	+	75	16
-	+	76	23
-	+	83	0
-	+	76	32
-	+	82	26
-	+	76	25
-	+	367	0
-	+	120	9
-	+	363	73
-	+	365	70
-	+	364	68
-	+	360	28
-	+	361	11
-	+	82	22
-	+	76	41
-	+	82	22
-	+	125	0
-	+	120	9
-	+	361	0
-	+	367	7
-	+	130	0
-	+	128	0
-	+	127	0
-	+	130	0
-	+	126	0
-	+	369	20
-	+	367	9
-	+	368	13
-	+	76	15
-	+	125	0
-	+	128	15
-	+	76	0
-	+	77	0
-	+	76	15
-	+	82	23
-	+	76	0
-	+	77	0
-	+	76	47
-	+	66	15
-	+	68	38
-	+	66	17
-	+	110	16
-	+	113	15
-	+	109	25
-	+	110	16
-	+	113	15
-	+	109	25
-	+	112	23
-	+	110	16
-	+	113	15
-	+	108	16
-	+	113	16
-	+	110	21
-	+	112	0
-	+	113	19
-	+	111	23
-	+	110	24
-	+	111	27
-	+	113	16
-	+	116	28
-	+	113	21
-	+	114	30
-	+	108	0
-	+	2	0
-	+	66	16
-	+	69	0
-
-> ~/conf/vim/.vim/vimrc
-	*	1610545283	0
-	"	12	0
-	^	12	38
-	.	12	37
-	+	1	0
-	+	212	44
-	+	212	0
-	+	11	33
-	+	12	37
-
-> ~/conf/dunst/.config/dunst/dunstrc
-	*	1610545245	0
-	"	1	0
-	.	256	0
-	+	256	4
-	+	256	71
-	+	256	23
-	+	256	26
-	+	256	0
-	+	348	0
-	+	256	0
-
-> /run/media/kine/web/root/adventure/Wed 13 Jan 10:02:31 GMT 2021.txt
-	*	1610532409	0
-	"	20	47
-	^	20	48
-	.	20	47
-	+	20	47
-
-> /run/media/kine/web/root/adventure/Wed 13 Jan 10:02:06 GMT 2021.txt
-	*	1610532126	0
-	"	1	0
-
-> ~/.local/bin/adventure
-	*	1610532108	0
-	"	3	0
-	^	3	0
-	.	2	0
-	+	1	11
-	+	2	0
-
-> /run/media/kine/web/root/adventure/Wed 13 Jan 09:50:22 GMT 2021.txt
-	*	1610531851	0
-	"	15	63
-	^	15	64
-	.	15	63
-	+	6	73
-	+	15	63
-
-> ~/.local/bin/tasks
-	*	1610463295	0
-	"	3	10
-	^	3	11
-	.	3	10
-	+	3	10
-
-> /tmp/zshUG2yUX
-	*	1610370702	0
-	"	1	9
-
-> /run/media/kine/web/root/adventure/Fri  8 Jan 11:29:12 GMT 2021.txt
-	*	1610370005	0
-	"	1	66
-	^	1	124
-	.	1	123
-	+	1	123
-
-> /usr/share/vim/vim82/doc/usr_02.txt
-	*	1610370004	0
-	"	9	0
-
-> /run/media/kine/web/root/adventure/Fri  8 Jan 10:45:48 GMT 2021.txt
-	*	1610369978	0
-	"	18	0
-	^	18	69
-	.	18	68
-	+	18	68
-
-> /run/media/kine/web/root/adventure/Fri  8 Jan 11:09:53 GMT 2021.txt
-	*	1610369957	0
-	"	1	0
-	^	1	50
-	.	1	49
-	+	1	49
-
-> /run/media/kine/web/root/adventure/Sun 10 Jan 18:21:54 GMT 2021.txt
-	*	1610369948	0
-	"	1	0
-	^	5	0
-	.	4	0
 	+	4	0
-
-> ~/tmp/course/cca/report.md
-	*	1610230401	0
-	"	1	0
-	^	41	402
-	.	41	401
-	+	1	0
-	+	5	12
-	+	10	2
-	+	7	57
-	+	10	230
-	+	16	440
-	+	45	608
-	+	46	0
-	+	45	684
-	+	51	104
-	+	51	0
-	+	54	108
-	+	54	26
-	+	54	248
-	+	60	0
-	+	60	286
-	+	62	5
-	+	60	376
-	+	63	0
-	+	60	461
-	+	60	370
-	+	63	0
-	+	60	608
-	+	66	51
-	+	65	15
-	+	66	33
-	+	67	0
-	+	66	5
-	+	65	55
-	+	72	0
-	+	69	0
-	+	70	0
-	+	65	0
-	+	70	60
-	+	27	3
-	+	48	0
-	+	28	0
-	+	19	0
-	+	20	52
-	+	32	14
-	+	33	6
-	+	34	8
-	+	35	2
-	+	42	119
-	+	42	18
-	+	42	121
-	+	42	0
-	+	37	0
-	+	42	0
-	+	41	401
-
-> ~/.thinking
-	*	1610229243	0
-	"	3	0
-	^	1	11
-	.	1	2
-	+	116	202
-	+	116	0
-	+	116	590
-	+	116	556
-	+	116	295
-	+	116	386
-	+	116	117
-	+	116	5
-	+	116	218
-	+	116	311
-	+	116	64
-	+	116	91
-	+	116	171
-	+	116	0
-	+	100	0
-	+	116	61
-	+	116	73
-	+	116	0
-	+	100	0
-	+	100	72
-	+	100	0
-	+	96	0
-	+	94	46
-	+	94	0
-	+	92	0
-	+	18	15
-	+	19	39
-	+	20	66
-	+	21	27
-	+	22	37
-	+	37	9
-	+	23	21
-	+	39	13
-	+	40	13
-	+	42	57
-	+	42	0
-	+	42	16
-	+	42	0
-	+	43	8
-	+	43	0
-	+	44	0
-	+	41	6
-	+	42	0
-	+	45	2
-	+	46	11
-	+	45	8
-	+	113	14
-	+	14	0
-	+	16	0
-	+	14	0
-	+	16	0
-	+	15	2
-	+	14	0
 	+	15	0
-	+	10	0
-	+	11	26
-	+	12	8
-	+	8	66
-	+	9	30
-	+	94	0
-	+	1	142
-	+	1	9
-	+	2	2
-	+	6	82
-	+	7	0
-	+	6	40
-	+	6	0
-	+	6	26
-	+	6	49
-	+	6	13
-	+	6	0
-	+	36	0
-	+	25	0
-	+	35	0
-	+	34	0
-	+	3	0
-	+	4	0
-	+	1	2
-
-> ~/tmp/course/a2.md
-	*	1610223484	0
-	"	1	0
-	^	37	0
-	.	37	0
-	+	13	4
-	+	5	4
-	+	13	0
-	+	81	8
-	+	65	0
-	+	82	2
-	+	65	68
-	+	66	81
-	+	67	0
-	+	83	0
-	+	62	5
-	+	90	66
-	+	83	0
-	+	87	17
-	+	65	0
-	+	66	0
-	+	65	23
-	+	92	0
-	+	87	7
-	+	12	0
-	+	3	0
-	+	3	2
-	+	2	19
-	+	87	22
-	+	84	124
-	+	87	0
-	+	84	0
-	+	85	0
-	+	88	18
-	+	84	102
-	+	88	0
-	+	48	292
-	+	52	453
-	+	59	0
-	+	56	274
-	+	59	0
-	+	58	318
-	+	13	0
-	+	7	249
-	+	7	0
-	+	7	282
-	+	9	411
-	+	7	233
-	+	8	0
-	+	9	227
-	+	9	0
-	+	11	158
-	+	16	85
-	+	16	294
-	+	18	5
 	+	19	0
-	+	15	4
-	+	16	339
-	+	28	7
-	+	27	7
-	+	28	12
-	+	44	0
-	+	22	57
-	+	24	0
-	+	28	8
-	+	29	6
-	+	30	6
-	+	31	6
-	+	44	3
-	+	45	0
-	+	39	0
-	+	31	6
-	+	26	17
-	+	39	8
-	+	27	53
-	+	39	40
-	+	41	3
-	+	40	2
-	+	41	11
-	+	43	10
-	+	22	105
-	+	28	10
-	+	29	4
-	+	22	124
-	+	29	0
-	+	29	4
-	+	30	7
-	+	31	4
-	+	40	11
-	+	41	8
-	+	42	8
-	+	43	8
-	+	32	3
-	+	23	99
-	+	36	64
-	+	38	0
-	+	39	0
-	+	37	0
-
-> /run/media/kine/web/root/adventure/Sat  9 Jan 14:39:06 GMT 2021.txt
-	*	1610204039	0
-	"	33	8
-	^	33	9
-	.	33	8
-	+	12	60
-	+	13	39
-	+	17	27
-	+	16	47
-	+	30	60
-	+	31	59
-	+	33	8
-
-> ~/.local/task/task.0343eef0.task
-	*	1610203136	0
-	"	1	0
-
-> ~/.p10k.zsh
-	*	1610063519	0
-	"	101	1
-	^	97	1
-	.	101	0
-	+	36	0
-	+	37	0
-	+	53	11
-	+	54	0
-	+	56	0
-	+	71	0
-	+	85	0
-	+	35	0
-	+	53	0
-	+	37	0
-	+	97	0
-	+	105	4
-	+	96	0
-	+	102	0
-	+	105	0
-	+	97	0
-	+	96	0
-	+	103	0
-	+	98	0
-	+	97	0
-	+	105	0
-	+	101	0
-
-> ~/.config/taskrc
-	*	1610063400	0
-	"	15	76
-	^	14	23
-	.	15	0
-	+	14	23
-	+	16	0
-	+	12	0
-	+	15	0
-
-> /tmp/zshYdTUPB
-	*	1610063112	0
-	"	1	184
-	^	1	185
-	.	1	8
-	+	1	185
-	+	1	8
-
-> /tmp/zshz1MirB
-	*	1610063086	0
-	"	1	262
-	^	1	263
-	.	1	8
-	+	1	8
-
-> /run/media/kine/web/root/adventure/Thu  7 Jan 23:28:16 GMT 2021.txt
-	*	1610062133	0
-	"	6	49
-	^	6	50
-	.	6	49
-	+	6	49
-
-> /run/media/kine/web/root/adventure/Thu  7 Jan 23:27:58 GMT 2021.txt
-	*	1610062095	0
-	"	1	39
-	^	1	40
-	.	1	40
-	+	1	40
-
-> /run/media/kine/web/root/adventure/Thu  7 Jan 23:26:16 GMT 2021.txt
-	*	1610062076	0
-	"	7	93
-	^	7	94
-	.	7	93
-	+	7	93
-
-> ~/tmp/course/pa.md
-	*	1610037179	0
-	"	88	215
-	^	88	216
-	.	88	215
-	+	36	23
-	+	35	17
-	+	36	14
-	+	35	30
-	+	40	11
-	+	35	26
-	+	41	0
-	+	41	8
-	+	41	0
-	+	40	47
-	+	43	22
-	+	35	11
-	+	43	37
-	+	43	10
-	+	47	181
-	+	47	82
-	+	49	18
-	+	35	26
-	+	45	9
-	+	49	20
-	+	39	8
-	+	35	13
-	+	39	9
-	+	35	19
-	+	39	10
-	+	45	10
-	+	42	70
-	+	43	0
-	+	49	545
-	+	29	11
-	+	30	0
-	+	47	171
-	+	49	708
-	+	53	9
-	+	74	15
-	+	72	36
-	+	74	37
-	+	72	12
-	+	74	38
-	+	77	29
-	+	78	27
-	+	78	28
-	+	78	27
-	+	78	28
-	+	78	29
-	+	58	0
-	+	70	27
-	+	77	0
-	+	74	27
-	+	75	29
-	+	76	29
-	+	80	245
-	+	61	12
-	+	62	0
-	+	73	0
-	+	72	25
-	+	57	199
-	+	84	137
-	+	84	32
-	+	84	826
-	+	86	19
-	+	92	18
-	+	94	0
-	+	93	21
-	+	95	46
-	+	95	30
-	+	97	129
-	+	96	0
-	+	103	21
-	+	103	7
-	+	109	27
-	+	105	0
-	+	106	0
-	+	107	0
-	+	100	0
-	+	103	0
-	+	101	0
-	+	102	0
-	+	100	11
-	+	101	25
-	+	102	21
-	+	100	9
-	+	101	23
-	+	102	19
-	+	100	11
-	+	101	25
-	+	102	21
-	+	106	0
-	+	107	0
-	+	106	1
-	+	107	1
-	+	106	35
-	+	107	19
-	+	110	13
-	+	109	28
-	+	110	198
-	+	110	32
-	+	88	215
-
-> ~/.local/bin/throw_corner
-	*	1609961925	0
-	"	6	35
-	^	6	36
-	.	6	35
-	+	1	11
-	+	1	45
-	+	1	55
-	+	1	43
-	+	1	55
-	+	1	0
-	+	7	0
-	+	8	12
-	+	11	10
-	+	15	3
-	+	14	4
-	+	18	8
-	+	13	8
-	+	31	14
-	+	36	0
-	+	34	16
-	+	36	0
-	+	31	11
-	+	34	3
-	+	33	15
-	+	34	3
-	+	36	0
-	+	34	37
-	+	36	0
-	+	7	41
-	+	7	0
-	+	38	0
-	+	37	0
-	+	39	11
-	+	2	7
-	+	3	0
-	+	4	0
-	+	3	17
-	+	33	16
-	+	34	16
-	+	35	11
-	+	33	7
-	+	36	9
-	+	35	13
-	+	33	0
-	+	36	0
-	+	35	13
-	+	34	0
-	+	32	0
-	+	6	35
-
-> ~/tmp/course/ass2.sql
-	*	1609858556	0
-	"	48	0
-
-> ~/www/root/adventure/Tue  5 Jan 13:39:57 GMT 2021.txt
-	*	1609853997	0
-	"	1	0
-
-> ~/www/root/adventure/Tue  5 Jan 13:39:23 GMT 2021.txt
-	*	1609853963	0
-	"	1	0
-
-> /tmp/mozilla_kine0/a2-setup-additional.sql
-	*	1609694957	0
-	"	1	0

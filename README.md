@@ -1,9 +1,14 @@
 # configs for kine@home
 
-These dotfiles build a herbstluftwm experience.
-Terminal based experience primarily, with a mix
-of browser of choice, file manager, and another
-few applications.
+TODO: create a script that installs all dependencies
+TODO: list all dependencies
 
-TODO: Further documentation required
+depends on:
+zsh
+oh-my-zsh
+powerlevel10k
+zsh-autosuggestions
+zsh-syntax-highlighting
 
+install both plugins and custom zsh themes into a local folder
+rework vim keybinds

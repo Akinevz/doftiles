@@ -9,13 +9,13 @@ alias bs="bspwm"
 alias aliases="vim $HOME/.config/aliases && source $HOME/.config/aliases"
 alias alisa=aliases
 alias rc="vim $HOME/.config/rc"
-alias profile="vim $HOME/.profile"
+alias profile="vim $HOME/.config/profile"
 
 alias ls='ls --color=auto'
-alias la='ls -al --color=auto'
+alias la='ls -l --color=auto'
+alias lal='ls -al --color=auto'
 alias l='ls'
 alias s='ls -r'
-alias sl='s'
 
 alias please='sudo "$BASH" -c "$(history -p !!)"'
 

@@ -47,4 +47,3 @@ cd
 #source $HOME/.config/zshrc.compl
 git config --global user.name "Kirill <akinevz> Nevzorov"
 git config --global user.email "akinevz@outlook.com"
-eval `ssh-agent`

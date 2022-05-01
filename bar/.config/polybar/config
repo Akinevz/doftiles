@@ -63,8 +63,7 @@ font-4 = "Noto Sans Symbols:fontformat=truetype:size=12:antialias=false;2"
 
 [bar/single]
 inherit = bar/common
-monitor = HDMI-A-0
-modules-left = custom_governor cpu memory xkeyboard
+modules-left =  cpu memory xkeyboard
 modules-right = xwindow pulseaudio date
 tray-position = right
 tray-padding = 2

@@ -4,58 +4,56 @@
  * Mail    : adi1090x@gmail.com
  * Github  : @adi1090x
  * Twitter : @adi1090x
- * Edited for this particular configuration by Axarva.
+ *
  */
 
 configuration {
-	font:							"Museo Sans 18";
+	font:							"FantasqueSansMono Nerd Font 12";
     show-icons:                     false;
 	icon-theme: 					"Papirus";
     drun-display-format:            "{name}";
     disable-history:                false;
-    fullscreen:                     false;
-	hide-scrollbar: 				true;
 	sidebar-mode: 					false;
 }
 
-@import "black_powermenu.rasi"
+@import "styles/colors.rasi"
 
 window {
     transparency:                   "real";
     background-color:               @background;
     text-color:                     @foreground;
-    border-radius:                  12px;
-    height:                         22%;
-    width:                          37%;
+    border-radius:                  0px;
+    height:                         28.5%;
+    width:                          50%;
     location:                       center;
     x-offset:                       0;
     y-offset:                       0;
 }
 
 prompt {
-    enabled: 						false;
+    enabled: 						true;
     padding:                        0.5% 0.5% 0.5% 0%;
-	background-color: 				@background;
+	background-color: 				@background-alt;
 	text-color: 					@foreground;
 }
 
 textbox-prompt-colon {
-	expand: 						true;
-	str: 							"Goodbye, deter";
-	background-color: 				@background;
-	text-color: 					@selected;
-    padding:                        3% 0.5% 0% 0%;
+	expand: 						false;
+	str: 							"System |";
+	background-color: 				@background-alt;
+	text-color: 					@foreground;
+    padding:                        0.5% 0.5% 0.5% 0%;
 }
 
 inputbar {
-	children: 						[ textbox-prompt-colon ];
-    background-color:               @background;
+	children: 						[ textbox-prompt-colon, prompt ];
+    background-color:               @background-alt;
     text-color:                     @foreground;
     expand:                         false;
     border:                  		0% 0.2% 0.2% 0%;
     border-radius:                  0% 100% 100% 100%;
     border-color:                  	@border;
-    margin:                         0% 3% 0% 9.5%;
+    margin:                         0% 21.3% 0% 0%;
     padding:                        0.5%;
     position:                       center;
 }
@@ -63,7 +61,7 @@ inputbar {
 listview {
     background-color:               @background;
     margin:                         0% 0% 0% 0%;
-    spacing:                        1%;
+    spacing:                        2%;
     cycle:                          true;
     dynamic:                        true;
     layout:                         horizontal;
@@ -72,28 +70,25 @@ listview {
 mainbox {
     background-color:               @background;
     children:                       [ inputbar, listview ];
-    spacing:                        1.5%;
-    padding:                        0.1% 0% 0% 2%;
+    spacing:                        3.5%;
+    padding:                        4% 0% 0% 2%;
 }
 
 element {
     background-color:               @background-alt;
-    text-color:                     @selected;
+    text-color:                     @foreground;
     orientation:                    horizontal;
     border-radius:                  100%;
 }
 
-element-text, element-icon {
-    background-color: inherit;
-    text-color:       inherit;
-}
-
 element-text {
-	font:							"feather 28";
+    background-color: 				#00000000;
+    text-color:       				inherit;
+	font:							"feather 32";
     expand:                         true;
     horizontal-align:               0.5;
     vertical-align:                 0.5;
-    margin:                         2.5% 1.7% 2.5% 1.7%;
+    margin:                         4.5% 2.7% 4.5% 2.7%;
 }
 
 element normal.urgent,
@@ -110,8 +105,8 @@ element alternate.active {
 }
 
 element selected {
-    background-color:               @background;
-    text-color:                     @red;
+    background-color:               @selected;
+    text-color:                     @foreground;
     border:                  		0% 0.2% 0.2% 0%;
     border-radius:                  100%;
     border-color:                  	@border;

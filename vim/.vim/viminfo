@@ -11,15 +11,25 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\V\<exports\>
+~MSle0~/launch
+
+# Last Substitute Search Pattern:
+~MSle0&gra
+
+# Last Substitute String:
+$
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1651393862,,"wq"
+|2,0,1651394623,,"wq"
+:w
+|2,0,1651372574,,"w"
 :q
 |2,0,1651393826,,"q"
 
 # Search String History (newest to oldest):
+?/float
+|2,1,1651394621,47,"float"
 
 # Expression History (newest to oldest):
 
@@ -28,9 +38,12 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
-"1	LINE	0
+"0	LINE	0
+	keyreg $Mod-Escape				reload
+|3,0,0,1,1,0,1650880395,"keyreg $Mod-Escape				reload"
+""1	LINE	0
 	eval `ssh-agent`
-|3,0,1,1,1,0,1651393715,"eval `ssh-agent`"
+|3,1,1,1,1,0,1651393715,"eval `ssh-agent`"
 "2	LINE	0
 	>>>>>>> 2e87f762eb33494f182fab3344bdc2e73566c538
 |3,0,2,1,1,0,1651393544,">>>>>>> 2e87f762eb33494f182fab3344bdc2e73566c538"
@@ -51,37 +64,158 @@
 	alias bspwm="vim $HOME/.config/bspwm"
 	>>>>>>> 2e87f762eb33494f182fab3344bdc2e73566c538
 |3,0,5,1,4,0,1651393529,"=======","alias sxhkd=\"vim $HOME/.config/sxhkd\"","alias bspwm=\"vim $HOME/.config/bspwm\"",">>>>>>> 2e87f762eb33494f182fab3344bdc2e73566c538"
-""-	CHAR	0
+"6	LINE	0
+	keyreg $Mod-Tab		or \
+						, and \
+							. compare tags.focus.curframe_wcount gt 1 \
+							. cycle +1 \
+						, cycle_frame 
+|3,0,6,1,5,0,1650880551,"keyreg $Mod-Tab		or \\","					, and \\","						. compare tags.focus.curframe_wcount gt 1 \\","						. cycle +1 \\","					, cycle_frame "
+"7	LINE	0
+	keyreg $ModShift-a			chain . split vertical . cycle_frame
+|3,0,7,1,1,0,1650880384,"keyreg $ModShift-a			chain . split vertical . cycle_frame"
+"8	LINE	0
+	# layouting
+	keyreg $Mod-f spawn maximize
+|3,0,8,1,2,0,1650457764,"# layouting","keyreg $Mod-f spawn maximize"
+"9	LINE	0
+	# rotate layout
+	keyreg $ModCtrl-c			rotate
+	# flip layout
+	keyreg $ModShift-c			chain , lock , rotate , rotate , unlock
+	# split into direction
+	keyreg $Mod-v				split right  0.5
+	keyreg $Mod-b				split bottom   0.5
+	keyreg $ModCtrl-v			chain , split right  0.5 , focus -e right
+	keyreg $ModCtrl-b			chain , split bottom   0.5 , focus -i down
+	keyreg $ModShift-b			chain split top   0.5 , focus -i down
+	
+|3,0,9,1,11,0,1650454562,"# rotate layout","keyreg $ModCtrl-c			rotate","# flip layout","keyreg $ModShift-c			chain , lock , rotate , rotate , unlock","# split into direction","keyreg $Mod-v				split right  0.5","keyreg $Mod-b				split bottom   0.5","keyreg $ModCtrl-v			chain , split right  0.5 , focus -e right","keyreg $ModCtrl-b			chain , split bottom   0.5 , focus -i down","keyreg $ModShift-b			chain split top   0.5 , focus -i down",""
+"a	LINE	0
+	HYPHEN_INSENSITIVE="true"
+	ENABLE_CORRECTION="true"
+	COMPLETION_WAITING_DOTS="true"
+	
+	HISTFILE=~/.histfile
+	HISTSIZE=9999
+	SAVEHIST=9999
+	
+	setopt autocd beep nomatch notify extendedglob
+	set -o emacs
+	bindkey -e
+	bindkey ' ' magic-space
+	
+	Plug 'aserebryakov/vim-todo-lists'
+	Plug 'michaeljsmith/vim-indent-object'
+	Plug 'vim-airline/vim-airline'
+	Plug 'xolox/vim-misc'
+	Plug 'xolox/vim-session'
+	 'junegunn/vim-easy-align'
+|3,0,10,1,19,0,1612021127,"HYPHEN_INSENSITIVE=\"true\"","ENABLE_CORRECTION=\"true\"","COMPLETION_WAITING_DOTS=\"true\"","","HISTFILE=~/.histfile","HISTSIZE=9999","SAVEHIST=9999","","setopt autocd beep nomatch notify extendedglob","set -o emacs","bindkey -e","bindkey ' ' magic-space","","Plug 'aserebryakov/vim-todo-lists'","Plug 'michaeljsmith/vim-indent-object'","Plug 'vim-airline/vim-airline'","Plug 'xolox/vim-misc'","Plug 'xolox/vim-session'",>28
+|<" 'junegunn/vim-easy-align'"
+"f	CHAR	0
+	/home/kine/.bin/adventure
+|3,0,15,0,1,0,1610532067,"/home/kine/.bin/adventure"
+"j	CHAR	0
+	
+|3,0,19,0,1,0,1573226791,""
+"l	LINE	0
+	3I=A :r!datekJA 3A=2o
+|3,0,21,1,1,0,1609156372,"3I=A :r!datekJA 3A=2o"
+"q@	LINE	0
+	3I=A :r!datekJA 3A=2o
+|3,2,26,1,1,0,1610463394,"3I=A :r!datekJA 3A=2o"
+"r	CHAR	0
+	A€kbciwJ€kbJ
+|3,0,27,0,1,0,1596936643,"A€kbciwJ€kbJ"
+"s	CHAR	0
+	_iecho "€kD€kDgconnectA"€ýaj
+|3,0,28,0,1,0,1598882847,"_iecho \"€kD€kDgconnectA\"€ýaj"
+"u	CHAR	0
+	
+|3,0,30,0,1,0,1580010805,""
+"w	LINE	0
+	w|!pandoc % -o pa.pdf && xdg-open pa.pdf
+|3,0,32,1,1,0,1610027937,"w|!pandoc % -o pa.pdf && xdg-open pa.pdf"
+"y	LINE	0
+	3I=A :r!datekJA 3A=2o
+|3,0,34,1,1,0,1609684071,"3I=A :r!datekJA 3A=2o"
+"z	CHAR	0
+	Q
+|3,0,35,0,1,0,1562301574,"Q"
+"-	CHAR	0
 	profile
-|3,1,36,0,1,0,1651393819,"profile"
+|3,0,36,0,1,0,1651393819,"profile"
 
 # File marks:
-'0  13  0  ~/.config/profile
-|4,48,13,0,1651393862,"~/.config/profile"
-'1  1  0  ~/.config/profile
-|4,49,1,0,1651393826,"~/.config/profile"
-'2  1  0  ~/.config/profile
-|4,50,1,0,1651393826,"~/.config/profile"
-'3  12  39  ~/.config/aliases
-|4,51,12,39,1651393822,"~/.config/aliases"
-'4  1  0  ~/.aliases
-|4,52,1,0,1651393808,"~/.aliases"
-'5  1  0  ~/.exports
-|4,53,1,0,1651393805,"~/.exports"
-'6  9  25  ~/doftiles/shell/.zprofile
-|4,54,9,25,1651393788,"~/doftiles/shell/.zprofile"
-'7  1  0  ~/doftiles/shell/.zshrc
-|4,55,1,0,1651393775,"~/doftiles/shell/.zshrc"
-'8  1  0  ~/.profile
-|4,56,1,0,1651393760,"~/.profile"
-'9  1  0  ~/.profile
-|4,57,1,0,1651393760,"~/.profile"
+'A  1478  21  ~/cartographer-gl/map-widget/node_modules/@types/mapbox-gl/index.d.ts
+|4,65,1478,21,1568110477,"~/cartographer-gl/map-widget/node_modules/@types/mapbox-gl/index.d.ts"
+'B  304  42  ~/.config/herbstluftwm/autostart
+|4,66,304,42,1595957659,"~/.config/herbstluftwm/autostart"
+'M  321  2  ~/.config/herbstluftwm/autostart
+|4,77,321,2,1595859810,"~/.config/herbstluftwm/autostart"
+'N  151  0  ~/task_launch
+|4,78,151,0,1554901471,"~/task_launch"
+'Z  2  34  ~/cartographer-gl/map-widget/src/mapboxTerrainV2.ts
+|4,90,2,34,1568110507,"~/cartographer-gl/map-widget/src/mapboxTerrainV2.ts"
+'0  197  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,48,197,0,1651394627,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+'1  41  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,49,41,0,1651394623,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+'2  8  0  ~/bin/bar.sh
+|4,50,8,0,1651394588,"~/bin/bar.sh"
+'3  1  0  ~/doftiles/.git/COMMIT_EDITMSG
+|4,51,1,0,1651393935,"~/doftiles/.git/COMMIT_EDITMSG"
+'4  13  0  ~/.config/profile
+|4,52,13,0,1651393862,"~/.config/profile"
+'5  1  0  ~/.config/profile
+|4,53,1,0,1651393826,"~/.config/profile"
+'6  1  0  ~/.config/profile
+|4,54,1,0,1651393826,"~/.config/profile"
+'7  12  39  ~/.config/aliases
+|4,55,12,39,1651393822,"~/.config/aliases"
+'8  1  0  ~/.aliases
+|4,56,1,0,1651393808,"~/.aliases"
+'9  1  0  ~/.exports
+|4,57,1,0,1651393805,"~/.exports"
 
 # Jumplist (newest first):
+-'  197  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,197,0,1651394627,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  41  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,41,0,1651394623,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  1  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,1,0,1651394621,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  8  0  ~/bin/bar.sh
+|4,39,8,0,1651394588,"~/bin/bar.sh"
+-'  8  0  ~/bin/bar.sh
+|4,39,8,0,1651394588,"~/bin/bar.sh"
+-'  1  0  ~/doftiles/.git/COMMIT_EDITMSG
+|4,39,1,0,1651393935,"~/doftiles/.git/COMMIT_EDITMSG"
+-'  1  0  ~/doftiles/.git/COMMIT_EDITMSG
+|4,39,1,0,1651393935,"~/doftiles/.git/COMMIT_EDITMSG"
+-'  13  0  ~/.config/profile
+|4,39,13,0,1651393862,"~/.config/profile"
+-'  13  0  ~/.config/profile
+|4,39,13,0,1651393862,"~/.config/profile"
+-'  13  0  ~/.config/profile
+|4,39,13,0,1651393862,"~/.config/profile"
 -'  13  0  ~/.config/profile
 |4,39,13,0,1651393862,"~/.config/profile"
 -'  1  0  ~/.config/profile
 |4,39,1,0,1651393849,"~/.config/profile"
+-'  1  0  ~/.config/profile
+|4,39,1,0,1651393849,"~/.config/profile"
+-'  1  0  ~/.config/profile
+|4,39,1,0,1651393849,"~/.config/profile"
+-'  1  0  ~/.config/profile
+|4,39,1,0,1651393849,"~/.config/profile"
+-'  1  0  ~/.config/profile
+|4,39,1,0,1651393826,"~/.config/profile"
+-'  1  0  ~/.config/profile
+|4,39,1,0,1651393826,"~/.config/profile"
+-'  1  0  ~/.config/profile
+|4,39,1,0,1651393826,"~/.config/profile"
 -'  1  0  ~/.config/profile
 |4,39,1,0,1651393826,"~/.config/profile"
 -'  12  39  ~/.config/aliases
@@ -92,6 +226,54 @@
 |4,39,12,39,1651393822,"~/.config/aliases"
 -'  12  39  ~/.config/aliases
 |4,39,12,39,1651393822,"~/.config/aliases"
+-'  12  39  ~/.config/aliases
+|4,39,12,39,1651393822,"~/.config/aliases"
+-'  12  39  ~/.config/aliases
+|4,39,12,39,1651393822,"~/.config/aliases"
+-'  12  39  ~/.config/aliases
+|4,39,12,39,1651393822,"~/.config/aliases"
+-'  12  39  ~/.config/aliases
+|4,39,12,39,1651393822,"~/.config/aliases"
+-'  12  39  ~/.config/aliases
+|4,39,12,39,1651393822,"~/.config/aliases"
+-'  12  39  ~/.config/aliases
+|4,39,12,39,1651393822,"~/.config/aliases"
+-'  12  39  ~/.config/aliases
+|4,39,12,39,1651393822,"~/.config/aliases"
+-'  12  39  ~/.config/aliases
+|4,39,12,39,1651393822,"~/.config/aliases"
+-'  12  39  ~/.config/aliases
+|4,39,12,39,1651393822,"~/.config/aliases"
+-'  12  39  ~/.config/aliases
+|4,39,12,39,1651393822,"~/.config/aliases"
+-'  12  39  ~/.config/aliases
+|4,39,12,39,1651393822,"~/.config/aliases"
+-'  12  39  ~/.config/aliases
+|4,39,12,39,1651393822,"~/.config/aliases"
+-'  1  0  ~/.config/aliases
+|4,39,1,0,1651393809,"~/.config/aliases"
+-'  1  0  ~/.config/aliases
+|4,39,1,0,1651393809,"~/.config/aliases"
+-'  1  0  ~/.config/aliases
+|4,39,1,0,1651393809,"~/.config/aliases"
+-'  1  0  ~/.config/aliases
+|4,39,1,0,1651393809,"~/.config/aliases"
+-'  1  0  ~/.config/aliases
+|4,39,1,0,1651393809,"~/.config/aliases"
+-'  1  0  ~/.config/aliases
+|4,39,1,0,1651393809,"~/.config/aliases"
+-'  1  0  ~/.config/aliases
+|4,39,1,0,1651393809,"~/.config/aliases"
+-'  1  0  ~/.config/aliases
+|4,39,1,0,1651393809,"~/.config/aliases"
+-'  1  0  ~/.config/aliases
+|4,39,1,0,1651393809,"~/.config/aliases"
+-'  1  0  ~/.config/aliases
+|4,39,1,0,1651393809,"~/.config/aliases"
+-'  1  0  ~/.config/aliases
+|4,39,1,0,1651393809,"~/.config/aliases"
+-'  1  0  ~/.config/aliases
+|4,39,1,0,1651393809,"~/.config/aliases"
 -'  1  0  ~/.config/aliases
 |4,39,1,0,1651393809,"~/.config/aliases"
 -'  1  0  ~/.config/aliases
@@ -116,6 +298,54 @@
 |4,39,1,0,1651393808,"~/.aliases"
 -'  1  0  ~/.aliases
 |4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
+-'  1  0  ~/.aliases
+|4,39,1,0,1651393808,"~/.aliases"
 -'  1  0  ~/.exports
 |4,39,1,0,1651393805,"~/.exports"
 -'  1  0  ~/.exports
@@ -148,141 +378,25 @@
 |4,39,1,0,1651393805,"~/.exports"
 -'  1  0  ~/.exports
 |4,39,1,0,1651393805,"~/.exports"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  9  25  ~/doftiles/shell/.zprofile
-|4,39,9,25,1651393788,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  13  7  ~/doftiles/shell/.zprofile
-|4,39,13,7,1651393784,"~/doftiles/shell/.zprofile"
--'  1  0  ~/doftiles/shell/.zprofile
-|4,39,1,0,1651393777,"~/doftiles/shell/.zprofile"
+-'  1  0  ~/.exports
+|4,39,1,0,1651393805,"~/.exports"
 
 # Buffer list:
-%~/.config/profile	13	0
+%~/doftiles/herbst/.config/herbstluftwm/autostart	197	0
 
 # History of marks within files (newest to oldest):
+
+> ~/bin/bar.sh
+	*	1651394587	0
+	"	8	0
+	^	8	0
+	.	8	0
+	+	3	14
+	+	8	0
+
+> ~/doftiles/.git/COMMIT_EDITMSG
+	*	1651393934	0
+	"	1	0
 
 > ~/.config/profile
 	*	1651393860	0
@@ -321,10 +435,6 @@
 	.	50	0
 	+	50	0
 
-> ~/doftiles/.git/COMMIT_EDITMSG
-	*	1651393743	0
-	"	1	0
-
 > ~/doftiles/vim/.vim/vimrc
 	*	1651393566	0
 	"	217	0
@@ -337,3 +447,96 @@
 	+	4	0
 	+	15	0
 	+	19	0
+
+> ~/doftiles/herbst/.config/herbstluftwm/autostart
+	*	1651388864	0
+	"	197	0
+	^	41	16
+	.	41	15
+	+	24	0
+	+	37	5
+	+	31	0
+	+	29	0
+	+	31	19
+	+	29	0
+	+	31	0
+	+	37	0
+	+	40	22
+	+	39	21
+	+	40	25
+	+	38	17
+	+	43	19
+	+	35	0
+	+	13	0
+	+	14	13
+	+	17	0
+	+	24	14
+	+	24	10
+	+	24	0
+	+	31	0
+	+	35	0
+	+	32	9
+	+	35	0
+	+	36	0
+	+	37	0
+	+	143	0
+	+	146	12
+	+	166	0
+	+	167	52
+	+	168	0
+	+	167	12
+	+	347	0
+	+	44	24
+	+	18	0
+	+	14	0
+	+	210	0
+	+	46	14
+	+	45	27
+	+	90	17
+	+	55	12
+	+	90	20
+	+	55	34
+	+	90	12
+	+	55	55
+	+	57	0
+	+	58	20
+	+	143	29
+	+	143	15
+	+	143	0
+	+	143	17
+	+	143	0
+	+	58	0
+	+	90	58
+	+	90	15
+	+	77	0
+	+	90	7
+	+	165	0
+	+	90	0
+	+	153	20
+	+	153	19
+	+	153	16
+	+	153	20
+	+	153	0
+	+	78	0
+	+	90	14
+	+	194	0
+	+	195	11
+	+	31	62
+	+	30	49
+	+	47	7
+	+	49	25
+	+	47	21
+	+	90	24
+	+	57	17
+	+	58	0
+	+	56	0
+	+	48	13
+	+	90	49
+	+	90	18
+	+	90	0
+	+	66	0
+	+	90	0
+	+	59	0
+	+	73	0
+	+	71	0
+	+	41	15

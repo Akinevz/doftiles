@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/launch
+~MSle0~/git
 
 # Last Substitute Search Pattern:
 ~MSle0&gra
@@ -21,13 +21,57 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1651394623,,"wq"
+|2,0,1654009898,,"wq"
 :w
-|2,0,1651372574,,"w"
+|2,0,1654008794,,"w"
+:set ft=bash
+|2,0,1654007153,,"set ft=bash"
+:set mouse=a
+|2,0,1654006909,,"set mouse=a"
+:e 
+|2,0,1654005987,,"e "
 :q
-|2,0,1651393826,,"q"
+|2,0,1654004846,,"q"
+:e .exports
+|2,0,1654000468,,"e .exports"
+:w ! sudo tee > /dev/null '%' 
+|2,0,1653998462,,"w ! sudo tee > /dev/null '%' "
 
 # Search String History (newest to oldest):
+?/git
+|2,1,1654009925,47,"git"
+?/sudo
+|2,1,1654009306,47,"sudo"
+?/please
+|2,1,1654007850,47,"please"
+?/cd
+|2,1,1654006161,47,"cd"
+?/path
+|2,1,1654005977,47,"path"
+?/alt
+|2,1,1654005830,47,"alt"
+?/screen
+|2,1,1654005099,47,"screen"
+?/modshift-s
+|2,1,1654005046,47,"modshift-s"
+?/scrot
+|2,1,1654004957,47,"scrot"
+?/display
+|2,1,1654004843,47,"display"
+?/exports
+|2,1,1654000292,47,"exports"
+?/zshrc
+|2,1,1654000220,47,"zshrc"
+?/profile
+|2,1,1654000154,47,"profile"
+?/max
+|2,1,1653999157,47,"max"
+?/urgent
+|2,1,1653998772,47,"urgent"
+?/single
+|2,1,1653998509,47,"single"
+?/term
+|2,1,1653998175,47,"term"
 ?/float
 |2,1,1651394621,47,"float"
 
@@ -39,58 +83,43 @@ $
 
 # Registers:
 "0	LINE	0
-	keyreg $Mod-Escape				reload
-|3,0,0,1,1,0,1650880395,"keyreg $Mod-Escape				reload"
+		echo sudo $(history -p "!!")
+|3,0,0,1,1,0,1654008686,"	echo sudo $(history -p \"!!\")"
 ""1	LINE	0
-	eval `ssh-agent`
-|3,1,1,1,1,0,1651393715,"eval `ssh-agent`"
-"2	LINE	0
-	>>>>>>> 2e87f762eb33494f182fab3344bdc2e73566c538
-|3,0,2,1,1,0,1651393544,">>>>>>> 2e87f762eb33494f182fab3344bdc2e73566c538"
-"3	LINE	0
-	<<<<<<< HEAD
-	alias la='ls -al --color=auto'
-	alias l='ls'
-	alias s='ls -r'
-	alias sl='s'
-	=======
-|3,0,3,1,6,0,1651393542,"<<<<<<< HEAD","alias la='ls -al --color=auto'","alias l='ls'","alias s='ls -r'","alias sl='s'","======="
-"4	LINE	0
-	<<<<<<< HEAD
-|3,0,4,1,1,0,1651393531,"<<<<<<< HEAD"
-"5	LINE	0
-	=======
-	alias sxhkd="vim $HOME/.config/sxhkd"
-	alias bspwm="vim $HOME/.config/bspwm"
-	>>>>>>> 2e87f762eb33494f182fab3344bdc2e73566c538
-|3,0,5,1,4,0,1651393529,"=======","alias sxhkd=\"vim $HOME/.config/sxhkd\"","alias bspwm=\"vim $HOME/.config/bspwm\"",">>>>>>> 2e87f762eb33494f182fab3344bdc2e73566c538"
-"6	LINE	0
-	keyreg $Mod-Tab		or \
-						, and \
-							. compare tags.focus.curframe_wcount gt 1 \
-							. cycle +1 \
-						, cycle_frame 
-|3,0,6,1,5,0,1650880551,"keyreg $Mod-Tab		or \\","					, and \\","						. compare tags.focus.curframe_wcount gt 1 \\","						. cycle +1 \\","					, cycle_frame "
-"7	LINE	0
-	keyreg $ModShift-a			chain . split vertical . cycle_frame
-|3,0,7,1,1,0,1650880384,"keyreg $ModShift-a			chain . split vertical . cycle_frame"
-"8	LINE	0
-	# layouting
-	keyreg $Mod-f spawn maximize
-|3,0,8,1,2,0,1650457764,"# layouting","keyreg $Mod-f spawn maximize"
-"9	LINE	0
-	# rotate layout
-	keyreg $ModCtrl-c			rotate
-	# flip layout
-	keyreg $ModShift-c			chain , lock , rotate , rotate , unlock
-	# split into direction
-	keyreg $Mod-v				split right  0.5
-	keyreg $Mod-b				split bottom   0.5
-	keyreg $ModCtrl-v			chain , split right  0.5 , focus -e right
-	keyreg $ModCtrl-b			chain , split bottom   0.5 , focus -i down
-	keyreg $ModShift-b			chain split top   0.5 , focus -i down
+	else
+		history -a
+		shopt -s extglob
 	
-|3,0,9,1,11,0,1650454562,"# rotate layout","keyreg $ModCtrl-c			rotate","# flip layout","keyreg $ModShift-c			chain , lock , rotate , rotate , unlock","# split into direction","keyreg $Mod-v				split right  0.5","keyreg $Mod-b				split bottom   0.5","keyreg $ModCtrl-v			chain , split right  0.5 , focus -e right","keyreg $ModCtrl-b			chain , split bottom   0.5 , focus -i down","keyreg $ModShift-b			chain split top   0.5 , focus -i down",""
+		echo sudo $(fc -ln -1)
+	fi
+|3,1,1,1,6,0,1654009469,"else","	history -a","	shopt -s extglob","","	echo sudo $(fc -ln -1)","fi"
+"2	LINE	0
+	
+	please() { if (($#)); then /usr/bin/sudo "$@" else eval "sudo $(fc -ln 1)" fi }
+	
+|3,0,2,1,3,0,1654009365,"","please() { if (($#)); then /usr/bin/sudo \"$@\" else eval \"sudo $(fc -ln 1)\" fi }",""
+"3	LINE	0
+	please() { if (($#)); then /usr/bin/sudo "$@" else eval "sudo $(fc -ln 1)" fi }
+	
+|3,0,3,1,2,0,1654009311,"please() { if (($#)); then /usr/bin/sudo \"$@\" else eval \"sudo $(fc -ln 1)\" fi }",""
+"4	LINE	0
+	alias please='sudo $(history -p !!)'
+|3,0,4,1,1,0,1654009267,"alias please='sudo $(history -p !!)'"
+"5	LINE	0
+		set -H
+|3,0,5,1,1,0,1654009099,"	set -H"
+"6	LINE	0
+		echo sudo $lc
+|3,0,6,1,1,0,1654008797,"	echo sudo $lc"
+"7	LINE	0
+		lc=$(history)
+|3,0,7,1,1,0,1654008786,"	lc=$(history)"
+"8	LINE	0
+		set -o history
+|3,0,8,1,1,0,1654008646,"	set -o history"
+"9	LINE	0
+	alias please='sudo .local/bin/please
+|3,0,9,1,1,0,1654008543,"alias please='sudo .local/bin/please"
 "a	LINE	0
 	HYPHEN_INSENSITIVE="true"
 	ENABLE_CORRECTION="true"
@@ -144,8 +173,8 @@ $
 	Q
 |3,0,35,0,1,0,1562301574,"Q"
 "-	CHAR	0
-	profile
-|3,0,36,0,1,0,1651393819,"profile"
+	eval 
+|3,0,36,0,1,0,1654009444,"eval "
 
 # File marks:
 'A  1478  21  ~/cartographer-gl/map-widget/node_modules/@types/mapbox-gl/index.d.ts
@@ -156,235 +185,505 @@ $
 |4,77,321,2,1595859810,"~/.config/herbstluftwm/autostart"
 'N  151  0  ~/task_launch
 |4,78,151,0,1554901471,"~/task_launch"
+'V  67  8  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,86,67,8,1654005049,"~/doftiles/herbst/.config/herbstluftwm/autostart"
 'Z  2  34  ~/cartographer-gl/map-widget/src/mapboxTerrainV2.ts
 |4,90,2,34,1568110507,"~/cartographer-gl/map-widget/src/mapboxTerrainV2.ts"
-'0  197  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,48,197,0,1651394627,"~/doftiles/herbst/.config/herbstluftwm/autostart"
-'1  41  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,49,41,0,1651394623,"~/doftiles/herbst/.config/herbstluftwm/autostart"
-'2  8  0  ~/bin/bar.sh
-|4,50,8,0,1651394588,"~/bin/bar.sh"
-'3  1  0  ~/doftiles/.git/COMMIT_EDITMSG
-|4,51,1,0,1651393935,"~/doftiles/.git/COMMIT_EDITMSG"
-'4  13  0  ~/.config/profile
-|4,52,13,0,1651393862,"~/.config/profile"
-'5  1  0  ~/.config/profile
-|4,53,1,0,1651393826,"~/.config/profile"
-'6  1  0  ~/.config/profile
-|4,54,1,0,1651393826,"~/.config/profile"
-'7  12  39  ~/.config/aliases
-|4,55,12,39,1651393822,"~/.config/aliases"
-'8  1  0  ~/.aliases
-|4,56,1,0,1651393808,"~/.aliases"
-'9  1  0  ~/.exports
-|4,57,1,0,1651393805,"~/.exports"
+'0  25  9  ~/.config/aliases
+|4,48,25,9,1654009932,"~/.config/aliases"
+'1  1  38  ~/doftiles/.git/COMMIT_EDITMSG
+|4,49,1,38,1654009898,"~/doftiles/.git/COMMIT_EDITMSG"
+'2  21  15  ~/.config/aliases
+|4,50,21,15,1654009853,"~/.config/aliases"
+'3  21  15  ~/.config/aliases
+|4,51,21,15,1654009853,"~/.config/aliases"
+'4  2  24  ~/doftiles/install
+|4,52,2,24,1654009790,"~/doftiles/install"
+'5  21  41  ~/.config/aliases
+|4,53,21,41,1654009572,"~/.config/aliases"
+'6  21  41  ~/.config/aliases
+|4,54,21,41,1654009572,"~/.config/aliases"
+'7  21  41  ~/.config/aliases
+|4,55,21,41,1654009552,"~/.config/aliases"
+'8  21  41  ~/.config/aliases
+|4,56,21,41,1654009552,"~/.config/aliases"
+'9  21  41  ~/.config/aliases
+|4,57,21,41,1654009552,"~/.config/aliases"
 
 # Jumplist (newest first):
--'  197  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,197,0,1651394627,"~/doftiles/herbst/.config/herbstluftwm/autostart"
--'  41  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,41,0,1651394623,"~/doftiles/herbst/.config/herbstluftwm/autostart"
--'  1  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,39,1,0,1651394621,"~/doftiles/herbst/.config/herbstluftwm/autostart"
--'  8  0  ~/bin/bar.sh
-|4,39,8,0,1651394588,"~/bin/bar.sh"
--'  8  0  ~/bin/bar.sh
-|4,39,8,0,1651394588,"~/bin/bar.sh"
--'  1  0  ~/doftiles/.git/COMMIT_EDITMSG
-|4,39,1,0,1651393935,"~/doftiles/.git/COMMIT_EDITMSG"
--'  1  0  ~/doftiles/.git/COMMIT_EDITMSG
-|4,39,1,0,1651393935,"~/doftiles/.git/COMMIT_EDITMSG"
--'  13  0  ~/.config/profile
-|4,39,13,0,1651393862,"~/.config/profile"
--'  13  0  ~/.config/profile
-|4,39,13,0,1651393862,"~/.config/profile"
--'  13  0  ~/.config/profile
-|4,39,13,0,1651393862,"~/.config/profile"
--'  13  0  ~/.config/profile
-|4,39,13,0,1651393862,"~/.config/profile"
--'  1  0  ~/.config/profile
-|4,39,1,0,1651393849,"~/.config/profile"
--'  1  0  ~/.config/profile
-|4,39,1,0,1651393849,"~/.config/profile"
--'  1  0  ~/.config/profile
-|4,39,1,0,1651393849,"~/.config/profile"
--'  1  0  ~/.config/profile
-|4,39,1,0,1651393849,"~/.config/profile"
--'  1  0  ~/.config/profile
-|4,39,1,0,1651393826,"~/.config/profile"
--'  1  0  ~/.config/profile
-|4,39,1,0,1651393826,"~/.config/profile"
--'  1  0  ~/.config/profile
-|4,39,1,0,1651393826,"~/.config/profile"
--'  1  0  ~/.config/profile
-|4,39,1,0,1651393826,"~/.config/profile"
--'  12  39  ~/.config/aliases
-|4,39,12,39,1651393822,"~/.config/aliases"
--'  12  39  ~/.config/aliases
-|4,39,12,39,1651393822,"~/.config/aliases"
--'  12  39  ~/.config/aliases
-|4,39,12,39,1651393822,"~/.config/aliases"
--'  12  39  ~/.config/aliases
-|4,39,12,39,1651393822,"~/.config/aliases"
--'  12  39  ~/.config/aliases
-|4,39,12,39,1651393822,"~/.config/aliases"
--'  12  39  ~/.config/aliases
-|4,39,12,39,1651393822,"~/.config/aliases"
--'  12  39  ~/.config/aliases
-|4,39,12,39,1651393822,"~/.config/aliases"
--'  12  39  ~/.config/aliases
-|4,39,12,39,1651393822,"~/.config/aliases"
--'  12  39  ~/.config/aliases
-|4,39,12,39,1651393822,"~/.config/aliases"
--'  12  39  ~/.config/aliases
-|4,39,12,39,1651393822,"~/.config/aliases"
--'  12  39  ~/.config/aliases
-|4,39,12,39,1651393822,"~/.config/aliases"
--'  12  39  ~/.config/aliases
-|4,39,12,39,1651393822,"~/.config/aliases"
--'  12  39  ~/.config/aliases
-|4,39,12,39,1651393822,"~/.config/aliases"
--'  12  39  ~/.config/aliases
-|4,39,12,39,1651393822,"~/.config/aliases"
--'  12  39  ~/.config/aliases
-|4,39,12,39,1651393822,"~/.config/aliases"
--'  12  39  ~/.config/aliases
-|4,39,12,39,1651393822,"~/.config/aliases"
+-'  25  9  ~/.config/aliases
+|4,39,25,9,1654009932,"~/.config/aliases"
+-'  24  14  ~/.config/aliases
+|4,39,24,14,1654009927,"~/.config/aliases"
+-'  23  14  ~/.config/aliases
+|4,39,23,14,1654009926,"~/.config/aliases"
 -'  1  0  ~/.config/aliases
-|4,39,1,0,1651393809,"~/.config/aliases"
+|4,39,1,0,1654009925,"~/.config/aliases"
+-'  1  38  ~/doftiles/.git/COMMIT_EDITMSG
+|4,39,1,38,1654009898,"~/doftiles/.git/COMMIT_EDITMSG"
+-'  1  38  ~/doftiles/.git/COMMIT_EDITMSG
+|4,39,1,38,1654009898,"~/doftiles/.git/COMMIT_EDITMSG"
+-'  21  15  ~/.config/aliases
+|4,39,21,15,1654009853,"~/.config/aliases"
+-'  21  15  ~/.config/aliases
+|4,39,21,15,1654009853,"~/.config/aliases"
+-'  21  15  ~/.config/aliases
+|4,39,21,15,1654009853,"~/.config/aliases"
 -'  1  0  ~/.config/aliases
-|4,39,1,0,1651393809,"~/.config/aliases"
+|4,39,1,0,1654009845,"~/.config/aliases"
 -'  1  0  ~/.config/aliases
-|4,39,1,0,1651393809,"~/.config/aliases"
+|4,39,1,0,1654009845,"~/.config/aliases"
+-'  2  24  ~/doftiles/install
+|4,39,2,24,1654009790,"~/doftiles/install"
+-'  2  24  ~/doftiles/install
+|4,39,2,24,1654009790,"~/doftiles/install"
+-'  2  24  ~/doftiles/install
+|4,39,2,24,1654009790,"~/doftiles/install"
+-'  2  24  ~/doftiles/install
+|4,39,2,24,1654009790,"~/doftiles/install"
+-'  2  24  ~/doftiles/install
+|4,39,2,24,1654009790,"~/doftiles/install"
+-'  2  24  ~/doftiles/install
+|4,39,2,24,1654009790,"~/doftiles/install"
+-'  2  24  ~/doftiles/install
+|4,39,2,24,1654009790,"~/doftiles/install"
+-'  2  24  ~/doftiles/install
+|4,39,2,24,1654009790,"~/doftiles/install"
+-'  1  0  ~/doftiles/install
+|4,39,1,0,1654009764,"~/doftiles/install"
+-'  1  0  ~/doftiles/install
+|4,39,1,0,1654009764,"~/doftiles/install"
+-'  1  0  ~/doftiles/install
+|4,39,1,0,1654009764,"~/doftiles/install"
+-'  1  0  ~/doftiles/install
+|4,39,1,0,1654009764,"~/doftiles/install"
+-'  1  0  ~/doftiles/install
+|4,39,1,0,1654009764,"~/doftiles/install"
+-'  1  0  ~/doftiles/install
+|4,39,1,0,1654009764,"~/doftiles/install"
+-'  1  0  ~/doftiles/install
+|4,39,1,0,1654009764,"~/doftiles/install"
+-'  1  0  ~/doftiles/install
+|4,39,1,0,1654009764,"~/doftiles/install"
+-'  21  41  ~/.config/aliases
+|4,39,21,41,1654009572,"~/.config/aliases"
+-'  21  41  ~/.config/aliases
+|4,39,21,41,1654009572,"~/.config/aliases"
+-'  21  41  ~/.config/aliases
+|4,39,21,41,1654009572,"~/.config/aliases"
+-'  21  41  ~/.config/aliases
+|4,39,21,41,1654009572,"~/.config/aliases"
 -'  1  0  ~/.config/aliases
-|4,39,1,0,1651393809,"~/.config/aliases"
+|4,39,1,0,1654009568,"~/.config/aliases"
 -'  1  0  ~/.config/aliases
-|4,39,1,0,1651393809,"~/.config/aliases"
+|4,39,1,0,1654009568,"~/.config/aliases"
 -'  1  0  ~/.config/aliases
-|4,39,1,0,1651393809,"~/.config/aliases"
+|4,39,1,0,1654009568,"~/.config/aliases"
 -'  1  0  ~/.config/aliases
-|4,39,1,0,1651393809,"~/.config/aliases"
+|4,39,1,0,1654009568,"~/.config/aliases"
+-'  21  41  ~/.config/aliases
+|4,39,21,41,1654009552,"~/.config/aliases"
+-'  21  41  ~/.config/aliases
+|4,39,21,41,1654009552,"~/.config/aliases"
+-'  21  41  ~/.config/aliases
+|4,39,21,41,1654009552,"~/.config/aliases"
+-'  21  41  ~/.config/aliases
+|4,39,21,41,1654009552,"~/.config/aliases"
 -'  1  0  ~/.config/aliases
-|4,39,1,0,1651393809,"~/.config/aliases"
+|4,39,1,0,1654009514,"~/.config/aliases"
 -'  1  0  ~/.config/aliases
-|4,39,1,0,1651393809,"~/.config/aliases"
+|4,39,1,0,1654009514,"~/.config/aliases"
 -'  1  0  ~/.config/aliases
-|4,39,1,0,1651393809,"~/.config/aliases"
+|4,39,1,0,1654009514,"~/.config/aliases"
 -'  1  0  ~/.config/aliases
-|4,39,1,0,1651393809,"~/.config/aliases"
--'  1  0  ~/.config/aliases
-|4,39,1,0,1651393809,"~/.config/aliases"
--'  1  0  ~/.config/aliases
-|4,39,1,0,1651393809,"~/.config/aliases"
--'  1  0  ~/.config/aliases
-|4,39,1,0,1651393809,"~/.config/aliases"
--'  1  0  ~/.config/aliases
-|4,39,1,0,1651393809,"~/.config/aliases"
--'  1  0  ~/.config/aliases
-|4,39,1,0,1651393809,"~/.config/aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1651393808,"~/.aliases"
--'  1  0  ~/.exports
-|4,39,1,0,1651393805,"~/.exports"
--'  1  0  ~/.exports
-|4,39,1,0,1651393805,"~/.exports"
--'  1  0  ~/.exports
-|4,39,1,0,1651393805,"~/.exports"
--'  1  0  ~/.exports
-|4,39,1,0,1651393805,"~/.exports"
--'  1  0  ~/.exports
-|4,39,1,0,1651393805,"~/.exports"
--'  1  0  ~/.exports
-|4,39,1,0,1651393805,"~/.exports"
--'  1  0  ~/.exports
-|4,39,1,0,1651393805,"~/.exports"
--'  1  0  ~/.exports
-|4,39,1,0,1651393805,"~/.exports"
--'  1  0  ~/.exports
-|4,39,1,0,1651393805,"~/.exports"
--'  1  0  ~/.exports
-|4,39,1,0,1651393805,"~/.exports"
--'  1  0  ~/.exports
-|4,39,1,0,1651393805,"~/.exports"
--'  1  0  ~/.exports
-|4,39,1,0,1651393805,"~/.exports"
--'  1  0  ~/.exports
-|4,39,1,0,1651393805,"~/.exports"
--'  1  0  ~/.exports
-|4,39,1,0,1651393805,"~/.exports"
--'  1  0  ~/.exports
-|4,39,1,0,1651393805,"~/.exports"
--'  1  0  ~/.exports
-|4,39,1,0,1651393805,"~/.exports"
--'  1  0  ~/.exports
-|4,39,1,0,1651393805,"~/.exports"
+|4,39,1,0,1654009514,"~/.config/aliases"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
+-'  4  1  ~/.local/bin/please
+|4,39,4,1,1654009471,"~/.local/bin/please"
 
 # Buffer list:
-%~/doftiles/herbst/.config/herbstluftwm/autostart	197	0
+%~/.config/aliases	25	9
 
 # History of marks within files (newest to oldest):
+
+> ~/.config/aliases
+	*	1654009929	0
+	"	25	9
+	^	21	16
+	.	21	15
+	+	13	39
+	+	13	29
+	+	13	38
+	+	39	0
+	+	37	0
+	+	13	0
+	+	38	26
+	+	10	71
+	+	22	0
+	+	21	67
+	+	21	15
+
+> ~/doftiles/.git/COMMIT_EDITMSG
+	*	1654009897	0
+	"	1	38
+	^	1	39
+	.	1	38
+	+	1	38
+
+> ~/doftiles/install
+	*	1654009789	0
+	"	2	24
+	^	2	25
+	.	2	24
+	+	2	24
+
+> ~/.local/bin/please
+	*	1654009470	0
+	"	4	1
+	^	4	2
+	.	4	0
+	+	5	7
+	+	1	11
+	+	5	0
+	+	5	4
+	+	5	13
+	+	5	21
+	+	4	3
+	+	5	0
+	+	2	5
+	+	5	4
+	+	5	0
+	+	5	1
+	+	5	13
+	+	5	17
+	+	5	10
+	+	5	13
+	+	5	0
+	+	5	11
+	+	5	16
+	+	5	27
+	+	5	0
+	+	5	11
+	+	5	21
+	+	5	0
+	+	4	0
+
+> ~/.zshrc
+	*	1654009365	0
+	"	49	0
+	.	49	0
+	+	32	0
+	+	31	29
+	+	30	0
+	+	49	0
+
+> ~/doftiles/herbst/.config/herbstluftwm/autostart
+	*	1654007255	0
+	"	100	11
+	^	97	14
+	.	100	11
+	+	24	0
+	+	38	5
+	+	32	0
+	+	29	0
+	+	32	19
+	+	29	0
+	+	32	0
+	+	38	0
+	+	41	22
+	+	40	21
+	+	41	25
+	+	39	17
+	+	45	19
+	+	36	0
+	+	13	0
+	+	14	13
+	+	17	0
+	+	24	14
+	+	24	10
+	+	24	0
+	+	32	0
+	+	36	0
+	+	33	9
+	+	36	0
+	+	37	0
+	+	38	0
+	+	144	0
+	+	147	12
+	+	167	0
+	+	168	52
+	+	169	0
+	+	168	12
+	+	348	0
+	+	46	24
+	+	18	0
+	+	14	0
+	+	211	0
+	+	48	14
+	+	47	27
+	+	91	17
+	+	57	12
+	+	91	20
+	+	57	34
+	+	91	12
+	+	57	55
+	+	59	0
+	+	60	20
+	+	144	29
+	+	144	15
+	+	144	0
+	+	144	17
+	+	144	0
+	+	60	0
+	+	91	58
+	+	91	15
+	+	78	0
+	+	91	7
+	+	166	0
+	+	91	0
+	+	154	20
+	+	154	19
+	+	154	16
+	+	154	20
+	+	154	0
+	+	79	0
+	+	91	14
+	+	195	0
+	+	196	11
+	+	32	62
+	+	30	49
+	+	49	7
+	+	51	25
+	+	49	21
+	+	91	24
+	+	59	17
+	+	60	0
+	+	58	0
+	+	50	13
+	+	91	49
+	+	91	18
+	+	91	0
+	+	68	0
+	+	91	0
+	+	61	0
+	+	74	0
+	+	72	0
+	+	42	15
+	+	31	0
+	+	30	18
+	+	79	29
+	+	44	17
+	+	67	0
+	+	34	23
+	+	100	11
+	+	96	13
+	+	98	0
+	+	100	11
+
+> ~/.cache/yay/openrc-arch-services-git/PKGBUILD
+	*	1654006936	0
+	"	13	9
+	^	12	32
+	.	13	9
+	+	12	62
+	+	18	34
+	+	23	35
+	+	18	35
+	+	28	35
+	+	18	17
+	+	23	18
+	+	28	18
+	+	18	17
+	+	19	3
+	+	19	6
+	+	23	16
+	+	28	16
+	+	18	35
+	+	23	35
+	+	28	35
+	+	19	0
+	+	12	8
+	+	13	9
+
+> ~/.config/exports
+	*	1654006001	0
+	"	10	34
+	^	10	35
+	.	10	34
+	+	6	24
+	+	9	0
+	+	18	0
+	+	19	1
+	+	18	0
+	+	10	34
+
+> ~/.zprofile
+	*	1654005987	0
+	"	1	0
+	^	9	32
+	.	15	0
+	+	24	0
+	+	16	0
+	+	9	31
+	+	15	0
+
+> ~/.exports
+	*	1654000475	0
+	"	12	0
+	.	12	0
+	+	12	0
+
+> ~/doftiles/.exports
+	*	1654000468	0
+	"	1	0
+
+> ~/.config/.zprofile
+	*	1654000179	0
+	"	1	0
+
+> ~/.config/zprofile
+	*	1654000161	0
+	"	1	0
+
+> ~/.config/profile
+	*	1654000147	0
+	"	1	0
+
+> ~/.config/alacritty/alacritty.yml
+	*	1654000040	0
+	"	321	13
+	^	321	14
+	.	321	13
+	+	321	13
+
+> ~/doftiles/bar/.config/polybar/config.ini
+	*	1653998509	0
+	"	64	5
+
+> /etc/bash/bashrc
+	*	1653998463	0
+	"	13	43
+	^	13	44
+	.	13	43
+	+	13	43
+
+> ~/.xinitrc
+	*	1653997352	0
+	"	51	16
+	^	51	17
+	.	51	16
+	+	51	16
 
 > ~/bin/bar.sh
 	*	1651394587	0
@@ -394,27 +693,8 @@ $
 	+	3	14
 	+	8	0
 
-> ~/doftiles/.git/COMMIT_EDITMSG
-	*	1651393934	0
-	"	1	0
-
-> ~/.config/profile
-	*	1651393860	0
-	"	13	0
-
-> ~/.config/aliases
-	*	1651393822	0
-	"	12	39
-	^	12	40
-	.	12	39
-	+	12	39
-
 > ~/.aliases
 	*	1651393807	0
-	"	1	0
-
-> ~/.exports
-	*	1651393792	0
 	"	1	0
 
 > ~/doftiles/shell/.zprofile
@@ -447,96 +727,3 @@ $
 	+	4	0
 	+	15	0
 	+	19	0
-
-> ~/doftiles/herbst/.config/herbstluftwm/autostart
-	*	1651388864	0
-	"	197	0
-	^	41	16
-	.	41	15
-	+	24	0
-	+	37	5
-	+	31	0
-	+	29	0
-	+	31	19
-	+	29	0
-	+	31	0
-	+	37	0
-	+	40	22
-	+	39	21
-	+	40	25
-	+	38	17
-	+	43	19
-	+	35	0
-	+	13	0
-	+	14	13
-	+	17	0
-	+	24	14
-	+	24	10
-	+	24	0
-	+	31	0
-	+	35	0
-	+	32	9
-	+	35	0
-	+	36	0
-	+	37	0
-	+	143	0
-	+	146	12
-	+	166	0
-	+	167	52
-	+	168	0
-	+	167	12
-	+	347	0
-	+	44	24
-	+	18	0
-	+	14	0
-	+	210	0
-	+	46	14
-	+	45	27
-	+	90	17
-	+	55	12
-	+	90	20
-	+	55	34
-	+	90	12
-	+	55	55
-	+	57	0
-	+	58	20
-	+	143	29
-	+	143	15
-	+	143	0
-	+	143	17
-	+	143	0
-	+	58	0
-	+	90	58
-	+	90	15
-	+	77	0
-	+	90	7
-	+	165	0
-	+	90	0
-	+	153	20
-	+	153	19
-	+	153	16
-	+	153	20
-	+	153	0
-	+	78	0
-	+	90	14
-	+	194	0
-	+	195	11
-	+	31	62
-	+	30	49
-	+	47	7
-	+	49	25
-	+	47	21
-	+	90	24
-	+	57	17
-	+	58	0
-	+	56	0
-	+	48	13
-	+	90	49
-	+	90	18
-	+	90	0
-	+	66	0
-	+	90	0
-	+	59	0
-	+	73	0
-	+	71	0
-	+	41	15

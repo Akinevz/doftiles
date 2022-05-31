@@ -27,10 +27,11 @@ herb keyunbind --all
 polybar single &
 
 # LAUNCHERS
-TERMINAL="gnome-terminal --zoom 1.5"
+TERMINAL="alacritty"
+#TERMINAL="gnome-terminal --zoom 1.5"
 ROFITHEME=${HOME}/.config/rofi/launcher/style.rasi
 APPLAUNCHER="rofi -modi drun,run -show drun -theme ${ROFITHEME}"
-SCREENSHOTTER="scrot"
+SCREENSHOTTER="scrot -fs"
 APPSWITCHER="rofi -modi windowcd -show windowcd -theme ${ROFITHEME}"
 
 # terminal
@@ -40,6 +41,7 @@ keyreg $Mod-Return              spawn $TERMINAL
 keyreg $Mod-BackSpace			spawn $APPLAUNCHER
 # screenshot; revision HHKB custom caps
 keyreg $Mod-o           		spawn $SCREENSHOTTER
+keyreg $ModShift-s           		spawn $SCREENSHOTTER
 
 #herb floating on
 
@@ -62,8 +64,7 @@ keyreg $ModShift-d			remove
 # cycle; TODO: make these cycle frame if only in frame
 keyreg $Mod-s 		chain \
 						. cycle -1
-keyreg $ModShift-s	chain \
-						. cycle +1
+
 keyreg $Mod-c		cycle_frame
 
 keyreg $ModAlt-Tab		or \
@@ -75,7 +76,7 @@ keyreg $ModAlt-Tab		or \
 keyreg $Mod-d	or						 \
 	, and                 						 \
 		. compare tags.focus.curframe_wcount = 2 \
-		. cycle_layout +1 max grid vertical      \
+		. cycle_layout +1 tabbed_max grid vertical      \
 	, cycle_layout +1 horizontal grid vertical max
 
 # rotate layout
@@ -92,14 +93,14 @@ keyreg $ModShift-b			chain split top   0.5 , focus -i down
 
 
 # FOCUS
-keyreg $Mod-Left       focus left
-keyreg $Mod-Down       focus down
-keyreg $Mod-Up         focus up
-keyreg $Mod-Right      focus right
-keyreg $ModAlt-h          focus left
-keyreg $ModAlt-j          focus down
-keyreg $ModAlt-k          focus up
-keyreg $ModAlt-l          focus right
+keyreg $ModAlt-Left       focus left
+keyreg $ModAlt-Down       focus down
+keyreg $ModAlt-Up         focus up
+keyreg $ModAlt-Right      focus right
+keyreg $Mod-h          focus left
+keyreg $Mod-j          focus down
+keyreg $Mod-k          focus up
+keyreg $Mod-l          focus right
 keyreg $ModCtrl-Left  shift left
 keyreg $ModCtrl-Down  shift down
 keyreg $ModCtrl-Up    shift up

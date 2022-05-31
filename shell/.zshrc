@@ -27,6 +27,9 @@ plugins=(
   zsh-syntax-highlighting
 )
 
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+ZSH_AUTOSUGGEST_USE_ASYNC=true
+
 source $ZSH/oh-my-zsh.sh
 
 ALIASES=~/.aliases

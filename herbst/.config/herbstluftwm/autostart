@@ -24,14 +24,17 @@ ModCtrl=$Mod-Ctrl
 herb emit_hook reload
 herb set_layout max
 herb keyunbind --all
+polybar single &
 
 # LAUNCHERS
 TERMINAL="gnome-terminal --zoom 1.5"
 ROFITHEME=${HOME}/.config/rofi/launcher/style.rasi
 APPLAUNCHER="rofi -modi drun,run -show drun -theme ${ROFITHEME}"
 SCREENSHOTTER="scrot"
+APPSWITCHER="rofi -modi windowcd -show windowcd -theme ${ROFITHEME}"
 
 # terminal
+keyreg $Mod-Tab 		spawn $APPSWITCHER
 keyreg $Mod-Return              spawn $TERMINAL
 # applauncher
 keyreg $Mod-BackSpace			spawn $APPLAUNCHER
@@ -62,7 +65,7 @@ keyreg $ModShift-s	chain \
 						. cycle +1
 keyreg $Mod-c		cycle_frame
 
-keyreg $Mod-Tab		or \
+keyreg $ModAlt-Tab		or \
 					, and \
 						. compare tags.focus.curframe_wcount gt 1 \
 						. cycle +1 \
@@ -106,14 +109,10 @@ keyreg $ModCtrl-k     shift up
 keyreg $ModCtrl-l     shift right
 
 ### TAGS ###
-tag_names=( work term browser task )
-tag_keys=( {1..9} 0 )
-
 #TODO: create a script to tag programs with Mod-T
 
 # focus tag instead of bringing it
 herb set swap_monitors_to_get_tag 0
-herb rename default "${tag_names[0]}" || true &>/dev/null
 
 #function verb() {
 #	action=$1
@@ -123,21 +122,21 @@ herb rename default "${tag_names[0]}" || true &>/dev/null
 #	echo "chain . lock . focus_monitor $mon . $action $src . cycle_monitor . $action $dst . focus_monitor $mon . unlock"
 #}
 
-for i in "${!tag_names[@]}" ; do
-	name="${tag_names[$i]}"
+tag_names=( work term browser task )
+tag_keys=( {1..9} 0 )
+
+herb rename default "${tag_names[0]}" || true
+for i in "${!tag_keys[@]}" ; do
 	if ! [ -z $name ] ; then
 		herb add "${tag_names[$i]}"
 	fi
-    key="${tag_keys[$i]}"
-    if ! [ -z "$key" ] ; then
-		keyreg "$Mod-$key" use_index "$i"
-		keyreg "$ModCtrl-$key" move_index "$i"
-		keyreg "$ModShift-$key" chain \
-			. set swap_monitors_to_get_tag 1 \
-			. use_index "$i" \
-			. set swap_monitors_to_get_tag 0 
+	key="${tag_keys[$i]}"
+	if [ -n "$key" ] ; then
+		herb keybind "$Mod-$key" use_index "$i"
+		herb keybind "$Mod-Shift-$key" move_index "$i"
 	fi
 done
+
 
 keyreg $Mod-x use_previous
 # substitute last window from mod-w
@@ -283,8 +282,6 @@ herb add term
 herb add config
 herb add task
 herb add browser
-herb add volume
-herb add music
 herb add discord
 herb rule class='pavucontrol' tag=volume
 herb rule class='spotify' tag=music
@@ -306,7 +303,7 @@ herb rule class='discord' tag=discord
 herb rule class='tasks' floating=on
 keyreg $Mod-t 		spawn task_window
 
-herb set tree_style '╾│ ├└╼─┐'
+herb set tree_style '╾│ ├└╼-┐'
 herb set default_frame_layout 1
 
 # unlock, just to be sure

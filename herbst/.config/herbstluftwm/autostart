@@ -38,7 +38,6 @@ keyreg $Mod-BackSpace			spawn $APPLAUNCHER
 # screenshot; revision HHKB custom caps
 keyreg $Mod-o           		spawn $SCREENSHOTTER
 
-#herb floating on
 
 # CLOSE OR QUIT WM
 keyreg $Mod-q					close_or_remove

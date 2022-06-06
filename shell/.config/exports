@@ -1,5 +1,6 @@
 export XDG_CONFIG_HOME=~/.config
 export MOZ_WEBRENDER=1
+export MOZ_USE_XINPUT2=1
 export MOZ_X11_EGL=1
 
 export BROWSER=/usr/bin/firefox
@@ -16,6 +17,6 @@ export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/radeon_icd.x86_64.json
 
 if [[ $(grep Microsoft /proc/version) ]]; then
 	export DISPLAY=$(ip route list default | awk '{print $3}'):0
+	export LIBGL_ALWAYS_INDIRECT=1
 fi
-export LIBGL_ALWAYS_INDIRECT=1
 

@@ -10,7 +10,7 @@ alias aliases="vim $HOME/.config/aliases && source $HOME/.config/aliases"
 alias exports="vim $HOME/.config/exports && source $HOME/.config/exports"
 alias alisa=aliases
 alias rc="vim $HOME/.config/rc"
-alias polybar="polybar single"
+alias polybar="polybar right & polybar single"
 
 alias ls='ls --color=auto'
 alias la='ls -l --color=auto'

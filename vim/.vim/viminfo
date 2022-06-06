@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/git
+~MSle0~/ewmh
 
 # Last Substitute Search Pattern:
 ~MSle0&gra
@@ -20,30 +20,136 @@
 $
 
 # Command Line History (newest to oldest):
-:wq
-|2,0,1654009898,,"wq"
 :w
-|2,0,1654008794,,"w"
+|2,0,1654187342,,"w"
+:wq
+|2,0,1654186664,,"wq"
+:q
+|2,0,1654186314,,"q"
+:w ! sudo tee > /dev/null '%' 
+|2,0,1654085405,,"w ! sudo tee > /dev/null '%' "
+:set nopaste
+|2,0,1654085230,,"set nopaste"
+:set paste
+|2,0,1654085225,,"set paste"
+:qa
+|2,0,1654029008,,"qa"
+:sp ~/.aliases
+|2,0,1654022928,,"sp ~/.aliases"
+:e /usr/lib/systemd/system/xrdp.service
+|2,0,1654011925,,"e /usr/lib/systemd/system/xrdp.service"
+:q!
+|2,0,1654012181,,"q!"
+:e ./xrdp-sesman
+|2,0,1654012163,,"e ./xrdp-sesman"
+:set autochdir
+|2,0,1654012160,,"set autochdir"
+:w ! sudo tee > /dev/null ./xrdp
+|2,0,1654011941,,"w ! sudo tee > /dev/null ./xrdp"
+:w ./xrdp
+|2,0,1654011936,,"w ./xrdp"
+:sp 
+|2,0,1654011647,,"sp "
+:e ./hv_kvp_daemon
+|2,0,1654011645,,"e ./hv_kvp_daemon"
 :set ft=bash
-|2,0,1654007153,,"set ft=bash"
+|2,0,1654010868,,"set ft=bash"
+:e! /etc/init.d/hv_vss_daemon
+|2,0,1654010746,,"e! /etc/init.d/hv_vss_daemon"
+:e! /etc/init.d/hv_kvp_daemon
+|2,0,1654010739,,"e! /etc/init.d/hv_kvp_daemon"
+:e /etc/init.d/hv_kvp_daemon
+|2,0,1654010734,,"e /etc/init.d/hv_kvp_daemon"
+:w ! sudo tee > /dev/null /etc/init.d/hv_vss_daemon
+|2,0,1654010724,,"w ! sudo tee > /dev/null /etc/init.d/hv_vss_daemon"
+:w ! sudo tee > /dev/null /etc/init.d/hv_kvp_daemon 
+|2,0,1654010644,,"w ! sudo tee > /dev/null /etc/init.d/hv_kvp_daemon "
+:w!
+|2,0,1654010614,,"w!"
 :set mouse=a
 |2,0,1654006909,,"set mouse=a"
 :e 
 |2,0,1654005987,,"e "
-:q
-|2,0,1654004846,,"q"
 :e .exports
 |2,0,1654000468,,"e .exports"
-:w ! sudo tee > /dev/null '%' 
-|2,0,1653998462,,"w ! sudo tee > /dev/null '%' "
 
 # Search String History (newest to oldest):
+?/ewmh
+|2,1,1654187332,47,"ewmh"
+?/polybar
+|2,1,1654186526,47,"polybar"
+?/width
+|2,1,1654186625,47,"width"
+?/xwindow
+|2,1,1654180991,47,"xwindow"
+?/modshift-space
+|2,1,1654180193,47,"modshift-space"
+?/appsw
+|2,1,1654180098,47,"appsw"
+?/mod-tab
+|2,1,1654180095,47,"mod-tab"
+?/bar
+|2,1,1654180082,47,"bar"
+?/f
+|2,1,1654180718,47,"f"
+?/line
+|2,1,1654180688,47,"line"
+?/line-he
+|2,1,1654180650,47,"line-he"
+?/date
+|2,1,1654180556,47,"date"
+?/mod-space
+|2,1,1654179675,47,"mod-space"
+?/modalt
+|2,1,1654179665,47,"modalt"
+?/smart
+|2,1,1654179638,47,"smart"
+?/modshift-h
+|2,1,1654178922,47,"modshift-h"
+?/pseudo
+|2,1,1654178547,47,"pseudo"
+?/gap
+|2,1,1654178211,47,"gap"
+?/shift-d
+|2,1,1654178144,47,"shift-d"
+?/arch
+|2,1,1654037786,47,"arch"
+?/Uni
+|2,1,1654037764,47,"Uni"
+?/intel
+|2,1,1654036430,47,"intel"
+?/i9
+|2,1,1654036427,47,"i9"
+??\a
+|2,1,1654034291,63,"\\a"
+?/EE
+|2,1,1654033664,47,"EE"
+?/32
+|2,1,1654033532,47,"32"
+?/glx
+|2,1,1654031296,47,"glx"
+?/ZQ
+|2,1,1654030313,47,"ZQ"
+?/modules
+|2,1,1654029243,47,"modules"
+?/backend
+|2,1,1654026897,47,"backend"
+?/kawa
+|2,1,1654025894,47,"kawa"
+?/log
+|2,1,1654025860,47,"log"
+?/refresh
+|2,1,1654025839,47,"refresh"
+?/color
+|2,1,1654025630,47,"color"
+?/please
+|2,1,1654022930,47,"please"
+?/tabbed
+|2,1,1654011551,47,"tabbed"
 ?/git
 |2,1,1654009925,47,"git"
 ?/sudo
 |2,1,1654009306,47,"sudo"
-?/please
-|2,1,1654007850,47,"please"
 ?/cd
 |2,1,1654006161,47,"cd"
 ?/path
@@ -68,12 +174,6 @@ $
 |2,1,1653999157,47,"max"
 ?/urgent
 |2,1,1653998772,47,"urgent"
-?/single
-|2,1,1653998509,47,"single"
-?/term
-|2,1,1653998175,47,"term"
-?/float
-|2,1,1651394621,47,"float"
 
 # Expression History (newest to oldest):
 
@@ -83,43 +183,37 @@ $
 
 # Registers:
 "0	LINE	0
-		echo sudo $(history -p "!!")
-|3,0,0,1,1,0,1654008686,"	echo sudo $(history -p \"!!\")"
-""1	LINE	0
-	else
-		history -a
-		shopt -s extglob
-	
-		echo sudo $(fc -ln -1)
-	fi
-|3,1,1,1,6,0,1654009469,"else","	history -a","	shopt -s extglob","","	echo sudo $(fc -ln -1)","fi"
+	polybar single -r & 
+|3,0,0,1,1,0,1654186716,"polybar single -r & "
+"1	LINE	0
+	offset-x = 1200
+|3,0,1,1,1,0,1654187243,"offset-x = 1200"
 "2	LINE	0
-	
-	please() { if (($#)); then /usr/bin/sudo "$@" else eval "sudo $(fc -ln 1)" fi }
-	
-|3,0,2,1,3,0,1654009365,"","please() { if (($#)); then /usr/bin/sudo \"$@\" else eval \"sudo $(fc -ln 1)\" fi }",""
+	polybar single -r & 
+|3,0,2,1,1,0,1654186717,"polybar single -r & "
 "3	LINE	0
-	please() { if (($#)); then /usr/bin/sudo "$@" else eval "sudo $(fc -ln 1)" fi }
-	
-|3,0,3,1,2,0,1654009311,"please() { if (($#)); then /usr/bin/sudo \"$@\" else eval \"sudo $(fc -ln 1)\" fi }",""
+	polybar right &
+|3,0,3,1,1,0,1654186467,"polybar right &"
 "4	LINE	0
-	alias please='sudo $(history -p !!)'
-|3,0,4,1,1,0,1654009267,"alias please='sudo $(history -p !!)'"
+	polybar single &
+|3,0,4,1,1,0,1654186457,"polybar single &"
 "5	LINE	0
-		set -H
-|3,0,5,1,1,0,1654009099,"	set -H"
-"6	LINE	0
-		echo sudo $lc
-|3,0,6,1,1,0,1654008797,"	echo sudo $lc"
+	polybar single &
+|3,0,5,1,1,0,1654181067,"polybar single &"
+"6	CHAR	0
+	%Y/%m/%d "
+	
+|3,0,6,0,2,0,1654180574,"%Y/%m/%d \"",""
 "7	LINE	0
-		lc=$(history)
-|3,0,7,1,1,0,1654008786,"	lc=$(history)"
+	modules-right = date 
+	tray-position = right
+|3,0,7,1,2,0,1654180012,"modules-right = date ","tray-position = right"
 "8	LINE	0
-		set -o history
-|3,0,8,1,1,0,1654008646,"	set -o history"
+	tray-position = right
+|3,0,8,1,1,0,1654180008,"tray-position = right"
 "9	LINE	0
-	alias please='sudo .local/bin/please
-|3,0,9,1,1,0,1654008543,"alias please='sudo .local/bin/please"
+	modules-left = custom_governor cpu temperature memory xkeyboard 
+|3,0,9,1,1,0,1654179995,"modules-left = custom_governor cpu temperature memory xkeyboard "
 "a	LINE	0
 	HYPHEN_INSENSITIVE="true"
 	ENABLE_CORRECTION="true"
@@ -172,9 +266,9 @@ $
 "z	CHAR	0
 	Q
 |3,0,35,0,1,0,1562301574,"Q"
-"-	CHAR	0
-	eval 
-|3,0,36,0,1,0,1654009444,"eval "
+""-	CHAR	0
+	x
+|3,1,36,0,1,0,1654187303,"x"
 
 # File marks:
 'A  1478  21  ~/cartographer-gl/map-widget/node_modules/@types/mapbox-gl/index.d.ts
@@ -185,243 +279,425 @@ $
 |4,77,321,2,1595859810,"~/.config/herbstluftwm/autostart"
 'N  151  0  ~/task_launch
 |4,78,151,0,1554901471,"~/task_launch"
-'V  67  8  ~/doftiles/herbst/.config/herbstluftwm/autostart
-|4,86,67,8,1654005049,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+'V  70  8  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,86,70,8,1654005049,"~/doftiles/herbst/.config/herbstluftwm/autostart"
 'Z  2  34  ~/cartographer-gl/map-widget/src/mapboxTerrainV2.ts
 |4,90,2,34,1568110507,"~/cartographer-gl/map-widget/src/mapboxTerrainV2.ts"
-'0  25  9  ~/.config/aliases
-|4,48,25,9,1654009932,"~/.config/aliases"
-'1  1  38  ~/doftiles/.git/COMMIT_EDITMSG
-|4,49,1,38,1654009898,"~/doftiles/.git/COMMIT_EDITMSG"
-'2  21  15  ~/.config/aliases
-|4,50,21,15,1654009853,"~/.config/aliases"
-'3  21  15  ~/.config/aliases
-|4,51,21,15,1654009853,"~/.config/aliases"
-'4  2  24  ~/doftiles/install
-|4,52,2,24,1654009790,"~/doftiles/install"
-'5  21  41  ~/.config/aliases
-|4,53,21,41,1654009572,"~/.config/aliases"
-'6  21  41  ~/.config/aliases
-|4,54,21,41,1654009572,"~/.config/aliases"
-'7  21  41  ~/.config/aliases
-|4,55,21,41,1654009552,"~/.config/aliases"
-'8  21  41  ~/.config/aliases
-|4,56,21,41,1654009552,"~/.config/aliases"
-'9  21  41  ~/.config/aliases
-|4,57,21,41,1654009552,"~/.config/aliases"
+'0  128  18  ~/doftiles/bar/.config/polybar/config.ini
+|4,48,128,18,1654187350,"~/doftiles/bar/.config/polybar/config.ini"
+'1  1  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,49,1,0,1654187317,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+'2  74  14  ~/doftiles/bar/.config/polybar/config.ini
+|4,50,74,14,1654187308,"~/doftiles/bar/.config/polybar/config.ini"
+'3  74  14  ~/doftiles/bar/.config/polybar/config.ini
+|4,51,74,14,1654187308,"~/doftiles/bar/.config/polybar/config.ini"
+'4  1  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,52,1,0,1654186777,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+'5  1  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,53,1,0,1654186777,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+'6  13  44  ~/.config/aliases
+|4,54,13,44,1654186736,"~/.config/aliases"
+'7  13  44  ~/.config/aliases
+|4,55,13,44,1654186736,"~/.config/aliases"
+'8  29  6  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,56,29,6,1654186733,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+'9  29  6  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,57,29,6,1654186733,"~/doftiles/herbst/.config/herbstluftwm/autostart"
 
 # Jumplist (newest first):
--'  25  9  ~/.config/aliases
-|4,39,25,9,1654009932,"~/.config/aliases"
--'  24  14  ~/.config/aliases
-|4,39,24,14,1654009927,"~/.config/aliases"
--'  23  14  ~/.config/aliases
-|4,39,23,14,1654009926,"~/.config/aliases"
+-'  128  18  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,128,18,1654187350,"~/doftiles/bar/.config/polybar/config.ini"
+-'  53  17  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,53,17,1654187335,"~/doftiles/bar/.config/polybar/config.ini"
+-'  98  8  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,98,8,1654187333,"~/doftiles/bar/.config/polybar/config.ini"
+-'  92  18  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,92,18,1654187333,"~/doftiles/bar/.config/polybar/config.ini"
+-'  1  0  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,1,0,1654187332,"~/doftiles/bar/.config/polybar/config.ini"
+-'  1  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,1,0,1654187317,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  1  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,1,0,1654187317,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  74  14  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,74,14,1654187308,"~/doftiles/bar/.config/polybar/config.ini"
+-'  74  14  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,74,14,1654187308,"~/doftiles/bar/.config/polybar/config.ini"
+-'  75  0  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,75,0,1654187245,"~/doftiles/bar/.config/polybar/config.ini"
+-'  75  0  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,75,0,1654187245,"~/doftiles/bar/.config/polybar/config.ini"
+-'  1  0  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,1,0,1654186805,"~/doftiles/bar/.config/polybar/config.ini"
+-'  1  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,1,0,1654186777,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  1  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,1,0,1654186777,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  1  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,1,0,1654186777,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  1  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,1,0,1654186777,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  13  44  ~/.config/aliases
+|4,39,13,44,1654186736,"~/.config/aliases"
+-'  13  44  ~/.config/aliases
+|4,39,13,44,1654186736,"~/.config/aliases"
+-'  13  44  ~/.config/aliases
+|4,39,13,44,1654186736,"~/.config/aliases"
+-'  13  44  ~/.config/aliases
+|4,39,13,44,1654186736,"~/.config/aliases"
+-'  13  44  ~/.config/aliases
+|4,39,13,44,1654186736,"~/.config/aliases"
+-'  13  44  ~/.config/aliases
+|4,39,13,44,1654186736,"~/.config/aliases"
+-'  13  44  ~/.config/aliases
+|4,39,13,44,1654186736,"~/.config/aliases"
+-'  13  44  ~/.config/aliases
+|4,39,13,44,1654186736,"~/.config/aliases"
+-'  13  44  ~/.config/aliases
+|4,39,13,44,1654186736,"~/.config/aliases"
+-'  13  44  ~/.config/aliases
+|4,39,13,44,1654186736,"~/.config/aliases"
+-'  29  6  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,29,6,1654186733,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  29  6  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,29,6,1654186733,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  29  6  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,29,6,1654186733,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  29  6  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,29,6,1654186733,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  29  6  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,29,6,1654186733,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  29  6  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,29,6,1654186733,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  29  6  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,29,6,1654186733,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  29  6  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,29,6,1654186733,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  1  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,1,0,1654186710,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  1  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,1,0,1654186710,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  69  7  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,69,7,1654186672,"~/doftiles/bar/.config/polybar/config.ini"
+-'  69  7  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,69,7,1654186672,"~/doftiles/bar/.config/polybar/config.ini"
+-'  69  7  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,69,7,1654186672,"~/doftiles/bar/.config/polybar/config.ini"
+-'  69  7  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,69,7,1654186672,"~/doftiles/bar/.config/polybar/config.ini"
+-'  69  7  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,69,7,1654186672,"~/doftiles/bar/.config/polybar/config.ini"
+-'  69  7  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,69,7,1654186672,"~/doftiles/bar/.config/polybar/config.ini"
+-'  69  7  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,69,7,1654186672,"~/doftiles/bar/.config/polybar/config.ini"
+-'  69  7  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,69,7,1654186672,"~/doftiles/bar/.config/polybar/config.ini"
+-'  69  7  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,69,7,1654186672,"~/doftiles/bar/.config/polybar/config.ini"
+-'  69  7  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,69,7,1654186672,"~/doftiles/bar/.config/polybar/config.ini"
+-'  28  12  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,28,12,1654186664,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  28  12  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,28,12,1654186664,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  28  12  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,28,12,1654186664,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  28  12  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,28,12,1654186664,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  28  12  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,28,12,1654186664,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  28  12  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,28,12,1654186664,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  28  12  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,28,12,1654186664,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  28  12  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,28,12,1654186664,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  28  12  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,28,12,1654186664,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  28  12  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,28,12,1654186664,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  1  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,1,0,1654186658,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  1  0  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,1,0,1654186658,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  33  4  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,33,4,1654186627,"~/doftiles/bar/.config/polybar/config.ini"
+-'  33  4  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,33,4,1654186627,"~/doftiles/bar/.config/polybar/config.ini"
+-'  33  4  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,33,4,1654186627,"~/doftiles/bar/.config/polybar/config.ini"
+-'  33  4  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,33,4,1654186627,"~/doftiles/bar/.config/polybar/config.ini"
+-'  33  4  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,33,4,1654186627,"~/doftiles/bar/.config/polybar/config.ini"
+-'  33  4  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,33,4,1654186627,"~/doftiles/bar/.config/polybar/config.ini"
+-'  33  4  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,33,4,1654186627,"~/doftiles/bar/.config/polybar/config.ini"
+-'  33  4  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,33,4,1654186627,"~/doftiles/bar/.config/polybar/config.ini"
+-'  33  4  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,33,4,1654186627,"~/doftiles/bar/.config/polybar/config.ini"
+-'  33  4  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,33,4,1654186627,"~/doftiles/bar/.config/polybar/config.ini"
+-'  2  0  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,2,0,1654186625,"~/doftiles/bar/.config/polybar/config.ini"
+-'  2  0  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,2,0,1654186625,"~/doftiles/bar/.config/polybar/config.ini"
+-'  2  0  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,2,0,1654186625,"~/doftiles/bar/.config/polybar/config.ini"
+-'  2  0  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,2,0,1654186625,"~/doftiles/bar/.config/polybar/config.ini"
+-'  2  0  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,2,0,1654186625,"~/doftiles/bar/.config/polybar/config.ini"
+-'  2  0  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,2,0,1654186625,"~/doftiles/bar/.config/polybar/config.ini"
+-'  2  0  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,2,0,1654186625,"~/doftiles/bar/.config/polybar/config.ini"
+-'  2  0  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,2,0,1654186625,"~/doftiles/bar/.config/polybar/config.ini"
+-'  2  0  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,2,0,1654186625,"~/doftiles/bar/.config/polybar/config.ini"
+-'  2  0  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,2,0,1654186625,"~/doftiles/bar/.config/polybar/config.ini"
+-'  1  0  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,1,0,1654186619,"~/doftiles/bar/.config/polybar/config.ini"
+-'  1  0  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,1,0,1654186619,"~/doftiles/bar/.config/polybar/config.ini"
+-'  1  0  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,1,0,1654186619,"~/doftiles/bar/.config/polybar/config.ini"
+-'  1  0  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,1,0,1654186619,"~/doftiles/bar/.config/polybar/config.ini"
+-'  1  0  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,1,0,1654186619,"~/doftiles/bar/.config/polybar/config.ini"
+-'  1  0  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,1,0,1654186619,"~/doftiles/bar/.config/polybar/config.ini"
+-'  1  0  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,1,0,1654186619,"~/doftiles/bar/.config/polybar/config.ini"
+-'  1  0  ~/doftiles/bar/.config/polybar/config.ini
+|4,39,1,0,1654186619,"~/doftiles/bar/.config/polybar/config.ini"
 -'  1  0  ~/.config/aliases
-|4,39,1,0,1654009925,"~/.config/aliases"
--'  1  38  ~/doftiles/.git/COMMIT_EDITMSG
-|4,39,1,38,1654009898,"~/doftiles/.git/COMMIT_EDITMSG"
--'  1  38  ~/doftiles/.git/COMMIT_EDITMSG
-|4,39,1,38,1654009898,"~/doftiles/.git/COMMIT_EDITMSG"
--'  21  15  ~/.config/aliases
-|4,39,21,15,1654009853,"~/.config/aliases"
--'  21  15  ~/.config/aliases
-|4,39,21,15,1654009853,"~/.config/aliases"
--'  21  15  ~/.config/aliases
-|4,39,21,15,1654009853,"~/.config/aliases"
+|4,39,1,0,1654186526,"~/.config/aliases"
 -'  1  0  ~/.config/aliases
-|4,39,1,0,1654009845,"~/.config/aliases"
+|4,39,1,0,1654186526,"~/.config/aliases"
 -'  1  0  ~/.config/aliases
-|4,39,1,0,1654009845,"~/.config/aliases"
--'  2  24  ~/doftiles/install
-|4,39,2,24,1654009790,"~/doftiles/install"
--'  2  24  ~/doftiles/install
-|4,39,2,24,1654009790,"~/doftiles/install"
--'  2  24  ~/doftiles/install
-|4,39,2,24,1654009790,"~/doftiles/install"
--'  2  24  ~/doftiles/install
-|4,39,2,24,1654009790,"~/doftiles/install"
--'  2  24  ~/doftiles/install
-|4,39,2,24,1654009790,"~/doftiles/install"
--'  2  24  ~/doftiles/install
-|4,39,2,24,1654009790,"~/doftiles/install"
--'  2  24  ~/doftiles/install
-|4,39,2,24,1654009790,"~/doftiles/install"
--'  2  24  ~/doftiles/install
-|4,39,2,24,1654009790,"~/doftiles/install"
--'  1  0  ~/doftiles/install
-|4,39,1,0,1654009764,"~/doftiles/install"
--'  1  0  ~/doftiles/install
-|4,39,1,0,1654009764,"~/doftiles/install"
--'  1  0  ~/doftiles/install
-|4,39,1,0,1654009764,"~/doftiles/install"
--'  1  0  ~/doftiles/install
-|4,39,1,0,1654009764,"~/doftiles/install"
--'  1  0  ~/doftiles/install
-|4,39,1,0,1654009764,"~/doftiles/install"
--'  1  0  ~/doftiles/install
-|4,39,1,0,1654009764,"~/doftiles/install"
--'  1  0  ~/doftiles/install
-|4,39,1,0,1654009764,"~/doftiles/install"
--'  1  0  ~/doftiles/install
-|4,39,1,0,1654009764,"~/doftiles/install"
--'  21  41  ~/.config/aliases
-|4,39,21,41,1654009572,"~/.config/aliases"
--'  21  41  ~/.config/aliases
-|4,39,21,41,1654009572,"~/.config/aliases"
--'  21  41  ~/.config/aliases
-|4,39,21,41,1654009572,"~/.config/aliases"
--'  21  41  ~/.config/aliases
-|4,39,21,41,1654009572,"~/.config/aliases"
+|4,39,1,0,1654186526,"~/.config/aliases"
 -'  1  0  ~/.config/aliases
-|4,39,1,0,1654009568,"~/.config/aliases"
+|4,39,1,0,1654186526,"~/.config/aliases"
 -'  1  0  ~/.config/aliases
-|4,39,1,0,1654009568,"~/.config/aliases"
+|4,39,1,0,1654186526,"~/.config/aliases"
 -'  1  0  ~/.config/aliases
-|4,39,1,0,1654009568,"~/.config/aliases"
+|4,39,1,0,1654186526,"~/.config/aliases"
 -'  1  0  ~/.config/aliases
-|4,39,1,0,1654009568,"~/.config/aliases"
--'  21  41  ~/.config/aliases
-|4,39,21,41,1654009552,"~/.config/aliases"
--'  21  41  ~/.config/aliases
-|4,39,21,41,1654009552,"~/.config/aliases"
--'  21  41  ~/.config/aliases
-|4,39,21,41,1654009552,"~/.config/aliases"
--'  21  41  ~/.config/aliases
-|4,39,21,41,1654009552,"~/.config/aliases"
+|4,39,1,0,1654186526,"~/.config/aliases"
 -'  1  0  ~/.config/aliases
-|4,39,1,0,1654009514,"~/.config/aliases"
+|4,39,1,0,1654186526,"~/.config/aliases"
 -'  1  0  ~/.config/aliases
-|4,39,1,0,1654009514,"~/.config/aliases"
+|4,39,1,0,1654186526,"~/.config/aliases"
 -'  1  0  ~/.config/aliases
-|4,39,1,0,1654009514,"~/.config/aliases"
--'  1  0  ~/.config/aliases
-|4,39,1,0,1654009514,"~/.config/aliases"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
--'  4  1  ~/.local/bin/please
-|4,39,4,1,1654009471,"~/.local/bin/please"
+|4,39,1,0,1654186526,"~/.config/aliases"
+-'  28  9  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,28,9,1654186502,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  28  9  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,28,9,1654186502,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  28  9  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,28,9,1654186502,"~/doftiles/herbst/.config/herbstluftwm/autostart"
+-'  28  9  ~/doftiles/herbst/.config/herbstluftwm/autostart
+|4,39,28,9,1654186502,"~/doftiles/herbst/.config/herbstluftwm/autostart"
 
 # Buffer list:
-%~/.config/aliases	25	9
+%~/doftiles/bar/.config/polybar/config.ini	128	18
 
 # History of marks within files (newest to oldest):
 
+> ~/doftiles/bar/.config/polybar/config.ini
+	*	1654187342	0
+	"	128	18
+	^	78	38
+	.	128	18
+	+	59	10
+	+	60	10
+	+	61	8
+	+	58	10
+	+	59	10
+	+	58	0
+	+	78	37
+	+	81	16
+	+	81	15
+	+	68	0
+	+	81	0
+	+	83	0
+	+	79	0
+	+	73	12
+	+	76	10
+	+	75	13
+	+	73	10
+	+	69	8
+	+	82	13
+	+	67	16
+	+	53	0
+	+	67	16
+	+	53	24
+	+	66	0
+	+	67	30
+	+	209	8
+	+	210	12
+	+	209	8
+	+	84	19
+	+	80	0
+	+	78	0
+	+	80	0
+	+	74	13
+	+	73	9
+	+	69	7
+	+	75	12
+	+	69	9
+	+	67	26
+	+	53	16
+	+	81	15
+	+	75	12
+	+	74	10
+	+	128	0
+	+	74	12
+	+	73	9
+	+	75	12
+	+	128	18
+	+	69	8
+	+	74	27
+	+	71	0
+	+	75	0
+	+	73	11
+	+	74	10
+	+	76	0
+	+	77	0
+	+	69	7
+	+	75	12
+	+	73	9
+	+	75	14
+	+	73	10
+	+	75	12
+	+	73	8
+	+	75	12
+	+	74	9
+	+	75	14
+	+	76	10
+	+	73	10
+	+	78	37
+	+	74	15
+	+	128	18
+
+> ~/doftiles/herbst/.config/herbstluftwm/autostart
+	*	1654186802	0
+	"	1	0
+	^	29	7
+	.	29	6
+	+	93	14
+	+	197	0
+	+	198	11
+	+	38	62
+	+	36	49
+	+	55	7
+	+	57	25
+	+	55	21
+	+	93	24
+	+	65	17
+	+	66	0
+	+	64	0
+	+	56	13
+	+	93	49
+	+	93	18
+	+	93	0
+	+	72	0
+	+	93	0
+	+	70	0
+	+	76	0
+	+	74	0
+	+	48	15
+	+	37	0
+	+	36	18
+	+	81	29
+	+	50	17
+	+	72	0
+	+	40	23
+	+	102	11
+	+	98	13
+	+	100	0
+	+	102	11
+	+	316	18
+	+	81	20
+	+	32	6
+	+	31	44
+	+	306	0
+	+	308	0
+	+	306	25
+	+	307	25
+	+	306	56
+	+	307	45
+	+	33	11
+	+	70	0
+	+	70	46
+	+	249	19
+	+	250	0
+	+	258	35
+	+	72	0
+	+	66	10
+	+	70	0
+	+	66	0
+	+	69	0
+	+	66	0
+	+	68	0
+	+	70	0
+	+	67	49
+	+	67	0
+	+	197	17
+	+	180	0
+	+	184	20
+	+	184	29
+	+	185	29
+	+	185	30
+	+	186	36
+	+	16	10
+	+	184	35
+	+	184	0
+	+	184	13
+	+	186	0
+	+	184	14
+	+	186	33
+	+	185	35
+	+	184	34
+	+	186	73
+	+	184	19
+	+	186	35
+	+	186	75
+	+	186	0
+	+	185	13
+	+	187	0
+	+	257	36
+	+	201	20
+	+	197	0
+	+	200	0
+	+	31	12
+	+	41	0
+	+	198	12
+	+	197	0
+	+	316	0
+	+	200	22
+	+	198	27
+	+	200	21
+	+	31	0
+	+	28	0
+	+	31	0
+	+	28	13
+	+	31	0
+	+	30	12
+	+	29	6
+
 > ~/.config/aliases
-	*	1654009929	0
-	"	25	9
-	^	21	16
-	.	21	15
+	*	1654186613	0
+	"	13	44
+	^	13	45
+	.	13	44
 	+	13	39
 	+	13	29
 	+	13	38
@@ -433,24 +709,133 @@ $
 	+	22	0
 	+	21	67
 	+	21	15
+	+	13	44
 
-> ~/doftiles/.git/COMMIT_EDITMSG
-	*	1654009897	0
-	"	1	38
-	^	1	39
-	.	1	38
-	+	1	38
+> /etc/X11/xorg.conf.d/70-synaptics.conf
+	*	1654085418	0
+	"	12	2
+	^	11	26
+	.	11	25
+	+	1	20
+	+	13	0
+	+	8	0
+	+	9	0
+	+	11	26
+	+	12	23
+	+	11	25
 
-> ~/doftiles/install
-	*	1654009789	0
-	"	2	24
-	^	2	25
-	.	2	24
-	+	2	24
+> /etc/mkinitcpio.conf
+	*	1654072288	0
+	"	52	62
+	^	52	63
+	.	52	62
+	+	7	31
+	+	49	0
+	+	52	62
+
+> /etc/pacman.conf
+	*	1654037996	0
+	"	98	9
+	^	98	10
+	.	98	9
+	+	33	0
+	+	90	0
+	+	97	4
+	+	95	0
+	+	97	38
+	+	100	5
+	+	98	9
+
+> /etc/pacman.d/mirrorlist-arch
+	*	1654037779	0
+	"	8	0
+	.	557	0
+	+	557	0
+
+> /etc/X11/xorg.conf.d/20-intel.conf
+	*	1654037728	0
+	"	4	0
+	^	5	14
+	.	2	0
+	+	1	0
+	+	5	13
+	+	2	0
+
+> /etc/pacman.d/mirrorlist
+	*	1654037725	0
+	"	1	0
+
+> ~/doftiles/picom/.config/picom/picom.conf
+	*	1654037709	0
+	"	213	17
+	^	213	18
+	.	213	17
+	+	137	18
+	+	111	0
+	+	137	21
+	+	81	18
+	+	213	17
+
+> ~/.config/exports
+	*	1654037650	0
+	"	20	1
+	^	3	24
+	.	20	0
+	+	7	24
+	+	10	0
+	+	19	0
+	+	21	1
+	+	19	0
+	+	11	34
+	+	3	24
+	+	22	0
+	+	20	0
+
+> ~/.zprofile
+	*	1654037639	0
+	"	19	0
+	^	9	32
+	.	15	0
+	+	24	0
+	+	16	0
+	+	9	31
+	+	15	0
+
+> /etc/default/grub
+	*	1654036526	0
+	"	7	39
+	^	7	40
+	.	7	39
+	+	27	0
+	+	35	0
+	+	38	26
+	+	35	28
+	+	7	39
+
+> /boot/grub/grub.cfg
+	*	1654036501	0
+	"	14	0
+
+> ~/.local/bin/internet
+	*	1654034334	0
+	"	5	36
+	^	5	37
+	.	5	36
+	+	3	16
+	+	2	0
+	+	5	36
+
+> ~/.local/share/xorg/Xorg.0.log
+	*	1654033671	0
+	"	191	14
+
+> ~/.aliases
+	*	1654023034	0
+	"	21	6
 
 > ~/.local/bin/please
-	*	1654009470	0
-	"	4	1
+	*	1654022940	0
+	"	3	6
 	^	4	2
 	.	4	0
 	+	5	7
@@ -479,6 +864,132 @@ $
 	+	5	0
 	+	4	0
 
+> /etc/init.d/xrdp
+	*	1654022884	0
+	"	14	13
+	^	14	14
+	.	14	13
+	+	3	17
+	+	4	17
+	+	7	14
+	+	10	14
+	+	12	0
+	+	14	13
+
+> /etc/init.d/xrdp-sesman
+	*	1654022876	0
+	"	14	13
+	^	14	14
+	.	14	13
+	+	1	53
+	+	1	20
+	+	8	0
+	+	2	0
+	+	3	25
+	+	4	0
+	+	7	0
+	+	4	27
+	+	7	20
+	+	6	0
+	+	5	0
+	+	11	0
+	+	12	0
+	+	14	13
+
+> /etc/init.d/modules
+	*	1654012358	0
+	"	1	0
+
+> ~/linux-vm-tools/arch/install-config.sh
+	*	1654012287	0
+	"	58	1
+	^	33	25
+	.	33	24
+	+	30	0
+	+	33	24
+
+> ~/doftiles/vim/.vim/vimrc
+	*	1654012199	0
+	"	118	12
+	^	118	13
+	.	118	12
+	+	118	12
+
+> /etc/init.d/hv_kvp_daemon
+	*	1654012141	0
+	"	7	0
+	^	5	19
+	.	5	0
+	+	3	23
+	+	4	18
+	+	5	0
+
+> /usr/lib/systemd/system/xrdp.service
+	*	1654011928	0
+	"	1	0
+
+> /usr/lib/systemd/system/xrdp-sesman.service
+	*	1654011915	0
+	"	1	0
+
+> /etc/init.d/hv_vss_daemon
+	*	1654011166	0
+	"	8	38
+	^	8	39
+	.	8	38
+	+	3	23
+	+	4	16
+	+	5	16
+	+	7	15
+	+	9	0
+	+	10	0
+	+	15	0
+	+	12	39
+	+	15	1
+	+	22	0
+	+	18	0
+	+	21	0
+	+	8	38
+
+> /etc/init.d/hv_fcopy_daemon
+	*	1654011074	0
+	"	1	0
+	^	3	9
+	.	3	8
+	+	3	8
+
+> /etc/openrc/init.d/hv_fcopy_daemon
+	*	1654010592	0
+	"	1	0
+	^	12	0
+	.	12	0
+	+	13	0
+	+	3	8
+	+	4	20
+	+	5	20
+	+	6	0
+	+	7	0
+	+	8	15
+	+	12	0
+
+> /etc/openrc/init.d/sshd
+	*	1654010196	0
+	"	1	0
+
+> ~/doftiles/.git/COMMIT_EDITMSG
+	*	1654009950	0
+	"	1	5
+	^	1	6
+	.	1	5
+	+	1	5
+
+> ~/doftiles/install
+	*	1654009789	0
+	"	2	24
+	^	2	25
+	.	2	24
+	+	2	24
+
 > ~/.zshrc
 	*	1654009365	0
 	"	49	0
@@ -487,109 +998,6 @@ $
 	+	31	29
 	+	30	0
 	+	49	0
-
-> ~/doftiles/herbst/.config/herbstluftwm/autostart
-	*	1654007255	0
-	"	100	11
-	^	97	14
-	.	100	11
-	+	24	0
-	+	38	5
-	+	32	0
-	+	29	0
-	+	32	19
-	+	29	0
-	+	32	0
-	+	38	0
-	+	41	22
-	+	40	21
-	+	41	25
-	+	39	17
-	+	45	19
-	+	36	0
-	+	13	0
-	+	14	13
-	+	17	0
-	+	24	14
-	+	24	10
-	+	24	0
-	+	32	0
-	+	36	0
-	+	33	9
-	+	36	0
-	+	37	0
-	+	38	0
-	+	144	0
-	+	147	12
-	+	167	0
-	+	168	52
-	+	169	0
-	+	168	12
-	+	348	0
-	+	46	24
-	+	18	0
-	+	14	0
-	+	211	0
-	+	48	14
-	+	47	27
-	+	91	17
-	+	57	12
-	+	91	20
-	+	57	34
-	+	91	12
-	+	57	55
-	+	59	0
-	+	60	20
-	+	144	29
-	+	144	15
-	+	144	0
-	+	144	17
-	+	144	0
-	+	60	0
-	+	91	58
-	+	91	15
-	+	78	0
-	+	91	7
-	+	166	0
-	+	91	0
-	+	154	20
-	+	154	19
-	+	154	16
-	+	154	20
-	+	154	0
-	+	79	0
-	+	91	14
-	+	195	0
-	+	196	11
-	+	32	62
-	+	30	49
-	+	49	7
-	+	51	25
-	+	49	21
-	+	91	24
-	+	59	17
-	+	60	0
-	+	58	0
-	+	50	13
-	+	91	49
-	+	91	18
-	+	91	0
-	+	68	0
-	+	91	0
-	+	61	0
-	+	74	0
-	+	72	0
-	+	42	15
-	+	31	0
-	+	30	18
-	+	79	29
-	+	44	17
-	+	67	0
-	+	34	23
-	+	100	11
-	+	96	13
-	+	98	0
-	+	100	11
 
 > ~/.cache/yay/openrc-arch-services-git/PKGBUILD
 	*	1654006936	0
@@ -615,28 +1023,6 @@ $
 	+	19	0
 	+	12	8
 	+	13	9
-
-> ~/.config/exports
-	*	1654006001	0
-	"	10	34
-	^	10	35
-	.	10	34
-	+	6	24
-	+	9	0
-	+	18	0
-	+	19	1
-	+	18	0
-	+	10	34
-
-> ~/.zprofile
-	*	1654005987	0
-	"	1	0
-	^	9	32
-	.	15	0
-	+	24	0
-	+	16	0
-	+	9	31
-	+	15	0
 
 > ~/.exports
 	*	1654000475	0
@@ -667,10 +1053,6 @@ $
 	.	321	13
 	+	321	13
 
-> ~/doftiles/bar/.config/polybar/config.ini
-	*	1653998509	0
-	"	64	5
-
 > /etc/bash/bashrc
 	*	1653998463	0
 	"	13	43
@@ -693,10 +1075,6 @@ $
 	+	3	14
 	+	8	0
 
-> ~/.aliases
-	*	1651393807	0
-	"	1	0
-
 > ~/doftiles/shell/.zprofile
 	*	1651393787	0
 	"	9	25
@@ -714,10 +1092,6 @@ $
 	"	39	0
 	.	50	0
 	+	50	0
-
-> ~/doftiles/vim/.vim/vimrc
-	*	1651393566	0
-	"	217	0
 
 > ~/doftiles/shell/.config/aliases
 	*	1651393547	0

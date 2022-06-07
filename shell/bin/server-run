@@ -1,0 +1,5 @@
+#!/bin/bash
+gnome-terminal --wait
+pkill '(gpg|ssh)-agent'
+taskkill.exe /IM pulseaudio.exe /F
+taskkill.exe /IM vcxsrv.exe /F

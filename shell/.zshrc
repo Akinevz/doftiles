@@ -47,3 +47,4 @@ cd
 #source $HOME/.config/zshrc.compl
 git config --global user.name "Kirill <akinevz> Nevzorov"
 git config --global user.email "akinevz@outlook.com"
+export BROWSER=/mnt/c/Programs/Mozilla Firefox/firefox.exe

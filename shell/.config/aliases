@@ -7,9 +7,10 @@ alias wmrc="vim $HOME/.config/herbstluftwm/autostart"
 alias sx="sxhkd"
 alias bs="bspwm"
 alias aliases="vim $HOME/.config/aliases && source $HOME/.config/aliases"
+alias exports="vim $HOME/.config/exports && source $HOME/.config/exports"
 alias alisa=aliases
 alias rc="vim $HOME/.config/rc"
-alias profile="vim $HOME/.config/profile"
+alias polybar="polybar right & polybar single"
 
 alias ls='ls --color=auto'
 alias la='ls -l --color=auto'
@@ -17,7 +18,7 @@ alias lal='ls -al --color=auto'
 alias l='ls'
 alias s='ls -r'
 
-alias please='sudo "$BASH" -c "$(history -p !!)"'
+alias please='~/.local/bin/please $(fc -ln -1)'
 
 alias status='git status'
 alias commit='git commit'
@@ -34,6 +35,7 @@ alias today='date;cal'
 
 alias vimrc='vim .vim/vimrc'
 alias zshrc="vim $HOME/.zshrc"
+alias profile="vim $HOME/.zprofile"
 
  # 
  # alias s="ls -tr -1h --color=tty"

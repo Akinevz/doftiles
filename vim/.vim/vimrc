@@ -115,6 +115,7 @@ set undofile
 set clipboard^=unnamedplus
 "set directory=.cache/vim-swaps
 set autoindent
+set autochdir
 set hidden
 set bs=indent,eol,start
 set diffopt+=hiddenoff

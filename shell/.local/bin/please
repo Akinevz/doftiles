@@ -1,0 +1,4 @@
+#!/bin/bash
+if [[ ! -z "$@" ]]; then
+	sudo "$@"
+fi

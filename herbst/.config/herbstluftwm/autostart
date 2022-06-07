@@ -13,6 +13,7 @@ export MONITORS=$(herb detect_monitors -l | wc -l)
 
 ### MODS ###
 Mod=Mod4   	# Super
+Shift=Shift
 ModAlt=Mod1 # Alt 
 
 ### ADDITIONAL MODS ###
@@ -24,14 +25,20 @@ ModCtrl=$Mod-Ctrl
 herb emit_hook reload
 herb set_layout max
 herb keyunbind --all
-polybar single &
+polybar single -r & 
+sleep 1
+polybar right -r & 
+hsetroot -cover ${HOME}/Desktop/wallpaper.jpg
+picom &
+nm-applet &
 
 # LAUNCHERS
-TERMINAL="gnome-terminal --zoom 1.5"
+TERMINAL="alacritty"
+#TERMINAL="gnome-terminal --zoom 1.5"
 ROFITHEME=${HOME}/.config/rofi/launcher/style.rasi
 APPLAUNCHER="rofi -modi drun,run -show drun -theme ${ROFITHEME}"
-SCREENSHOTTER="scrot"
-APPSWITCHER="rofi -modi windowcd -show windowcd -theme ${ROFITHEME}"
+SCREENSHOTTER="scrot -fs"
+APPSWITCHER="rofi -modi windowcd,window -show windowcd -theme ${ROFITHEME}"
 
 # terminal
 keyreg $Mod-Tab 		spawn $APPSWITCHER
@@ -40,6 +47,7 @@ keyreg $Mod-Return              spawn $TERMINAL
 keyreg $Mod-BackSpace			spawn $APPLAUNCHER
 # screenshot; revision HHKB custom caps
 keyreg $Mod-o           		spawn $SCREENSHOTTER
+keyreg $ModShift-s           		spawn $SCREENSHOTTER
 
 
 # CLOSE OR QUIT WM
@@ -55,16 +63,11 @@ keyreg XF86Sleep				quit
 # WINDOWING
 keyreg $ModShift-Return		chain . split explode . cycle_frame . spawn $TERMINAL
 keyreg $Mod-a				chain . split explode 0.5 . cycle_frame
-keyreg $ModShift-a			chain . split vertical . cycle_frame
-keyreg $ModShift-d			remove
+keyreg $ModShift-a			chain . split explode 0.5
+keyreg $ModAlt-a				chain . split explode 0.5 . cycle_frame
+keyreg $ModAlt-q			remove
 
 # cycle; TODO: make these cycle frame if only in frame
-keyreg $Mod-s 		chain \
-						. cycle -1
-keyreg $ModShift-s	chain \
-						. cycle +1
-keyreg $Mod-c		cycle_frame
-
 keyreg $ModAlt-Tab		or \
 					, and \
 						. compare tags.focus.curframe_wcount gt 1 \
@@ -91,14 +94,14 @@ keyreg $ModShift-b			chain split top   0.5 , focus -i down
 
 
 # FOCUS
-keyreg $Mod-Left       focus left
-keyreg $Mod-Down       focus down
-keyreg $Mod-Up         focus up
-keyreg $Mod-Right      focus right
-keyreg $ModAlt-h          focus left
-keyreg $ModAlt-j          focus down
-keyreg $ModAlt-k          focus up
-keyreg $ModAlt-l          focus right
+keyreg $ModAlt-Left       focus left
+keyreg $ModAlt-Down       focus down
+keyreg $ModAlt-Up         focus up
+keyreg $ModAlt-Right      focus right
+keyreg $Mod-h          focus left
+keyreg $Mod-j          focus down
+keyreg $Mod-k          focus up
+keyreg $Mod-l          focus right
 keyreg $ModCtrl-Left  shift left
 keyreg $ModCtrl-Down  shift down
 keyreg $ModCtrl-Up    shift up
@@ -177,10 +180,10 @@ keyreg $ModShift-h       resize left +$nudgestep
 keyreg $ModShift-j       resize down +$nudgestep
 keyreg $ModShift-k       resize up +$nudgestep
 keyreg $ModShift-l       resize right +$nudgestep
-keyreg $ModShift-Left    resize left +$resizestep
-keyreg $ModShift-Down    resize down +$resizestep
-keyreg $ModShift-Up      resize up +$resizestep
-keyreg $ModShift-Right   resize right +$resizestep
+keyreg $ModAlt-Shift-h       shift left
+keyreg $ModAlt-Shift-j       shift  down
+keyreg $ModAlt-Shift-k       shift  up
+keyreg $ModAlt-Shift-l       shift  right 
 
 herb set default_direction_external_only
                                      
@@ -190,9 +193,10 @@ keyreg $ModShift-comma  shift left
 keyreg $ModShift-period shift right
                                      
 # maximize
-keyreg $Mod-f fullscreen toggle
-keyreg $ModShift-space                    chain . set_attr clients.focus.floating off . pseudotile toggle . jumpto urgent
+#keyreg $Mod-f fullscreen toggle
+keyreg $Mod-f              pseudotile toggle
 # resize popup                       
+keyreg $ModAlt-space	   chain . set_attr clients.focus.floating off . pseudotile toggle . jumpto urgent
 keyreg $ModCtrl-space                chain \
                                         , set_attr clients.focus.floating toggle \
                                         , pseudotile off
@@ -241,7 +245,7 @@ herb set frame_transparent_width 2
 herb set frame_border_width 5
 
 # ????
-herb set frame_gap 0
+herb set frame_gap 10
 #herb set frame_gap -10
 herb set window_gap 0
 herb set frame_padding 0
@@ -249,8 +253,8 @@ herb set frame_padding 0
 herb set snap_distance 10
 herb set snap_gap 5
 
-herb set smart_window_surroundings off
-herb set smart_frame_surroundings off
+herb set smart_window_surroundings on
+herb set smart_frame_surroundings on
 
 herb attr theme.minimal.border_width 2
 herb attr theme.inner_width 0
@@ -298,6 +302,9 @@ keyreg XF86AudioPlay spawn spotify_playpause
 keyreg XF86AudioNext spawn spotify_control next
 keyreg XF86AudioPrev spawn spotify_control previous
 
+keyreg XF86MonBrightnessDown spawn xbacklight -15 -fps 30
+keyreg XF86MonBrightnessUp spawn  xbacklight +15 -fps 30
+
 herb rule class='discord' tag=discord
 
 herb rule class='tasks' floating=on
@@ -305,6 +312,7 @@ keyreg $Mod-t 		spawn task_window
 
 herb set tree_style '╾│ ├└╼-┐'
 herb set default_frame_layout 1
+herb set tabbed_max true
 
 # unlock, just to be sure
 herb unlock

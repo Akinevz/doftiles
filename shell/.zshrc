@@ -47,4 +47,10 @@ cd
 #source $HOME/.config/zshrc.compl
 git config --global user.name "Kirill <akinevz> Nevzorov"
 git config --global user.email "akinevz@outlook.com"
-export BROWSER=/mnt/c/Programs/Mozilla Firefox/firefox.exe
+export BROWSER=/mnt/c/Programs/Mozilla\ Firefox/firefox.exe
+export JAVA_HOME=/usr/lib/jvm/java-18-openjdk/
+export SFDX_PATH=${HOME}/.local/share/yarn/bin/
+export PATH=$PATH:$SFDX_PATH
+eval `ssh-agent` &>/dev/null
+ssh-add
+clear

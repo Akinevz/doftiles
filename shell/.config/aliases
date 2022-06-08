@@ -25,6 +25,7 @@ alias status='git status'
 alias commit='git commit'
 alias addg='git add'
 alias diffg='git diff'
+alias lsg='git status'
 
 # General
 alias v="vim"

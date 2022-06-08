@@ -95,22 +95,22 @@ keyreg $ModShift-b			chain split top   0.5 , focus -i down
 
 
 # FOCUS
-keyreg $ModAlt-Left       focus left
-keyreg $ModAlt-Down       focus down
-keyreg $ModAlt-Up         focus up
-keyreg $ModAlt-Right      focus right
-keyreg $Mod-h          focus left
-keyreg $Mod-j          focus down
-keyreg $Mod-k          focus up
-keyreg $Mod-l          focus right
-keyreg $ModCtrl-Left  shift left
-keyreg $ModCtrl-Down  shift down
-keyreg $ModCtrl-Up    shift up
-keyreg $ModCtrl-Right shift right
-keyreg $ModCtrl-h     shift left
-keyreg $ModCtrl-j     shift down
-keyreg $ModCtrl-k     shift up
-keyreg $ModCtrl-l     shift right
+keyreg $Mod-Left  		   	focus left
+keyreg $Mod-Down  		   	focus down
+keyreg $Mod-Up    		   	focus up
+keyreg $Mod-Right 		   	focus right
+keyreg $ModAlt-h       		focus left
+keyreg $ModAlt-j       		focus down
+keyreg $ModAlt-k       		focus up
+keyreg $ModAlt-l       		focus right
+keyreg $ModCtrl-Left  		shift left
+keyreg $ModCtrl-Down  		shift down
+keyreg $ModCtrl-Up    		shift up
+keyreg $ModCtrl-Right 		shift right
+keyreg $ModCtrl-h     		shift left
+keyreg $ModCtrl-j     		shift down
+keyreg $ModCtrl-k     		shift up
+keyreg $ModCtrl-l     		shift right
 
 ### TAGS ###
 #TODO: create a script to tag programs with Mod-T
@@ -195,9 +195,9 @@ keyreg $ModShift-period shift right
                                      
 # maximize
 #keyreg $Mod-f fullscreen toggle
-keyreg $Mod-f              pseudotile toggle
+keyreg $ModAlt-space              pseudotile toggle
 # resize popup                       
-keyreg $ModAlt-space	   chain . set_attr clients.focus.floating off . pseudotile toggle . jumpto urgent
+keyreg $ModShift-space	   chain . set_attr clients.focus.floating off . pseudotile toggle . jumpto urgent
 keyreg $ModCtrl-space                chain \
                                         , set_attr clients.focus.floating toggle \
                                         , pseudotile off
@@ -254,7 +254,7 @@ herb set frame_padding 0
 herb set snap_distance 10
 herb set snap_gap 5
 
-herb set smart_window_surroundings on
+herb set smart_window_surroundings off
 herb set smart_frame_surroundings on
 
 herb attr theme.minimal.border_width 2

@@ -2,8 +2,9 @@
 
 # incoming 
 alias sxhkdrc="vim $HOME/.config/sxhkd"
+ADDITIONAL_WMRC="$HOME/.config/polybar/config.ini"
 #alias bspwmrc="vim $HOME/.config/bspwm"
-alias wmrc="vim $HOME/.config/herbstluftwm/autostart"
+alias wmrc="vim $HOME/.config/herbstluftwm/autostart -o ${ADDITIONAL_WMRC}"
 alias sx="sxhkd"
 alias bs="bspwm"
 alias aliases="vim $HOME/.config/aliases && source $HOME/.config/aliases"
